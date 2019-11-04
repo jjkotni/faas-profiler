@@ -8,9 +8,12 @@ import concurrent.futures
 import logging
 import threading
 import time
+import sys
+from time import sleep
 
 def functionWorker(params):
     result = { 'output' : 'hello World!'}
+    sleep(0.2)    
 
     print(result)
     
@@ -21,9 +24,21 @@ def main(params):
     logging.basicConfig(format=format, level=logging.INFO,
                         datefmt="%H:%M:%S")
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
-        executor.map(functionWorker, range(15))
+    workers = int(params['workers'])
 
-    result = { 'output': 'Executed 15 threads'}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+        executor.map(functionWorker, range(workers))
+
+
+    out    =  'Executed '+str(workers)+' threads'
+    result = { 'output': out}
 
     return(result)
+
+'''
+if __name__== "__main__":
+  params = {}
+  params['workers'] = sys.argv[1]
+  print(params)   
+  main(params)
+'''

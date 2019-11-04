@@ -3,7 +3,11 @@
 
 # Installing some dependencies if needed
 sudo apt-get install -y moreutils
-sudo pip3 install -r requirements.txt
+sudo python3.6 -m pip install -r requirements.txt
+#sudo pip3 install -r requirements.txt
+
+#Install CAT tool for pqos monitoring script
+sudo apt install intel-cmt-cat
 
 # Configure path variables used by the platform 
 ROOTLINE='FAAS_ROOT="'$(echo $PWD)'"'

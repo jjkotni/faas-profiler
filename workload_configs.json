@@ -1,13 +1,14 @@
 {
-    "test_name": "example_test",
-    "test_duration_in_seconds": 15,
+    "test_name": "single_thread",
+    "test_duration_in_seconds": 10,
     "random_seed": 100,
     "blocking_cli": false,
     "instances":{
         "instance1":{
             "application": "hello_python_mthread",
             "distribution": "Uniform",
-            "rate": 15,
+            "param_file": "params/1.json",
+            "rate": 30,
             "activity_window": [5, 10]
         }
     },
