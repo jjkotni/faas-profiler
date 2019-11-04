@@ -7,14 +7,17 @@ import json
 import os
 from wskutil import request
 import sys
+import pdb
 
 sys.path.insert(0, '../')
 
 # Local
 from GenConfigs import *
 
-DB_CONFIG_FILE = os.path.expanduser(
-    WSK_PATH[:-3]+'/../ansible/db_local.ini')
+#DB_CONFIG_FILE = os.path.expanduser(
+#    WSK_PATH[:-3]+'/../ansible/db_local.ini')
+
+DB_CONFIG_FILE = '/home/kjj/tmp/openwhisk/src/ansible/db_local.ini'
 
 # Examples:
 # print(GetDBConfigs())
@@ -66,8 +69,9 @@ def GetActivationRecordsSince(since, limit=100):
     Returns details on activation records since a given tick in milliseconds
     """
     configs = GetDBConfigs()
-    url = configs['db_protocol']+'://'+configs['db_host']+':' + \
-        configs['db_port']+'/'+'whisk_local_activations/_find'
+    url = 'http://127.0.0.1:5984/local_activations/_find'
+    #url = configs['db_protocol']+'://'+configs['db_host']+':' + \
+    #    configs['db_port']+'/'+'whisk_local_activations/_find'
     headers = {
         'Content-Type': 'application/json',
     }
@@ -83,6 +87,7 @@ def GetActivationRecordsSince(since, limit=100):
     res = request('POST', url, body=json.dumps(body), headers=headers,
                   auth='%s:%s' % (configs['db_username'], configs['db_password']))
 
+    pdb.set_trace()
     return json.loads(res.read())
 
 
@@ -108,7 +113,7 @@ def GetActivationIDsSince(since, limit=100):
                   auth='%s:%s' % (configs['db_username'], configs['db_password']))
     doc = json.loads(res.read())
     IDs = [x['_id'] for x in doc["docs"]]
-
+ 
     return IDs
 
 

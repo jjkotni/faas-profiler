@@ -140,9 +140,10 @@ def AnalyzePerfMonRecords(config_file):
         records['perf_records'] = ReadPerfMon(perf_mon_file)
 
     # PQOS Mon
+    '''
     if not os.path.isfile(pqos_msr_mon_file):
         logger.error("The PQOS output file is missing!")
     else:
         records['pqos_records'] = ReadPQOSMSRMon(pqos_msr_mon_file)
-
+    '''
     return records

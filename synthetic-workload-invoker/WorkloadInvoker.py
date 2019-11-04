@@ -10,6 +10,7 @@ import json
 from optparse import OptionParser
 import os
 import requests
+from concurrent.futures import ProcessPoolExecutor
 from requests_futures.sessions import FuturesSession
 import subprocess
 import sys
@@ -35,6 +36,7 @@ logger = ScriptLogger('workload_invoker', 'SWI.log')
 
 
 APIHOST = 'https://172.17.0.1'
+print(WSK_PATH)
 AUTH_KEY = subprocess.check_output(WSK_PATH + " property get --auth", shell=True).split()[2]
 AUTH_KEY = AUTH_KEY.decode("utf-8")
 user_pass = AUTH_KEY.split(':')
@@ -187,6 +189,7 @@ def main(argv):
         if workload['perf_monitoring']['runtime_script']:
             runtime_script = 'bash ' + FAAS_ROOT + '/' + workload['perf_monitoring']['runtime_script'] + \
                 ' ' + str(int(workload['test_duration_in_seconds'])) + ' &'
+            logger.info(runtime_script)
             os.system(runtime_script)
             logger.info("Runtime monitoring script ran")
     except:

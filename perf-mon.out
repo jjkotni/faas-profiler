@@ -1,0 +1,1495 @@
+# started on Sun Nov  3 20:37:01 2019
+
+#           time             counts unit events
+     0.121702704       13,46,55,239      cpu-cycles                                                    (51.03%)
+     0.121702704       10,15,26,221      L1-dcache-loads                                               (54.29%)
+     0.121702704           7,59,431      L1-dcache-load-misses     #    0.75% of all L1-dcache hits    (57.55%)
+     0.121702704           1,48,406      L1-icache-load-misses                                         (60.34%)
+     0.121702704             22,401      dTLB-load-misses          #   11.25% of all dTLB cache hits   (60.31%)
+     0.121702704           1,99,154      dTLB-loads                                                    (59.19%)
+     0.121702704             22,243      iTLB-load-misses          #   54.67% of all iTLB cache hits   (55.97%)
+     0.121702704             40,685      iTLB-loads                                                    (52.73%)
+     0.121702704           1,98,675      branch-misses                                                 (49.77%)
+     0.121702704                770      context-switches                                            
+     0.121702704                 10      cpu-migrations                                              
+     0.121702704                 29      page-faults                                                 
+     0.243642643        4,06,22,155      cpu-cycles                                                    (53.61%)
+     0.243642643          66,25,359      L1-dcache-loads                                               (53.64%)
+     0.243642643           6,78,652      L1-dcache-load-misses     #    1.26% of all L1-dcache hits    (53.75%)
+     0.243642643           1,10,122      L1-icache-load-misses                                         (55.17%)
+     0.243642643             42,260      dTLB-load-misses          #   26.80% of all dTLB cache hits   (56.88%)
+     0.243642643           1,16,248      dTLB-loads                                                    (57.87%)
+     0.243642643             16,473      iTLB-load-misses          #   54.70% of all iTLB cache hits   (57.90%)
+     0.243642643             19,543      iTLB-loads                                                    (56.58%)
+     0.243642643           1,85,546      branch-misses                                                 (55.02%)
+     0.243642643                436      context-switches                                            
+     0.243642643                  3      cpu-migrations                                              
+     0.243642643                 42      page-faults                                                 
+     0.364997376        4,64,31,988      cpu-cycles                                                    (55.23%)
+     0.364997376          63,75,820      L1-dcache-loads                                               (55.82%)
+     0.364997376           3,64,792      L1-dcache-load-misses     #    0.96% of all L1-dcache hits    (56.08%)
+     0.364997376           1,05,286      L1-icache-load-misses                                         (56.07%)
+     0.364997376             36,420      dTLB-load-misses          #   30.03% of all dTLB cache hits   (56.25%)
+     0.364997376             48,491      dTLB-loads                                                    (55.87%)
+     0.364997376              6,777      iTLB-load-misses          #   33.03% of all iTLB cache hits   (54.96%)
+     0.364997376              1,325      iTLB-loads                                                    (55.02%)
+     0.364997376           1,50,842      branch-misses                                                 (54.97%)
+     0.364997376                338      context-switches                                            
+     0.364997376                  5      cpu-migrations                                              
+     0.364997376                  3      page-faults                                                 
+     0.485866091        3,52,70,497      cpu-cycles                                                    (53.92%)
+     0.485866091          61,67,907      L1-dcache-loads                                               (54.49%)
+     0.485866091           4,22,960      L1-dcache-load-misses     #    1.40% of all L1-dcache hits    (55.72%)
+     0.485866091           1,36,030      L1-icache-load-misses                                         (56.48%)
+     0.485866091             46,304      dTLB-load-misses          #   43.74% of all dTLB cache hits   (57.24%)
+     0.485866091             59,580      dTLB-loads                                                    (56.96%)
+     0.485866091              8,165      iTLB-load-misses          #   51.93% of all iTLB cache hits   (56.06%)
+     0.485866091              1,344      iTLB-loads                                                    (55.25%)
+     0.485866091           1,40,127      branch-misses                                                 (54.36%)
+     0.485866091                300      context-switches                                            
+     0.485866091                  5      cpu-migrations                                              
+     0.485866091                  0      page-faults                                                 
+     0.607583638        8,83,73,972      cpu-cycles                                                    (55.06%)
+     0.607583638        6,48,33,408      L1-dcache-loads                                               (54.94%)
+     0.607583638          11,44,629      L1-dcache-load-misses     #    3.08% of all L1-dcache hits    (55.25%)
+     0.607583638           1,14,129      L1-icache-load-misses                                         (55.19%)
+     0.607583638             37,705      dTLB-load-misses          #   33.99% of all dTLB cache hits   (55.77%)
+     0.607583638           1,31,151      dTLB-loads                                                    (56.18%)
+     0.607583638             16,212      iTLB-load-misses          #  112.44% of all iTLB cache hits   (56.01%)
+     0.607583638              9,195      iTLB-loads                                                    (56.11%)
+     0.607583638           4,10,138      branch-misses                                                 (55.56%)
+     0.607583638                375      context-switches                                            
+     0.607583638                 13      cpu-migrations                                              
+     0.607583638                 17      page-faults                                                 
+     0.728348618       13,78,77,278      cpu-cycles                                                    (55.20%)
+     0.728348618        3,82,21,665      L1-dcache-loads                                               (55.59%)
+     0.728348618          17,61,202      L1-dcache-load-misses     #    4.72% of all L1-dcache hits    (56.20%)
+     0.728348618             84,402      L1-icache-load-misses                                         (56.11%)
+     0.728348618             32,200      dTLB-load-misses          #   30.82% of all dTLB cache hits   (56.15%)
+     0.728348618             72,330      dTLB-loads                                                    (55.95%)
+     0.728348618             53,161      iTLB-load-misses          #   50.18% of all iTLB cache hits   (55.19%)
+     0.728348618           5,63,523      iTLB-loads                                                    (54.99%)
+     0.728348618           6,13,204      branch-misses                                                 (54.83%)
+     0.728348618                931      context-switches                                            
+     0.728348618                 66      cpu-migrations                                              
+     0.728348618                 39      page-faults                                                 
+     0.849361441        3,61,74,505      cpu-cycles                                                    (54.77%)
+     0.849361441          41,52,502      L1-dcache-loads                                               (54.74%)
+     0.849361441           3,40,224      L1-dcache-load-misses     #    1.04% of all L1-dcache hits    (55.49%)
+     0.849361441             97,668      L1-icache-load-misses                                         (55.90%)
+     0.849361441             33,180      dTLB-load-misses          #   34.52% of all dTLB cache hits   (56.38%)
+     0.849361441             45,837      dTLB-loads                                                    (56.57%)
+     0.849361441              6,760      iTLB-load-misses          #    7.43% of all iTLB cache hits   (55.90%)
+     0.849361441              1,200      iTLB-loads                                                    (55.57%)
+     0.849361441           1,36,210      branch-misses                                                 (54.87%)
+     0.849361441                291      context-switches                                            
+     0.849361441                  1      cpu-migrations                                              
+     0.849361441                  0      page-faults                                                 
+     0.971048299        3,36,69,028      cpu-cycles                                                    (55.43%)
+     0.971048299          29,14,346      L1-dcache-loads                                               (55.38%)
+     0.971048299           2,07,593      L1-dcache-load-misses     #    0.72% of all L1-dcache hits    (55.64%)
+     0.971048299             83,232      L1-icache-load-misses                                         (55.56%)
+     0.971048299             31,784      dTLB-load-misses          #   35.60% of all dTLB cache hits   (55.58%)
+     0.971048299             41,463      dTLB-loads                                                    (55.75%)
+     0.971048299              6,699      iTLB-load-misses          #    8.40% of all iTLB cache hits   (55.53%)
+     0.971048299                951      iTLB-loads                                                    (55.68%)
+     0.971048299           1,16,403      branch-misses                                                 (55.49%)
+     0.971048299                225      context-switches                                            
+     0.971048299                  2      cpu-migrations                                              
+     0.971048299                  0      page-faults                                                 
+     1.092524622        7,39,53,713      cpu-cycles                                                    (55.18%)
+     1.092524622        1,02,90,414      L1-dcache-loads                                               (55.45%)
+     1.092524622           5,64,784      L1-dcache-load-misses     #    2.11% of all L1-dcache hits    (56.06%)
+     1.092524622           1,80,303      L1-icache-load-misses                                         (56.06%)
+     1.092524622             59,375      dTLB-load-misses          #   59.71% of all dTLB cache hits   (56.05%)
+     1.092524622           1,80,637      dTLB-loads                                                    (55.93%)
+     1.092524622             28,828      iTLB-load-misses          #   37.76% of all iTLB cache hits   (55.40%)
+     1.092524622             49,402      iTLB-loads                                                    (55.22%)
+     1.092524622           2,18,408      branch-misses                                                 (54.82%)
+     1.092524622                619      context-switches                                            
+     1.092524622                  8      cpu-migrations                                              
+     1.092524622                 19      page-faults                                                 
+     1.213674472        4,69,68,907      cpu-cycles                                                    (55.21%)
+     1.213674472          52,23,906      L1-dcache-loads                                               (55.07%)
+     1.213674472           4,96,662      L1-dcache-load-misses     #    2.02% of all L1-dcache hits    (55.35%)
+     1.213674472           1,47,747      L1-icache-load-misses                                         (55.58%)
+     1.213674472             60,172      dTLB-load-misses          #   59.87% of all dTLB cache hits   (55.89%)
+     1.213674472           1,10,169      dTLB-loads                                                    (56.10%)
+     1.213674472             23,541      iTLB-load-misses          #   33.56% of all iTLB cache hits   (55.88%)
+     1.213674472             14,281      iTLB-loads                                                    (55.74%)
+     1.213674472           2,53,235      branch-misses                                                 (55.27%)
+     1.213674472                385      context-switches                                            
+     1.213674472                 10      cpu-migrations                                              
+     1.213674472                 32      page-faults                                                 
+     1.335240483        3,69,23,311      cpu-cycles                                                    (55.71%)
+     1.335240483          44,70,392      L1-dcache-loads                                               (55.57%)
+     1.335240483           2,81,004      L1-dcache-load-misses     #    1.23% of all L1-dcache hits    (55.80%)
+     1.335240483             99,344      L1-icache-load-misses                                         (55.67%)
+     1.335240483             39,390      dTLB-load-misses          #   40.88% of all dTLB cache hits   (55.61%)
+     1.335240483             54,821      dTLB-loads                                                    (55.53%)
+     1.335240483              9,397      iTLB-load-misses          #   14.67% of all iTLB cache hits   (55.30%)
+     1.335240483              3,022      iTLB-loads                                                    (55.51%)
+     1.335240483           1,31,850      branch-misses                                                 (55.36%)
+     1.335240483                340      context-switches                                            
+     1.335240483                  6      cpu-migrations                                              
+     1.335240483                  0      page-faults                                                 
+     1.456970961        3,84,79,520      cpu-cycles                                                    (55.16%)
+     1.456970961          44,66,063      L1-dcache-loads                                               (55.28%)
+     1.456970961           2,97,224      L1-dcache-load-misses     #    1.40% of all L1-dcache hits    (55.74%)
+     1.456970961             90,425      L1-icache-load-misses                                         (55.91%)
+     1.456970961             32,513      dTLB-load-misses          #   35.08% of all dTLB cache hits   (56.04%)
+     1.456970961             52,426      dTLB-loads                                                    (55.93%)
+     1.456970961              8,308      iTLB-load-misses          #   14.12% of all iTLB cache hits   (55.57%)
+     1.456970961              1,605      iTLB-loads                                                    (55.50%)
+     1.456970961           1,32,241      branch-misses                                                 (55.07%)
+     1.456970961                258      context-switches                                            
+     1.456970961                  3      cpu-migrations                                              
+     1.456970961                  0      page-faults                                                 
+     1.577566037        3,35,19,166      cpu-cycles                                                    (55.41%)
+     1.577566037          38,38,960      L1-dcache-loads                                               (55.33%)
+     1.577566037           2,93,092      L1-dcache-load-misses     #    1.47% of all L1-dcache hits    (55.47%)
+     1.577566037             83,708      L1-icache-load-misses                                         (55.42%)
+     1.577566037             38,330      dTLB-load-misses          #   42.34% of all dTLB cache hits   (55.67%)
+     1.577566037             64,591      dTLB-loads                                                    (55.82%)
+     1.577566037             11,614      iTLB-load-misses          #   21.21% of all iTLB cache hits   (55.68%)
+     1.577566037              5,667      iTLB-loads                                                    (55.84%)
+     1.577566037           1,63,612      branch-misses                                                 (55.44%)
+     1.577566037                299      context-switches                                            
+     1.577566037                  6      cpu-migrations                                              
+     1.577566037                  8      page-faults                                                 
+     1.699501693        3,50,96,501      cpu-cycles                                                    (55.55%)
+     1.699501693          35,58,453      L1-dcache-loads                                               (55.70%)
+     1.699501693           3,53,673      L1-dcache-load-misses     #    1.89% of all L1-dcache hits    (55.83%)
+     1.699501693           1,13,165      L1-icache-load-misses                                         (55.72%)
+     1.699501693             45,265      dTLB-load-misses          #   49.01% of all dTLB cache hits   (55.72%)
+     1.699501693           1,16,038      dTLB-loads                                                    (55.60%)
+     1.699501693             19,199      iTLB-load-misses          #   36.72% of all iTLB cache hits   (55.25%)
+     1.699501693             20,201      iTLB-loads                                                    (55.41%)
+     1.699501693           1,83,064      branch-misses                                                 (55.29%)
+     1.699501693                302      context-switches                                            
+     1.699501693                  8      cpu-migrations                                              
+     1.699501693                 11      page-faults                                                 
+     1.820893511        9,37,32,932      cpu-cycles                                                    (55.24%)
+     1.820893511          43,44,651      L1-dcache-loads                                               (55.27%)
+     1.820893511           3,74,262      L1-dcache-load-misses     #    2.10% of all L1-dcache hits    (55.59%)
+     1.820893511           1,18,433      L1-icache-load-misses                                         (55.70%)
+     1.820893511             78,175      dTLB-load-misses          #   54.50% of all dTLB cache hits   (55.91%)
+     1.820893511           8,58,721      dTLB-loads                                                    (55.94%)
+     1.820893511           1,02,335      iTLB-load-misses          #  127.19% of all iTLB cache hits   (55.61%)
+     1.820893511           4,74,939      iTLB-loads                                                    (55.57%)
+     1.820893511           4,93,177      branch-misses                                                 (55.27%)
+     1.820893511                994      context-switches                                            
+     1.820893511                 49      cpu-migrations                                              
+     1.820893511                 35      page-faults                                                 
+     1.942296079        3,50,56,760      cpu-cycles                                                    (55.58%)
+     1.942296079          28,53,631      L1-dcache-loads                                               (55.54%)
+     1.942296079           2,10,093      L1-dcache-load-misses     #    1.25% of all L1-dcache hits    (55.60%)
+     1.942296079             71,402      L1-icache-load-misses                                         (55.49%)
+     1.942296079             23,568      dTLB-load-misses          #   17.22% of all dTLB cache hits   (55.50%)
+     1.942296079             38,733      dTLB-loads                                                    (55.61%)
+     1.942296079              6,189      iTLB-load-misses          #    8.20% of all iTLB cache hits   (55.49%)
+     1.942296079              1,347      iTLB-loads                                                    (55.68%)
+     1.942296079           1,38,469      branch-misses                                                 (55.57%)
+     1.942296079                262      context-switches                                            
+     1.942296079                  5      cpu-migrations                                              
+     1.942296079                  0      page-faults                                                 
+     2.063738516       26,16,58,552      cpu-cycles                                                    (55.43%)
+     2.063738516          93,12,094      L1-dcache-loads                                               (55.59%)
+     2.063738516           5,34,986      L1-dcache-load-misses     #    3.26% of all L1-dcache hits    (55.84%)
+     2.063738516             97,392      L1-icache-load-misses                                         (55.77%)
+     2.063738516             32,592      dTLB-load-misses          #   24.69% of all dTLB cache hits   (55.78%)
+     2.063738516             53,644      dTLB-loads                                                    (55.69%)
+     2.063738516              9,012      iTLB-load-misses          #   12.65% of all iTLB cache hits   (55.40%)
+     2.063738516              2,783      iTLB-loads                                                    (55.38%)
+     2.063738516           1,68,815      branch-misses                                                 (55.21%)
+     2.063738516                486      context-switches                                            
+     2.063738516                 10      cpu-migrations                                              
+     2.063738516                  4      page-faults                                                 
+     2.184779772        2,69,37,553      cpu-cycles                                                    (55.37%)
+     2.184779772          58,52,639      L1-dcache-loads                                               (55.33%)
+     2.184779772           5,32,228      L1-dcache-load-misses     #    3.36% of all L1-dcache hits    (55.47%)
+     2.184779772           1,73,434      L1-icache-load-misses                                         (55.55%)
+     2.184779772             70,306      dTLB-load-misses          #   53.39% of all dTLB cache hits   (55.75%)
+     2.184779772           1,26,189      dTLB-loads                                                    (55.85%)
+     2.184779772             12,128      iTLB-load-misses          #   17.96% of all iTLB cache hits   (55.69%)
+     2.184779772              4,269      iTLB-loads                                                    (55.66%)
+     2.184779772           1,35,256      branch-misses                                                 (55.39%)
+     2.184779772                329      context-switches                                            
+     2.184779772                  5      cpu-migrations                                              
+     2.184779772                 24      page-faults                                                 
+     2.305584544        4,55,46,313      cpu-cycles                                                    (55.63%)
+     2.305584544          73,53,111      L1-dcache-loads                                               (55.58%)
+     2.305584544           7,45,274      L1-dcache-load-misses     #    4.84% of all L1-dcache hits    (55.63%)
+     2.305584544           1,90,673      L1-icache-load-misses                                         (55.53%)
+     2.305584544             70,213      dTLB-load-misses          #   52.76% of all dTLB cache hits   (55.57%)
+     2.305584544           1,58,173      dTLB-loads                                                    (55.54%)
+     2.305584544             23,651      iTLB-load-misses          #   36.78% of all iTLB cache hits   (55.47%)
+     2.305584544              6,330      iTLB-loads                                                    (55.59%)
+     2.305584544           1,90,117      branch-misses                                                 (55.49%)
+     2.305584544                427      context-switches                                            
+     2.305584544                  9      cpu-migrations                                              
+     2.305584544                 27      page-faults                                                 
+     2.427622187        3,67,93,666      cpu-cycles                                                    (55.36%)
+     2.427622187          56,81,225      L1-dcache-loads                                               (55.46%)
+     2.427622187           3,15,283      L1-dcache-load-misses     #    2.12% of all L1-dcache hits    (55.71%)
+     2.427622187             77,677      L1-icache-load-misses                                         (55.78%)
+     2.427622187             32,705      dTLB-load-misses          #   25.45% of all dTLB cache hits   (55.84%)
+     2.427622187             42,021      dTLB-loads                                                    (55.75%)
+     2.427622187              5,608      iTLB-load-misses          #    9.18% of all iTLB cache hits   (55.53%)
+     2.427622187                564      iTLB-loads                                                    (55.48%)
+     2.427622187           1,30,271      branch-misses                                                 (55.21%)
+     2.427622187                234      context-switches                                            
+     2.427622187                  3      cpu-migrations                                              
+     2.427622187                  0      page-faults                                                 
+     2.549163765        3,50,98,273      cpu-cycles                                                    (55.49%)
+     2.549163765          34,52,994      L1-dcache-loads                                               (55.42%)
+     2.549163765           3,63,456      L1-dcache-load-misses     #    2.53% of all L1-dcache hits    (55.49%)
+     2.549163765           1,24,145      L1-icache-load-misses                                         (55.44%)
+     2.549163765             49,456      dTLB-load-misses          #   39.05% of all dTLB cache hits   (55.66%)
+     2.549163765             89,285      dTLB-loads                                                    (55.71%)
+     2.549163765             13,554      iTLB-load-misses          #   23.17% of all iTLB cache hits   (55.64%)
+     2.549163765              6,049      iTLB-loads                                                    (55.72%)
+     2.549163765           1,50,763      branch-misses                                                 (55.47%)
+     2.549163765                280      context-switches                                            
+     2.549163765                  6      cpu-migrations                                              
+     2.549163765                  9      page-faults                                                 
+     2.669807823        3,53,68,970      cpu-cycles                                                    (55.58%)
+     2.669807823          40,66,030      L1-dcache-loads                                               (55.65%)
+     2.669807823           3,00,466      L1-dcache-load-misses     #    2.16% of all L1-dcache hits    (55.72%)
+     2.669807823             88,068      L1-icache-load-misses                                         (55.61%)
+     2.669807823             35,076      dTLB-load-misses          #   28.56% of all dTLB cache hits   (55.66%)
+     2.669807823             41,803      dTLB-loads                                                    (55.59%)
+     2.669807823              4,872      iTLB-load-misses          #    8.72% of all iTLB cache hits   (55.36%)
+     2.669807823                731      iTLB-loads                                                    (55.49%)
+     2.669807823           1,03,720      branch-misses                                                 (55.40%)
+     2.669807823                222      context-switches                                            
+     2.669807823                  3      cpu-migrations                                              
+     2.669807823                  5      page-faults                                                 
+     2.791637065        3,20,59,947      cpu-cycles                                                    (55.33%)
+     2.791637065          48,28,351      L1-dcache-loads                                               (55.41%)
+     2.791637065          14,29,564      L1-dcache-load-misses     #   10.59% of all L1-dcache hits    (55.59%)
+     2.791637065           7,27,272      L1-icache-load-misses                                         (55.65%)
+     2.791637065           1,51,109      dTLB-load-misses          #   97.90% of all dTLB cache hits   (55.84%)
+     2.791637065           8,48,711      dTLB-loads                                                    (55.79%)
+     2.791637065             95,851      iTLB-load-misses          #  148.63% of all iTLB cache hits   (55.58%)
+     2.791637065           2,54,333      iTLB-loads                                                    (55.55%)
+     2.791637065           1,49,089      branch-misses                                                 (55.33%)
+     2.791637065                984      context-switches                                            
+     2.791637065                 48      cpu-migrations                                              
+     2.791637065                 45      page-faults                                                 
+     2.913117594        4,51,15,890      cpu-cycles                                                    (55.56%)
+     2.913117594          56,64,624      L1-dcache-loads                                               (55.52%)
+     2.913117594           3,74,877      L1-dcache-load-misses     #    2.85% of all L1-dcache hits    (55.56%)
+     2.913117594             93,449      L1-icache-load-misses                                         (55.45%)
+     2.913117594             31,142      dTLB-load-misses          #   20.80% of all dTLB cache hits   (55.54%)
+     2.913117594             43,674      dTLB-loads                                                    (55.62%)
+     2.913117594              7,024      iTLB-load-misses          #   11.24% of all iTLB cache hits   (55.57%)
+     2.913117594             16,037      iTLB-loads                                                    (55.66%)
+     2.913117594           1,73,589      branch-misses                                                 (55.55%)
+     2.913117594                282      context-switches                                            
+     2.913117594                  3      cpu-migrations                                              
+     2.913117594                  0      page-faults                                                 
+     3.033900679        4,04,85,849      cpu-cycles                                                    (55.50%)
+     3.033900679          39,54,905      L1-dcache-loads                                               (55.59%)
+     3.033900679           3,27,763      L1-dcache-load-misses     #    2.56% of all L1-dcache hits    (55.73%)
+     3.033900679             75,878      L1-icache-load-misses                                         (55.67%)
+     3.033900679             28,971      dTLB-load-misses          #   19.88% of all dTLB cache hits   (55.70%)
+     3.033900679             49,604      dTLB-loads                                                    (55.65%)
+     3.033900679              7,542      iTLB-load-misses          #   12.56% of all iTLB cache hits   (55.46%)
+     3.033900679              1,399      iTLB-loads                                                    (55.41%)
+     3.033900679           1,52,321      branch-misses                                                 (55.33%)
+     3.033900679                262      context-switches                                            
+     3.033900679                  3      cpu-migrations                                              
+     3.033900679                 21      page-faults                                                 
+#           time             counts unit events
+     3.155591374        5,02,08,590      cpu-cycles                                                    (55.39%)
+     3.155591374          90,41,094      L1-dcache-loads                                               (55.38%)
+     3.155591374           8,09,681      L1-dcache-load-misses     #    6.40% of all L1-dcache hits    (55.53%)
+     3.155591374           1,52,777      L1-icache-load-misses                                         (55.57%)
+     3.155591374             36,889      dTLB-load-misses          #   25.93% of all dTLB cache hits   (55.75%)
+     3.155591374             54,950      dTLB-loads                                                    (55.80%)
+     3.155591374              7,508      iTLB-load-misses          #   12.97% of all iTLB cache hits   (55.64%)
+     3.155591374              4,267      iTLB-loads                                                    (55.57%)
+     3.155591374           2,00,780      branch-misses                                                 (55.41%)
+     3.155591374                571      context-switches                                            
+     3.155591374                 12      cpu-migrations                                              
+     3.155591374                 13      page-faults                                                 
+     3.276431738        5,33,66,355      cpu-cycles                                                    (55.57%)
+     3.276431738          77,30,309      L1-dcache-loads                                               (55.55%)
+     3.276431738           5,65,894      L1-dcache-load-misses     #    4.54% of all L1-dcache hits    (55.62%)
+     3.276431738           1,56,893      L1-icache-load-misses                                         (55.52%)
+     3.276431738             60,518      dTLB-load-misses          #   42.92% of all dTLB cache hits   (55.58%)
+     3.276431738           1,08,588      dTLB-loads                                                    (55.58%)
+     3.276431738             21,085      iTLB-load-misses          #   37.62% of all iTLB cache hits   (55.51%)
+     3.276431738              8,362      iTLB-loads                                                    (55.57%)
+     3.276431738           1,78,763      branch-misses                                                 (55.53%)
+     3.276431738                413      context-switches                                            
+     3.276431738                 19      cpu-migrations                                              
+     3.276431738                 32      page-faults                                                 
+     3.397334621        3,81,74,938      cpu-cycles                                                    (55.44%)
+     3.397334621          63,33,163      L1-dcache-loads                                               (55.53%)
+     3.397334621           3,13,035      L1-dcache-load-misses     #    2.55% of all L1-dcache hits    (55.69%)
+     3.397334621             94,695      L1-icache-load-misses                                         (55.67%)
+     3.397334621             32,758      dTLB-load-misses          #   23.73% of all dTLB cache hits   (55.74%)
+     3.397334621             57,967      dTLB-loads                                                    (55.68%)
+     3.397334621              8,520      iTLB-load-misses          #   15.75% of all iTLB cache hits   (55.50%)
+     3.397334621              1,696      iTLB-loads                                                    (55.47%)
+     3.397334621           1,28,865      branch-misses                                                 (55.34%)
+     3.397334621                312      context-switches                                            
+     3.397334621                 14      cpu-migrations                                              
+     3.397334621                  1      page-faults                                                 
+     3.517969112        3,87,92,537      cpu-cycles                                                    (55.47%)
+     3.517969112        2,52,64,055      L1-dcache-loads                                               (55.43%)
+     3.517969112          22,93,363      L1-dcache-load-misses     #   18.05% of all L1-dcache hits    (55.47%)
+     3.517969112           4,17,391      L1-icache-load-misses                                         (55.49%)
+     3.517969112           1,25,889      dTLB-load-misses          #   83.60% of all dTLB cache hits   (55.67%)
+     3.517969112           5,01,799      dTLB-loads                                                    (55.72%)
+     3.517969112             20,625      iTLB-load-misses          #   39.03% of all iTLB cache hits   (55.66%)
+     3.517969112             17,601      iTLB-loads                                                    (55.64%)
+     3.517969112           1,86,363      branch-misses                                                 (55.49%)
+     3.517969112                867      context-switches                                            
+     3.517969112                 30      cpu-migrations                                              
+     3.517969112                212      page-faults                                                 
+     3.639671500        4,75,09,019      cpu-cycles                                                    (55.63%)
+     3.639671500          60,39,295      L1-dcache-loads                                               (55.58%)
+     3.639671500           5,80,592      L1-dcache-load-misses     #    4.65% of all L1-dcache hits    (55.63%)
+     3.639671500           1,33,770      L1-icache-load-misses                                         (55.53%)
+     3.639671500             53,817      dTLB-load-misses          #   36.20% of all dTLB cache hits   (55.59%)
+     3.639671500             93,766      dTLB-loads                                                    (55.54%)
+     3.639671500              9,769      iTLB-load-misses          #   19.11% of all iTLB cache hits   (55.45%)
+     3.639671500                893      iTLB-loads                                                    (55.53%)
+     3.639671500           1,45,301      branch-misses                                                 (55.52%)
+     3.639671500                358      context-switches                                            
+     3.639671500                 12      cpu-migrations                                              
+     3.639671500                 13      page-faults                                                 
+     3.760626354       10,39,52,552      cpu-cycles                                                    (55.41%)
+     3.760626354        4,85,39,733      L1-dcache-loads                                               (55.46%)
+     3.760626354          27,00,977      L1-dcache-load-misses     #   19.80% of all L1-dcache hits    (55.64%)
+     3.760626354           6,89,361      L1-icache-load-misses                                         (55.65%)
+     3.760626354           1,24,220      dTLB-load-misses          #   78.61% of all dTLB cache hits   (55.76%)
+     3.760626354           4,38,204      dTLB-loads                                                    (55.72%)
+     3.760626354             25,708      iTLB-load-misses          #   50.24% of all iTLB cache hits   (55.54%)
+     3.760626354             52,725      iTLB-loads                                                    (55.50%)
+     3.760626354           2,41,324      branch-misses                                                 (55.38%)
+     3.760626354              1,114      context-switches                                            
+     3.760626354                 86      cpu-migrations                                              
+     3.760626354                 48      page-faults                                                 
+     3.881809044        3,11,10,880      cpu-cycles                                                    (55.53%)
+     3.881809044          57,09,280      L1-dcache-loads                                               (55.47%)
+     3.881809044           2,43,645      L1-dcache-load-misses     #    1.82% of all L1-dcache hits    (55.52%)
+     3.881809044             68,271      L1-icache-load-misses                                         (55.46%)
+     3.881809044             33,014      dTLB-load-misses          #   21.36% of all dTLB cache hits   (55.61%)
+     3.881809044             46,893      dTLB-loads                                                    (55.67%)
+     3.881809044              6,015      iTLB-load-misses          #   12.13% of all iTLB cache hits   (55.60%)
+     3.881809044                629      iTLB-loads                                                    (55.63%)
+     3.881809044           1,24,963      branch-misses                                                 (55.53%)
+     3.881809044                215      context-switches                                            
+     3.881809044                  1      cpu-migrations                                              
+     3.881809044                  0      page-faults                                                 
+     4.002891035        5,88,83,329      cpu-cycles                                                    (55.57%)
+     4.002891035        1,54,89,767      L1-dcache-loads                                               (55.60%)
+     4.002891035           9,88,527      L1-dcache-load-misses     #    7.34% of all L1-dcache hits    (55.64%)
+     4.002891035           1,61,650      L1-icache-load-misses                                         (55.59%)
+     4.002891035             70,486      dTLB-load-misses          #   46.01% of all dTLB cache hits   (55.65%)
+     4.002891035           1,10,115      dTLB-loads                                                    (55.61%)
+     4.002891035              8,802      iTLB-load-misses          #   18.29% of all iTLB cache hits   (55.45%)
+     4.002891035              1,238      iTLB-loads                                                    (55.47%)
+     4.002891035           1,14,365      branch-misses                                                 (55.45%)
+     4.002891035                407      context-switches                                            
+     4.002891035                 17      cpu-migrations                                              
+     4.002891035                  9      page-faults                                                 
+     4.124324669        6,43,20,626      cpu-cycles                                                    (55.41%)
+     4.124324669          82,74,937      L1-dcache-loads                                               (55.43%)
+     4.124324669           5,65,685      L1-dcache-load-misses     #    4.25% of all L1-dcache hits    (55.56%)
+     4.124324669           1,23,288      L1-icache-load-misses                                         (55.60%)
+     4.124324669             42,357      dTLB-load-misses          #   27.75% of all dTLB cache hits   (55.76%)
+     4.124324669           1,33,573      dTLB-loads                                                    (55.75%)
+     4.124324669             25,924      iTLB-load-misses          #   54.23% of all iTLB cache hits   (55.58%)
+     4.124324669             37,050      iTLB-loads                                                    (55.53%)
+     4.124324669           2,49,866      branch-misses                                                 (55.43%)
+     4.124324669                646      context-switches                                            
+     4.124324669                 15      cpu-migrations                                              
+     4.124324669                 21      page-faults                                                 
+     4.245080789        6,23,24,510      cpu-cycles                                                    (55.56%)
+     4.245080789          57,40,881      L1-dcache-loads                                               (55.53%)
+     4.245080789           5,21,055      L1-dcache-load-misses     #    3.98% of all L1-dcache hits    (55.56%)
+     4.245080789           1,13,032      L1-icache-load-misses                                         (55.51%)
+     4.245080789             52,647      dTLB-load-misses          #   34.57% of all dTLB cache hits   (55.57%)
+     4.245080789           1,41,154      dTLB-loads                                                    (55.62%)
+     4.245080789             30,168      iTLB-load-misses          #   63.86% of all iTLB cache hits   (55.55%)
+     4.245080789             28,232      iTLB-loads                                                    (55.57%)
+     4.245080789           2,64,992      branch-misses                                                 (55.56%)
+     4.245080789                481      context-switches                                            
+     4.245080789                 41      cpu-migrations                                              
+     4.245080789                 23      page-faults                                                 
+     4.365995554        4,59,83,043      cpu-cycles                                                    (55.52%)
+     4.365995554          80,50,642      L1-dcache-loads                                               (55.59%)
+     4.365995554           5,31,640      L1-dcache-load-misses     #    4.10% of all L1-dcache hits    (55.69%)
+     4.365995554           1,23,043      L1-icache-load-misses                                         (55.63%)
+     4.365995554             37,196      dTLB-load-misses          #   24.86% of all dTLB cache hits   (55.67%)
+     4.365995554             56,954      dTLB-loads                                                    (55.62%)
+     4.365995554              6,344      iTLB-load-misses          #   13.81% of all iTLB cache hits   (55.47%)
+     4.365995554                553      iTLB-loads                                                    (55.43%)
+     4.365995554           1,64,085      branch-misses                                                 (55.42%)
+     4.365995554                324      context-switches                                            
+     4.365995554                  3      cpu-migrations                                              
+     4.365995554                 12      page-faults                                                 
+     4.487692024        2,67,91,939      cpu-cycles                                                    (55.45%)
+     4.487692024          31,90,262      L1-dcache-loads                                               (55.46%)
+     4.487692024           2,71,742      L1-dcache-load-misses     #    2.14% of all L1-dcache hits    (55.54%)
+     4.487692024             75,105      L1-icache-load-misses                                         (55.56%)
+     4.487692024             28,643      dTLB-load-misses          #   19.49% of all dTLB cache hits   (55.70%)
+     4.487692024             49,894      dTLB-loads                                                    (55.73%)
+     4.487692024              8,160      iTLB-load-misses          #   18.24% of all iTLB cache hits   (55.58%)
+     4.487692024              1,313      iTLB-loads                                                    (55.55%)
+     4.487692024           1,32,142      branch-misses                                                 (55.46%)
+     4.487692024                268      context-switches                                            
+     4.487692024                  0      cpu-migrations                                              
+     4.487692024                  0      page-faults                                                 
+     4.608984474        5,91,75,710      cpu-cycles                                                    (55.59%)
+     4.608984474          84,97,049      L1-dcache-loads                                               (55.59%)
+     4.608984474           5,69,260      L1-dcache-load-misses     #    4.53% of all L1-dcache hits    (55.61%)
+     4.608984474           1,63,987      L1-icache-load-misses                                         (55.55%)
+     4.608984474             43,288      dTLB-load-misses          #   29.97% of all dTLB cache hits   (55.60%)
+     4.608984474             51,430      dTLB-loads                                                    (55.55%)
+     4.608984474             10,516      iTLB-load-misses          #   24.04% of all iTLB cache hits   (55.48%)
+     4.608984474              6,998      iTLB-loads                                                    (55.52%)
+     4.608984474           2,08,528      branch-misses                                                 (55.53%)
+     4.608984474                348      context-switches                                            
+     4.608984474                  9      cpu-migrations                                              
+     4.608984474                 14      page-faults                                                 
+     4.729592940       15,72,03,317      cpu-cycles                                                    (55.46%)
+     4.729592940        4,46,51,879      L1-dcache-loads                                               (55.55%)
+     4.729592940          29,45,725      L1-dcache-load-misses     #   21.98% of all L1-dcache hits    (55.65%)
+     4.729592940           4,87,826      L1-icache-load-misses                                         (55.67%)
+     4.729592940             31,949      dTLB-load-misses          #   22.53% of all dTLB cache hits   (55.73%)
+     4.729592940             42,697      dTLB-loads                                                    (55.66%)
+     4.729592940             10,080      iTLB-load-misses          #   21.25% of all iTLB cache hits   (55.50%)
+     4.729592940           1,87,573      iTLB-loads                                                    (55.45%)
+     4.729592940           5,92,503      branch-misses                                                 (55.37%)
+     4.729592940              1,064      context-switches                                            
+     4.729592940                 68      cpu-migrations                                              
+     4.729592940                 42      page-faults                                                 
+     4.851785849        4,33,58,261      cpu-cycles                                                    (55.48%)
+     4.851785849          74,57,006      L1-dcache-loads                                               (55.49%)
+     4.851785849           4,45,607      L1-dcache-load-misses     #    3.36% of all L1-dcache hits    (55.51%)
+     4.851785849           1,27,898      L1-icache-load-misses                                         (55.52%)
+     4.851785849             42,148      dTLB-load-misses          #   30.11% of all dTLB cache hits   (55.66%)
+     4.851785849             67,744      dTLB-loads                                                    (55.68%)
+     4.851785849              7,488      iTLB-load-misses          #   16.18% of all iTLB cache hits   (55.61%)
+     4.851785849              1,121      iTLB-loads                                                    (55.57%)
+     4.851785849           1,56,745      branch-misses                                                 (55.50%)
+     4.851785849                380      context-switches                                            
+     4.851785849                  7      cpu-migrations                                              
+     4.851785849                  5      page-faults                                                 
+     4.973223366        4,21,61,274      cpu-cycles                                                    (55.57%)
+     4.973223366          40,11,625      L1-dcache-loads                                               (55.62%)
+     4.973223366           2,81,593      L1-dcache-load-misses     #    2.16% of all L1-dcache hits    (55.64%)
+     4.973223366             90,639      L1-icache-load-misses                                         (55.59%)
+     4.973223366             38,690      dTLB-load-misses          #   28.02% of all dTLB cache hits   (55.64%)
+     4.973223366             61,330      dTLB-loads                                                    (55.58%)
+     4.973223366             10,039      iTLB-load-misses          #   22.22% of all iTLB cache hits   (55.44%)
+     4.973223366              1,644      iTLB-loads                                                    (55.47%)
+     4.973223366           1,49,912      branch-misses                                                 (55.48%)
+     4.973223366                382      context-switches                                            
+     4.973223366                  0      cpu-migrations                                              
+     4.973223366                  0      page-faults                                                 
+     5.093765173       28,26,42,130      cpu-cycles                                                    (55.43%)
+     5.093765173       21,52,18,748      L1-dcache-loads                                               (55.51%)
+     5.093765173          65,79,735      L1-dcache-load-misses     #   36.88% of all L1-dcache hits    (55.60%)
+     5.093765173          17,52,942      L1-icache-load-misses                                         (55.62%)
+     5.093765173           4,09,046      dTLB-load-misses          #  224.18% of all dTLB cache hits   (55.75%)
+     5.093765173          20,03,024      dTLB-loads                                                    (55.68%)
+     5.093765173           1,06,153      iTLB-load-misses          #  213.39% of all iTLB cache hits   (55.54%)
+     5.093765173           2,36,684      iTLB-loads                                                    (55.49%)
+     5.093765173          14,39,666      branch-misses                                                 (55.42%)
+     5.093765173              3,639      context-switches                                            
+     5.093765173                128      cpu-migrations                                              
+     5.093765173              7,630      page-faults                                                 
+     5.214310281     1,19,89,45,461      cpu-cycles                                                    (55.53%)
+     5.214310281       66,84,68,899      L1-dcache-loads                                               (55.53%)
+     5.214310281        3,06,56,745      L1-dcache-load-misses     #   92.98% of all L1-dcache hits    (55.54%)
+     5.214310281          36,78,144      L1-icache-load-misses                                         (55.49%)
+     5.214310281           7,31,484      dTLB-load-misses          #  264.84% of all dTLB cache hits   (55.62%)
+     5.214310281          42,13,134      dTLB-loads                                                    (55.63%)
+     5.214310281           1,64,370      iTLB-load-misses          #  246.27% of all iTLB cache hits   (55.56%)
+     5.214310281           7,80,707      iTLB-loads                                                    (55.59%)
+     5.214310281          53,30,129      branch-misses                                                 (55.53%)
+     5.214310281              8,753      context-switches                                            
+     5.214310281                584      cpu-migrations                                              
+     5.214310281              9,514      page-faults                                                 
+     5.334793540     1,46,96,13,008      cpu-cycles                                                    (55.55%)
+     5.334793540       96,82,06,574      L1-dcache-loads                                               (55.62%)
+     5.334793540        2,48,46,748      L1-dcache-load-misses     #   45.82% of all L1-dcache hits    (55.64%)
+     5.334793540          43,89,674      L1-icache-load-misses                                         (55.60%)
+     5.334793540           8,75,554      dTLB-load-misses          #  229.04% of all dTLB cache hits   (55.65%)
+     5.334793540          49,43,286      dTLB-loads                                                    (55.58%)
+     5.334793540           2,53,316      iTLB-load-misses          #  311.51% of all iTLB cache hits   (55.45%)
+     5.334793540           7,07,984      iTLB-loads                                                    (55.46%)
+     5.334793540          57,47,676      branch-misses                                                 (55.47%)
+     5.334793540             12,825      context-switches                                            
+     5.334793540                796      cpu-migrations                                              
+     5.334793540             21,675      page-faults                                                 
+     5.455285900     1,47,72,44,141      cpu-cycles                                                    (55.44%)
+     5.455285900       94,93,81,380      L1-dcache-loads                                               (55.49%)
+     5.455285900        2,06,08,875      L1-dcache-load-misses     #   27.81% of all L1-dcache hits    (55.58%)
+     5.455285900          39,24,282      L1-icache-load-misses                                         (55.60%)
+     5.455285900           6,56,382      dTLB-load-misses          #  138.78% of all dTLB cache hits   (55.73%)
+     5.455285900          44,63,898      dTLB-loads                                                    (55.69%)
+     5.455285900           2,86,493      iTLB-load-misses          #  285.93% of all iTLB cache hits   (55.55%)
+     5.455285900           9,30,822      iTLB-loads                                                    (55.50%)
+     5.455285900          71,31,174      branch-misses                                                 (55.44%)
+     5.455285900             11,185      context-switches                                            
+     5.455285900                661      cpu-migrations                                              
+     5.455285900             17,526      page-faults                                                 
+     5.575766982     1,14,64,22,894      cpu-cycles                                                    (55.54%)
+     5.575766982       80,37,09,398      L1-dcache-loads                                               (55.54%)
+     5.575766982        2,44,96,721      L1-dcache-load-misses     #   27.22% of all L1-dcache hits    (55.55%)
+     5.575766982          44,48,548      L1-icache-load-misses                                         (55.51%)
+     5.575766982          11,15,878      dTLB-load-misses          #  196.02% of all dTLB cache hits   (55.60%)
+     5.575766982          49,02,972      dTLB-loads                                                    (55.61%)
+     5.575766982           2,31,157      iTLB-load-misses          #  212.20% of all iTLB cache hits   (55.55%)
+     5.575766982           5,02,129      iTLB-loads                                                    (55.57%)
+     5.575766982          44,82,059      branch-misses                                                 (55.54%)
+     5.575766982             11,321      context-switches                                            
+     5.575766982                690      cpu-migrations                                              
+     5.575766982             20,027      page-faults                                                 
+     5.696234974     1,11,33,62,386      cpu-cycles                                                    (55.54%)
+     5.696234974       69,59,18,718      L1-dcache-loads                                               (55.60%)
+     5.696234974        2,08,45,197      L1-dcache-load-misses     #   20.26% of all L1-dcache hits    (55.65%)
+     5.696234974          35,97,989      L1-icache-load-misses                                         (55.61%)
+     5.696234974           6,86,246      dTLB-load-misses          #  108.52% of all dTLB cache hits   (55.65%)
+     5.696234974          35,34,751      dTLB-loads                                                    (55.59%)
+     5.696234974           1,68,089      iTLB-load-misses          #  139.66% of all iTLB cache hits   (55.47%)
+     5.696234974           6,45,864      iTLB-loads                                                    (55.45%)
+     5.696234974          47,65,012      branch-misses                                                 (55.46%)
+     5.696234974             10,942      context-switches                                            
+     5.696234974                545      cpu-migrations                                              
+     5.696234974             17,875      page-faults                                                 
+     5.816662017     1,75,47,80,275      cpu-cycles                                                    (55.46%)
+     5.816662017     1,04,61,86,815      L1-dcache-loads                                               (55.48%)
+     5.816662017        3,22,62,114      L1-dcache-load-misses     #   26.33% of all L1-dcache hits    (55.56%)
+     5.816662017          41,41,015      L1-icache-load-misses                                         (55.59%)
+     5.816662017           7,83,288      dTLB-load-misses          #  106.59% of all dTLB cache hits   (55.70%)
+     5.816662017          55,51,850      dTLB-loads                                                    (55.69%)
+     5.816662017           3,54,633      iTLB-load-misses          #  237.05% of all iTLB cache hits   (55.56%)
+     5.816662017          15,24,233      iTLB-loads                                                    (55.52%)
+     5.816662017          70,85,406      branch-misses                                                 (55.46%)
+     5.816662017             12,143      context-switches                                            
+     5.816662017                817      cpu-migrations                                              
+     5.816662017             18,658      page-faults                                                 
+     5.937144099     1,11,85,77,237      cpu-cycles                                                    (55.55%)
+     5.937144099       79,41,42,948      L1-dcache-loads                                               (55.55%)
+     5.937144099        1,74,59,845      L1-dcache-load-misses     #   12.82% of all L1-dcache hits    (55.56%)
+     5.937144099          39,86,319      L1-icache-load-misses                                         (55.52%)
+     5.937144099           7,32,598      dTLB-load-misses          #   90.62% of all dTLB cache hits   (55.58%)
+     5.937144099          43,39,557      dTLB-loads                                                    (55.59%)
+     5.937144099           2,38,613      iTLB-load-misses          #  150.13% of all iTLB cache hits   (55.54%)
+     5.937144099           6,06,702      iTLB-loads                                                    (55.56%)
+     5.937144099          47,37,070      branch-misses                                                 (55.55%)
+     5.937144099             10,076      context-switches                                            
+     5.937144099                612      cpu-migrations                                              
+     5.937144099             17,926      page-faults                                                 
+     6.057611392     1,30,94,50,603      cpu-cycles                                                    (55.52%)
+     6.057611392       84,52,91,082      L1-dcache-loads                                               (55.59%)
+     6.057611392        2,39,03,446      L1-dcache-load-misses     #   15.89% of all L1-dcache hits    (55.65%)
+     6.057611392          45,01,244      L1-icache-load-misses                                         (55.61%)
+     6.057611392           9,77,510      dTLB-load-misses          #  107.36% of all dTLB cache hits   (55.66%)
+     6.057611392          59,12,253      dTLB-loads                                                    (55.60%)
+     6.057611392           2,29,666      iTLB-load-misses          #  129.47% of all iTLB cache hits   (55.48%)
+     6.057611392          10,81,725      iTLB-loads                                                    (55.44%)
+     6.057611392          61,71,470      branch-misses                                                 (55.46%)
+     6.057611392             10,522      context-switches                                            
+     6.057611392                695      cpu-migrations                                              
+     6.057611392             16,272      page-faults                                                 
+#           time             counts unit events
+     6.178091364     1,51,34,91,948      cpu-cycles                                                    (55.47%)
+     6.178091364       86,18,39,268      L1-dcache-loads                                               (55.48%)
+     6.178091364        3,74,86,140      L1-dcache-load-misses     #   22.81% of all L1-dcache hits    (55.55%)
+     6.178091364          44,85,231      L1-icache-load-misses                                         (55.57%)
+     6.178091364           8,92,773      dTLB-load-misses          #   89.59% of all dTLB cache hits   (55.68%)
+     6.178091364          52,96,358      dTLB-loads                                                    (55.69%)
+     6.178091364           2,07,123      iTLB-load-misses          #  109.30% of all iTLB cache hits   (55.57%)
+     6.178091364           7,94,946      iTLB-loads                                                    (55.53%)
+     6.178091364          68,27,291      branch-misses                                                 (55.48%)
+     6.178091364             12,227      context-switches                                            
+     6.178091364                877      cpu-migrations                                              
+     6.178091364             20,088      page-faults                                                 
+     6.298540187     1,46,29,94,500      cpu-cycles                                                    (55.56%)
+     6.298540187       87,23,81,915      L1-dcache-loads                                               (55.56%)
+     6.298540187        1,84,65,216      L1-dcache-load-misses     #   10.38% of all L1-dcache hits    (55.57%)
+     6.298540187          33,61,932      L1-icache-load-misses                                         (55.53%)
+     6.298540187           6,19,939      dTLB-load-misses          #   58.52% of all dTLB cache hits   (55.58%)
+     6.298540187          42,62,247      dTLB-loads                                                    (55.58%)
+     6.298540187           3,61,238      iTLB-load-misses          #  175.27% of all iTLB cache hits   (55.53%)
+     6.298540187          10,53,143      iTLB-loads                                                    (55.55%)
+     6.298540187          69,60,651      branch-misses                                                 (55.56%)
+     6.298540187             11,870      context-switches                                            
+     6.298540187                754      cpu-migrations                                              
+     6.298540187             19,401      page-faults                                                 
+     6.418999929     1,25,37,57,999      cpu-cycles                                                    (55.51%)
+     6.418999929       77,33,21,234      L1-dcache-loads                                               (55.57%)
+     6.418999929        1,95,29,664      L1-dcache-load-misses     #   10.32% of all L1-dcache hits    (55.65%)
+     6.418999929          40,61,794      L1-icache-load-misses                                         (55.62%)
+     6.418999929           8,58,464      dTLB-load-misses          #   75.31% of all dTLB cache hits   (55.66%)
+     6.418999929          53,27,473      dTLB-loads                                                    (55.61%)
+     6.418999929           3,18,337      iTLB-load-misses          #  144.46% of all iTLB cache hits   (55.49%)
+     6.418999929           9,62,077      iTLB-loads                                                    (55.45%)
+     6.418999929          62,05,282      branch-misses                                                 (55.45%)
+     6.418999929             10,965      context-switches                                            
+     6.418999929                831      cpu-migrations                                              
+     6.418999929             16,969      page-faults                                                 
+     6.539491344     1,40,16,24,612      cpu-cycles                                                    (55.49%)
+     6.539491344       96,69,94,623      L1-dcache-loads                                               (55.49%)
+     6.539491344        2,09,07,159      L1-dcache-load-misses     #   10.27% of all L1-dcache hits    (55.54%)
+     6.539491344          40,87,643      L1-icache-load-misses                                         (55.56%)
+     6.539491344           8,68,117      dTLB-load-misses          #   72.08% of all dTLB cache hits   (55.66%)
+     6.539491344          46,27,430      dTLB-loads                                                    (55.67%)
+     6.539491344           2,29,273      iTLB-load-misses          #   99.97% of all iTLB cache hits   (55.58%)
+     6.539491344           7,04,967      iTLB-loads                                                    (55.54%)
+     6.539491344          57,94,121      branch-misses                                                 (55.49%)
+     6.539491344             11,052      context-switches                                            
+     6.539491344                701      cpu-migrations                                              
+     6.539491344             17,468      page-faults                                                 
+     6.659970709     1,51,82,71,671      cpu-cycles                                                    (55.57%)
+     6.659970709       93,30,53,261      L1-dcache-loads                                               (55.57%)
+     6.659970709        2,86,02,300      L1-dcache-load-misses     #   13.19% of all L1-dcache hits    (55.58%)
+     6.659970709          43,48,024      L1-icache-load-misses                                         (55.54%)
+     6.659970709           7,35,955      dTLB-load-misses          #   58.92% of all dTLB cache hits   (55.58%)
+     6.659970709          36,59,867      dTLB-loads                                                    (55.57%)
+     6.659970709           1,21,410      iTLB-load-misses          #   50.28% of all iTLB cache hits   (55.51%)
+     6.659970709           8,95,950      iTLB-loads                                                    (55.53%)
+     6.659970709          58,17,438      branch-misses                                                 (55.55%)
+     6.659970709             11,486      context-switches                                            
+     6.659970709                801      cpu-migrations                                              
+     6.659970709             17,331      page-faults                                                 
+     6.780449794     1,44,83,08,961      cpu-cycles                                                    (55.50%)
+     6.780449794       88,64,02,299      L1-dcache-loads                                               (55.56%)
+     6.780449794        2,18,17,829      L1-dcache-load-misses     #    9.53% of all L1-dcache hits    (55.63%)
+     6.780449794          39,94,787      L1-icache-load-misses                                         (55.62%)
+     6.780449794           7,62,292      dTLB-load-misses          #   57.72% of all dTLB cache hits   (55.67%)
+     6.780449794          52,57,187      dTLB-loads                                                    (55.62%)
+     6.780449794           3,84,756      iTLB-load-misses          #  143.79% of all iTLB cache hits   (55.51%)
+     6.780449794          17,04,090      iTLB-loads                                                    (55.47%)
+     6.780449794          76,15,320      branch-misses                                                 (55.44%)
+     6.780449794             13,007      context-switches                                            
+     6.780449794                855      cpu-migrations                                              
+     6.780449794             19,922      page-faults                                                 
+     6.900974319     1,26,16,50,214      cpu-cycles                                                    (55.50%)
+     6.900974319       78,30,69,749      L1-dcache-loads                                               (55.50%)
+     6.900974319        2,63,72,288      L1-dcache-load-misses     #   11.06% of all L1-dcache hits    (55.53%)
+     6.900974319          46,02,972      L1-icache-load-misses                                         (55.55%)
+     6.900974319          10,11,199      dTLB-load-misses          #   72.51% of all dTLB cache hits   (55.65%)
+     6.900974319          55,38,652      dTLB-loads                                                    (55.65%)
+     6.900974319           2,98,320      iTLB-load-misses          #  108.45% of all iTLB cache hits   (55.59%)
+     6.900974319           6,94,756      iTLB-loads                                                    (55.55%)
+     6.900974319          52,18,133      branch-misses                                                 (55.50%)
+     6.900974319             12,021      context-switches                                            
+     6.900974319                766      cpu-migrations                                              
+     6.900974319             19,461      page-faults                                                 
+     7.021437424     1,51,52,88,294      cpu-cycles                                                    (55.58%)
+     7.021437424       88,40,87,873      L1-dcache-loads                                               (55.58%)
+     7.021437424        2,79,60,772      L1-dcache-load-misses     #   11.20% of all L1-dcache hits    (55.59%)
+     7.021437424          44,81,131      L1-icache-load-misses                                         (55.55%)
+     7.021437424           7,48,628      dTLB-load-misses          #   51.96% of all dTLB cache hits   (55.59%)
+     7.021437424          40,77,215      dTLB-loads                                                    (55.55%)
+     7.021437424           1,87,285      iTLB-load-misses          #   65.91% of all iTLB cache hits   (55.51%)
+     7.021437424           8,02,232      iTLB-loads                                                    (55.52%)
+     7.021437424          63,45,134      branch-misses                                                 (55.53%)
+     7.021437424             11,743      context-switches                                            
+     7.021437424                780      cpu-migrations                                              
+     7.021437424             18,013      page-faults                                                 
+     7.141957409     1,36,08,81,351      cpu-cycles                                                    (55.50%)
+     7.141957409       83,69,75,769      L1-dcache-loads                                               (55.55%)
+     7.141957409        2,03,99,011      L1-dcache-load-misses     #    7.86% of all L1-dcache hits    (55.61%)
+     7.141957409          37,53,625      L1-icache-load-misses                                         (55.63%)
+     7.141957409           6,36,982      dTLB-load-misses          #   43.14% of all dTLB cache hits   (55.67%)
+     7.141957409          35,53,621      dTLB-loads                                                    (55.62%)
+     7.141957409           1,50,374      iTLB-load-misses          #   52.20% of all iTLB cache hits   (55.52%)
+     7.141957409           5,14,346      iTLB-loads                                                    (55.48%)
+     7.141957409          49,11,878      branch-misses                                                 (55.44%)
+     7.141957409             10,665      context-switches                                            
+     7.141957409                664      cpu-migrations                                              
+     7.141957409             18,463      page-faults                                                 
+     7.262462774     1,42,85,69,527      cpu-cycles                                                    (55.51%)
+     7.262462774       85,59,45,826      L1-dcache-loads                                               (55.51%)
+     7.262462774        2,28,57,748      L1-dcache-load-misses     #    8.48% of all L1-dcache hits    (55.52%)
+     7.262462774          35,18,764      L1-icache-load-misses                                         (55.54%)
+     7.262462774           6,26,060      dTLB-load-misses          #   41.20% of all dTLB cache hits   (55.63%)
+     7.262462774          40,58,741      dTLB-loads                                                    (55.64%)
+     7.262462774           2,36,609      iTLB-load-misses          #   78.65% of all iTLB cache hits   (55.59%)
+     7.262462774          10,54,514      iTLB-loads                                                    (55.56%)
+     7.262462774          67,07,814      branch-misses                                                 (55.51%)
+     7.262462774             10,676      context-switches                                            
+     7.262462774                676      cpu-migrations                                              
+     7.262462774             14,716      page-faults                                                 
+     7.382925479     1,31,96,62,280      cpu-cycles                                                    (55.58%)
+     7.382925479       87,20,28,040      L1-dcache-loads                                               (55.59%)
+     7.382925479        2,65,12,523      L1-dcache-load-misses     #    9.49% of all L1-dcache hits    (55.60%)
+     7.382925479          42,98,824      L1-icache-load-misses                                         (55.56%)
+     7.382925479          10,39,835      dTLB-load-misses          #   65.02% of all dTLB cache hits   (55.60%)
+     7.382925479          63,76,115      dTLB-loads                                                    (55.55%)
+     7.382925479           3,38,750      iTLB-load-misses          #  108.78% of all iTLB cache hits   (55.50%)
+     7.382925479           9,45,908      iTLB-loads                                                    (55.51%)
+     7.382925479          66,39,049      branch-misses                                                 (55.52%)
+     7.382925479             12,157      context-switches                                            
+     7.382925479                778      cpu-migrations                                              
+     7.382925479             19,677      page-faults                                                 
+     7.503409387     1,46,35,22,893      cpu-cycles                                                    (55.49%)
+     7.503409387       94,37,46,594      L1-dcache-loads                                               (55.54%)
+     7.503409387        3,51,17,400      L1-dcache-load-misses     #   12.10% of all L1-dcache hits    (55.60%)
+     7.503409387          53,58,426      L1-icache-load-misses                                         (55.62%)
+     7.503409387           9,65,853      dTLB-load-misses          #   58.21% of all dTLB cache hits   (55.67%)
+     7.503409387          53,16,994      dTLB-loads                                                    (55.63%)
+     7.503409387           1,74,302      iTLB-load-misses          #   54.51% of all iTLB cache hits   (55.53%)
+     7.503409387           8,30,316      iTLB-loads                                                    (55.49%)
+     7.503409387          74,08,911      branch-misses                                                 (55.45%)
+     7.503409387             12,350      context-switches                                            
+     7.503409387                755      cpu-migrations                                              
+     7.503409387             19,477      page-faults                                                 
+     7.623864685     1,49,20,50,861      cpu-cycles                                                    (55.52%)
+     7.623864685       91,97,65,108      L1-dcache-loads                                               (55.52%)
+     7.623864685        2,53,91,012      L1-dcache-load-misses     #    8.46% of all L1-dcache hits    (55.53%)
+     7.623864685          44,31,774      L1-icache-load-misses                                         (55.53%)
+     7.623864685           8,59,587      dTLB-load-misses          #   50.04% of all dTLB cache hits   (55.62%)
+     7.623864685          53,49,111      dTLB-loads                                                    (55.62%)
+     7.623864685           3,36,720      iTLB-load-misses          #  101.64% of all iTLB cache hits   (55.58%)
+     7.623864685          10,43,699      iTLB-loads                                                    (55.57%)
+     7.623864685          63,59,704      branch-misses                                                 (55.52%)
+     7.623864685             11,700      context-switches                                            
+     7.623864685                933      cpu-migrations                                              
+     7.623864685             18,186      page-faults                                                 
+     7.744329574     1,93,15,71,783      cpu-cycles                                                    (55.57%)
+     7.744329574     1,23,14,12,985      L1-dcache-loads                                               (55.59%)
+     7.744329574        4,44,30,104      L1-dcache-load-misses     #   14.12% of all L1-dcache hits    (55.60%)
+     7.744329574          54,94,877      L1-icache-load-misses                                         (55.57%)
+     7.744329574           9,95,028      dTLB-load-misses          #   52.71% of all dTLB cache hits   (55.61%)
+     7.744329574        1,25,93,563      dTLB-loads                                                    (55.56%)
+     7.744329574           3,46,075      iTLB-load-misses          #  100.68% of all iTLB cache hits   (55.49%)
+     7.744329574          11,28,587      iTLB-loads                                                    (55.51%)
+     7.744329574          97,11,908      branch-misses                                                 (55.52%)
+     7.744329574             11,609      context-switches                                            
+     7.744329574                747      cpu-migrations                                              
+     7.744329574             17,436      page-faults                                                 
+     7.864825112     1,27,07,21,555      cpu-cycles                                                    (55.48%)
+     7.864825112       86,94,82,140      L1-dcache-loads                                               (55.53%)
+     7.864825112        2,22,05,675      L1-dcache-load-misses     #    6.87% of all L1-dcache hits    (55.59%)
+     7.864825112          41,67,233      L1-icache-load-misses                                         (55.61%)
+     7.864825112           9,02,394      dTLB-load-misses          #   46.57% of all dTLB cache hits   (55.67%)
+     7.864825112          51,21,742      dTLB-loads                                                    (55.63%)
+     7.864825112           2,77,893      iTLB-load-misses          #   79.54% of all iTLB cache hits   (55.54%)
+     7.864825112           7,10,543      iTLB-loads                                                    (55.50%)
+     7.864825112          55,13,272      branch-misses                                                 (55.46%)
+     7.864825112             11,274      context-switches                                            
+     7.864825112                690      cpu-migrations                                              
+     7.864825112             18,667      page-faults                                                 
+     7.985266072     1,22,73,57,405      cpu-cycles                                                    (55.53%)
+     7.985266072       79,42,14,750      L1-dcache-loads                                               (55.53%)
+     7.985266072        2,49,95,284      L1-dcache-load-misses     #    7.57% of all L1-dcache hits    (55.54%)
+     7.985266072          42,17,903      L1-icache-load-misses                                         (55.52%)
+     7.985266072           7,47,888      dTLB-load-misses          #   38.16% of all dTLB cache hits   (55.60%)
+     7.985266072          34,17,868      dTLB-loads                                                    (55.61%)
+     7.985266072           1,31,273      iTLB-load-misses          #   37.24% of all iTLB cache hits   (55.57%)
+     7.985266072           5,54,122      iTLB-loads                                                    (55.57%)
+     7.985266072          49,74,677      branch-misses                                                 (55.53%)
+     7.985266072             11,078      context-switches                                            
+     7.985266072                735      cpu-migrations                                              
+     7.985266072             17,560      page-faults                                                 
+     8.105715911     1,47,29,14,354      cpu-cycles                                                    (55.56%)
+     8.105715911       91,21,45,464      L1-dcache-loads                                               (55.60%)
+     8.105715911        2,41,38,060      L1-dcache-load-misses     #    7.12% of all L1-dcache hits    (55.61%)
+     8.105715911          36,83,383      L1-icache-load-misses                                         (55.58%)
+     8.105715911           5,62,496      dTLB-load-misses          #   28.33% of all dTLB cache hits   (55.61%)
+     8.105715911          36,88,828      dTLB-loads                                                    (55.57%)
+     8.105715911           2,50,706      iTLB-load-misses          #   69.83% of all iTLB cache hits   (55.48%)
+     8.105715911           7,92,580      iTLB-loads                                                    (55.50%)
+     8.105715911          66,51,405      branch-misses                                                 (55.51%)
+     8.105715911             11,675      context-switches                                            
+     8.105715911                597      cpu-migrations                                              
+     8.105715911             19,624      page-faults                                                 
+     8.226245329     1,16,13,91,309      cpu-cycles                                                    (55.47%)
+     8.226245329       73,09,72,776      L1-dcache-loads                                               (55.52%)
+     8.226245329        1,78,67,642      L1-dcache-load-misses     #    5.18% of all L1-dcache hits    (55.58%)
+     8.226245329          37,29,732      L1-icache-load-misses                                         (55.60%)
+     8.226245329           8,10,585      dTLB-load-misses          #   40.00% of all dTLB cache hits   (55.68%)
+     8.226245329          47,41,811      dTLB-loads                                                    (55.64%)
+     8.226245329           2,54,624      iTLB-load-misses          #   69.99% of all iTLB cache hits   (55.55%)
+     8.226245329           6,83,342      iTLB-loads                                                    (55.51%)
+     8.226245329          53,61,329      branch-misses                                                 (55.47%)
+     8.226245329             11,112      context-switches                                            
+     8.226245329                609      cpu-migrations                                              
+     8.226245329             19,492      page-faults                                                 
+     8.346757066     1,16,91,98,076      cpu-cycles                                                    (55.54%)
+     8.346757066       81,38,14,484      L1-dcache-loads                                               (55.54%)
+     8.346757066        1,85,54,554      L1-dcache-load-misses     #    5.28% of all L1-dcache hits    (55.55%)
+     8.346757066          37,56,759      L1-icache-load-misses                                         (55.52%)
+     8.346757066           6,78,948      dTLB-load-misses          #   33.04% of all dTLB cache hits   (55.59%)
+     8.346757066          39,98,581      dTLB-loads                                                    (55.60%)
+     8.346757066           1,94,348      iTLB-load-misses          #   53.01% of all iTLB cache hits   (55.56%)
+     8.346757066           5,56,663      iTLB-loads                                                    (55.57%)
+     8.346757066          48,79,407      branch-misses                                                 (55.54%)
+     8.346757066             10,295      context-switches                                            
+     8.346757066                508      cpu-migrations                                              
+     8.346757066             16,969      page-faults                                                 
+     8.467202787     1,33,76,45,725      cpu-cycles                                                    (55.55%)
+     8.467202787       87,36,51,337      L1-dcache-loads                                               (55.59%)
+     8.467202787        2,54,44,582      L1-dcache-load-misses     #    7.09% of all L1-dcache hits    (55.61%)
+     8.467202787          40,73,313      L1-icache-load-misses                                         (55.58%)
+     8.467202787           7,66,458      dTLB-load-misses          #   36.88% of all dTLB cache hits   (55.62%)
+     8.467202787          36,79,191      dTLB-loads                                                    (55.58%)
+     8.467202787           1,65,173      iTLB-load-misses          #   44.69% of all iTLB cache hits   (55.49%)
+     8.467202787           5,75,196      iTLB-loads                                                    (55.49%)
+     8.467202787          55,62,606      branch-misses                                                 (55.50%)
+     8.467202787             10,591      context-switches                                            
+     8.467202787                574      cpu-migrations                                              
+     8.467202787             17,359      page-faults                                                 
+     8.587659749     1,22,44,16,683      cpu-cycles                                                    (55.48%)
+     8.587659749       79,29,50,422      L1-dcache-loads                                               (55.51%)
+     8.587659749        1,63,94,537      L1-dcache-load-misses     #    4.49% of all L1-dcache hits    (55.57%)
+     8.587659749          34,65,956      L1-icache-load-misses                                         (55.58%)
+     8.587659749           5,57,637      dTLB-load-misses          #   26.48% of all dTLB cache hits   (55.66%)
+     8.587659749          40,57,862      dTLB-loads                                                    (55.64%)
+     8.587659749           2,72,949      iTLB-load-misses          #   72.63% of all iTLB cache hits   (55.55%)
+     8.587659749           8,09,179      iTLB-loads                                                    (55.52%)
+     8.587659749          57,82,783      branch-misses                                                 (55.49%)
+     8.587659749             10,700      context-switches                                            
+     8.587659749                628      cpu-migrations                                              
+     8.587659749             17,245      page-faults                                                 
+     8.708133461     1,17,08,65,619      cpu-cycles                                                    (55.55%)
+     8.708133461       73,84,02,391      L1-dcache-loads                                               (55.55%)
+     8.708133461        2,16,51,565      L1-dcache-load-misses     #    5.85% of all L1-dcache hits    (55.56%)
+     8.708133461          40,69,349      L1-icache-load-misses                                         (55.53%)
+     8.708133461           9,42,102      dTLB-load-misses          #   43.91% of all dTLB cache hits   (55.58%)
+     8.708133461          49,37,994      dTLB-loads                                                    (55.59%)
+     8.708133461           2,85,987      iTLB-load-misses          #   74.89% of all iTLB cache hits   (55.55%)
+     8.708133461           8,14,615      iTLB-loads                                                    (55.56%)
+     8.708133461          53,29,615      branch-misses                                                 (55.55%)
+     8.708133461             11,400      context-switches                                            
+     8.708133461                623      cpu-migrations                                              
+     8.708133461             19,890      page-faults                                                 
+     8.828595623     1,58,15,20,315      cpu-cycles                                                    (55.54%)
+     8.828595623       93,27,84,150      L1-dcache-loads                                               (55.58%)
+     8.828595623        3,09,27,525      L1-dcache-load-misses     #    8.18% of all L1-dcache hits    (55.62%)
+     8.828595623          45,30,995      L1-icache-load-misses                                         (55.59%)
+     8.828595623           8,36,865      dTLB-load-misses          #   38.25% of all dTLB cache hits   (55.62%)
+     8.828595623          52,61,340      dTLB-loads                                                    (55.58%)
+     8.828595623           1,72,682      iTLB-load-misses          #   44.59% of all iTLB cache hits   (55.50%)
+     8.828595623           7,74,630      iTLB-loads                                                    (55.49%)
+     8.828595623          71,51,437      branch-misses                                                 (55.49%)
+     8.828595623             11,917      context-switches                                            
+     8.828595623                776      cpu-migrations                                              
+     8.828595623             17,744      page-faults                                                 
+     8.949143233     1,27,20,65,814      cpu-cycles                                                    (55.49%)
+     8.949143233       82,91,54,823      L1-dcache-loads                                               (55.51%)
+     8.949143233        2,13,59,481      L1-dcache-load-misses     #    5.56% of all L1-dcache hits    (55.56%)
+     8.949143233          35,78,530      L1-icache-load-misses                                         (55.57%)
+     8.949143233           6,54,556      dTLB-load-misses          #   29.53% of all dTLB cache hits   (55.65%)
+     8.949143233          43,09,041      dTLB-loads                                                    (55.64%)
+     8.949143233           2,38,402      iTLB-load-misses          #   60.75% of all iTLB cache hits   (55.56%)
+     8.949143233           7,69,746      iTLB-loads                                                    (55.53%)
+     8.949143233          60,60,222      branch-misses                                                 (55.50%)
+     8.949143233             10,821      context-switches                                            
+     8.949143233                597      cpu-migrations                                              
+     8.949143233             17,520      page-faults                                                 
+     9.069613505     1,42,83,38,598      cpu-cycles                                                    (55.56%)
+     9.069613505       87,46,33,786      L1-dcache-loads                                               (55.56%)
+     9.069613505        2,36,23,795      L1-dcache-load-misses     #    6.05% of all L1-dcache hits    (55.56%)
+     9.069613505          39,40,008      L1-icache-load-misses                                         (55.53%)
+     9.069613505           5,25,446      dTLB-load-misses          #   23.41% of all dTLB cache hits   (55.57%)
+     9.069613505          43,26,207      dTLB-loads                                                    (55.58%)
+     9.069613505           2,22,655      iTLB-load-misses          #   55.74% of all iTLB cache hits   (55.54%)
+     9.069613505           9,19,840      iTLB-loads                                                    (55.55%)
+     9.069613505          64,67,805      branch-misses                                                 (55.56%)
+     9.069613505             11,073      context-switches                                            
+     9.069613505                638      cpu-migrations                                              
+     9.069613505             19,452      page-faults                                                 
+#           time             counts unit events
+     9.190081517     1,08,08,36,089      cpu-cycles                                                    (55.53%)
+     9.190081517       77,27,91,894      L1-dcache-loads                                               (55.57%)
+     9.190081517        1,77,16,814      L1-dcache-load-misses     #    4.48% of all L1-dcache hits    (55.62%)
+     9.190081517          40,32,560      L1-icache-load-misses                                         (55.60%)
+     9.190081517           8,38,624      dTLB-load-misses          #   36.78% of all dTLB cache hits   (55.63%)
+     9.190081517          49,04,537      dTLB-loads                                                    (55.59%)
+     9.190081517           3,27,254      iTLB-load-misses          #   80.70% of all iTLB cache hits   (55.51%)
+     9.190081517           8,58,526      iTLB-loads                                                    (55.48%)
+     9.190081517          54,77,510      branch-misses                                                 (55.49%)
+     9.190081517             10,238      context-switches                                            
+     9.190081517                642      cpu-migrations                                              
+     9.190081517             15,777      page-faults                                                 
+     9.310501330     1,84,15,00,118      cpu-cycles                                                    (55.50%)
+     9.310501330     1,03,06,68,549      L1-dcache-loads                                               (55.50%)
+     9.310501330        3,95,03,641      L1-dcache-load-misses     #    9.78% of all L1-dcache hits    (55.55%)
+     9.310501330          58,30,323      L1-icache-load-misses                                         (55.56%)
+     9.310501330          15,14,708      dTLB-load-misses          #   64.69% of all dTLB cache hits   (55.64%)
+     9.310501330          70,33,057      dTLB-loads                                                    (55.64%)
+     9.310501330           3,36,937      iTLB-load-misses          #   81.70% of all iTLB cache hits   (55.57%)
+     9.310501330           9,35,818      iTLB-loads                                                    (55.54%)
+     9.310501330          79,14,804      branch-misses                                                 (55.50%)
+     9.310501330             17,645      context-switches                                            
+     9.310501330              1,951      cpu-migrations                                              
+     9.310501330             26,045      page-faults                                                 
+     9.430993961     1,26,86,09,897      cpu-cycles                                                    (55.56%)
+     9.430993961       77,95,92,692      L1-dcache-loads                                               (55.56%)
+     9.430993961        2,05,25,066      L1-dcache-load-misses     #    5.02% of all L1-dcache hits    (55.57%)
+     9.430993961          37,02,505      L1-icache-load-misses                                         (55.54%)
+     9.430993961           6,41,298      dTLB-load-misses          #   27.17% of all dTLB cache hits   (55.57%)
+     9.430993961          38,17,023      dTLB-loads                                                    (55.57%)
+     9.430993961           2,41,658      iTLB-load-misses          #   58.23% of all iTLB cache hits   (55.53%)
+     9.430993961           6,18,328      iTLB-loads                                                    (55.55%)
+     9.430993961          52,42,009      branch-misses                                                 (55.55%)
+     9.430993961             10,463      context-switches                                            
+     9.430993961                570      cpu-migrations                                              
+     9.430993961             16,905      page-faults                                                 
+     9.551506056     1,33,08,35,126      cpu-cycles                                                    (55.52%)
+     9.551506056       87,08,75,155      L1-dcache-loads                                               (55.57%)
+     9.551506056        2,26,34,497      L1-dcache-load-misses     #    5.46% of all L1-dcache hits    (55.61%)
+     9.551506056          38,21,375      L1-icache-load-misses                                         (55.60%)
+     9.551506056           6,94,723      dTLB-load-misses          #   29.16% of all dTLB cache hits   (55.63%)
+     9.551506056          40,67,484      dTLB-loads                                                    (55.59%)
+     9.551506056           2,03,094      iTLB-load-misses          #   48.66% of all iTLB cache hits   (55.52%)
+     9.551506056           6,00,047      iTLB-loads                                                    (55.49%)
+     9.551506056          53,23,280      branch-misses                                                 (55.48%)
+     9.551506056             10,936      context-switches                                            
+     9.551506056                586      cpu-migrations                                              
+     9.551506056             18,951      page-faults                                                 
+     9.671966821     1,25,73,97,897      cpu-cycles                                                    (55.51%)
+     9.671966821       88,73,10,137      L1-dcache-loads                                               (55.51%)
+     9.671966821        2,04,45,315      L1-dcache-load-misses     #    4.86% of all L1-dcache hits    (55.54%)
+     9.671966821          43,52,273      L1-icache-load-misses                                         (55.56%)
+     9.671966821           8,08,929      dTLB-load-misses          #   33.53% of all dTLB cache hits   (55.63%)
+     9.671966821          48,14,189      dTLB-loads                                                    (55.63%)
+     9.671966821           2,25,354      iTLB-load-misses          #   53.62% of all iTLB cache hits   (55.57%)
+     9.671966821           6,48,020      iTLB-loads                                                    (55.55%)
+     9.671966821          57,08,281      branch-misses                                                 (55.51%)
+     9.671966821             11,067      context-switches                                            
+     9.671966821                648      cpu-migrations                                              
+     9.671966821             18,383      page-faults                                                 
+     9.792487035     1,29,89,13,709      cpu-cycles                                                    (55.57%)
+     9.792487035       80,41,90,209      L1-dcache-loads                                               (55.57%)
+     9.792487035        2,64,93,454      L1-dcache-load-misses     #    6.23% of all L1-dcache hits    (55.58%)
+     9.792487035          44,24,771      L1-icache-load-misses                                         (55.55%)
+     9.792487035           9,04,342      dTLB-load-misses          #   37.21% of all dTLB cache hits   (55.58%)
+     9.792487035          38,86,279      dTLB-loads                                                    (55.56%)
+     9.792487035           1,35,875      iTLB-load-misses          #   31.82% of all iTLB cache hits   (55.53%)
+     9.792487035           9,65,315      iTLB-loads                                                    (55.54%)
+     9.792487035          48,58,331      branch-misses                                                 (55.55%)
+     9.792487035             11,486      context-switches                                            
+     9.792487035                721      cpu-migrations                                              
+     9.792487035             16,176      page-faults                                                 
+     9.912971250     1,05,32,77,331      cpu-cycles                                                    (55.52%)
+     9.912971250       64,07,74,935      L1-dcache-loads                                               (55.56%)
+     9.912971250        1,66,10,117      L1-dcache-load-misses     #    3.88% of all L1-dcache hits    (55.60%)
+     9.912971250          30,11,377      L1-icache-load-misses                                         (55.61%)
+     9.912971250           5,93,226      dTLB-load-misses          #   24.24% of all dTLB cache hits   (55.63%)
+     9.912971250          37,91,788      dTLB-loads                                                    (55.60%)
+     9.912971250           2,33,765      iTLB-load-misses          #   54.36% of all iTLB cache hits   (55.53%)
+     9.912971250           6,74,819      iTLB-loads                                                    (55.50%)
+     9.912971250          48,15,213      branch-misses                                                 (55.48%)
+     9.912971250             11,112      context-switches                                            
+     9.912971250                503      cpu-migrations                                              
+     9.912971250             19,013      page-faults                                                 
+    10.033422365     1,36,29,54,609      cpu-cycles                                                    (55.52%)
+    10.033422365       87,25,05,815      L1-dcache-loads                                               (55.52%)
+    10.033422365        2,54,27,926      L1-dcache-load-misses     #    5.87% of all L1-dcache hits    (55.53%)
+    10.033422365          41,32,510      L1-icache-load-misses                                         (55.55%)
+    10.033422365           9,37,624      dTLB-load-misses          #   37.82% of all dTLB cache hits   (55.62%)
+    10.033422365          51,19,284      dTLB-loads                                                    (55.62%)
+    10.033422365           2,53,997      iTLB-load-misses          #   58.72% of all iTLB cache hits   (55.58%)
+    10.033422365           6,40,831      iTLB-loads                                                    (55.55%)
+    10.033422365          53,05,879      branch-misses                                                 (55.52%)
+    10.033422365             11,553      context-switches                                            
+    10.033422365                753      cpu-migrations                                              
+    10.033422365             22,214      page-faults                                                 
+    10.153830982       85,73,47,205      cpu-cycles                                                    (55.58%)
+    10.153830982       55,50,78,554      L1-dcache-loads                                               (55.57%)
+    10.153830982        1,90,72,186      L1-dcache-load-misses     #    4.39% of all L1-dcache hits    (55.58%)
+    10.153830982          31,38,960      L1-icache-load-misses                                         (55.56%)
+    10.153830982           5,50,402      dTLB-load-misses          #   21.92% of all dTLB cache hits   (55.58%)
+    10.153830982          50,79,330      dTLB-loads                                                    (55.55%)
+    10.153830982           1,28,212      iTLB-load-misses          #   28.84% of all iTLB cache hits   (55.52%)
+    10.153830982          14,42,716      iTLB-loads                                                    (55.53%)
+    10.153830982          53,65,845      branch-misses                                                 (55.54%)
+    10.153830982              5,037      context-switches                                            
+    10.153830982                179      cpu-migrations                                              
+    10.153830982             10,714      page-faults                                                 
+    10.274462383        3,34,77,757      cpu-cycles                                                    (55.51%)
+    10.274462383        1,00,67,902      L1-dcache-loads                                               (55.55%)
+    10.274462383           8,53,465      L1-dcache-load-misses     #    0.20% of all L1-dcache hits    (55.59%)
+    10.274462383             91,294      L1-icache-load-misses                                         (55.61%)
+    10.274462383             31,387      dTLB-load-misses          #    1.26% of all dTLB cache hits   (55.64%)
+    10.274462383           1,02,836      dTLB-loads                                                    (55.60%)
+    10.274462383              6,458      iTLB-load-misses          #    1.47% of all iTLB cache hits   (55.53%)
+    10.274462383              7,358      iTLB-loads                                                    (55.51%)
+    10.274462383             92,259      branch-misses                                                 (55.47%)
+    10.274462383                594      context-switches                                            
+    10.274462383                 20      cpu-migrations                                              
+    10.274462383                  9      page-faults                                                 
+    10.395832188        4,19,52,053      cpu-cycles                                                    (55.53%)
+    10.395832188          69,68,827      L1-dcache-loads                                               (55.53%)
+    10.395832188           5,60,810      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (55.54%)
+    10.395832188           1,42,372      L1-icache-load-misses                                         (55.53%)
+    10.395832188             58,999      dTLB-load-misses          #    2.40% of all dTLB cache hits   (55.60%)
+    10.395832188             65,707      dTLB-loads                                                    (55.61%)
+    10.395832188             12,401      iTLB-load-misses          #    2.85% of all iTLB cache hits   (55.58%)
+    10.395832188              4,704      iTLB-loads                                                    (55.57%)
+    10.395832188           1,75,313      branch-misses                                                 (55.53%)
+    10.395832188                479      context-switches                                            
+    10.395832188                 15      cpu-migrations                                              
+    10.395832188                 21      page-faults                                                 
+    10.517103778        6,60,13,132      cpu-cycles                                                    (55.57%)
+    10.517103778          45,32,781      L1-dcache-loads                                               (55.58%)
+    10.517103778           3,69,158      L1-dcache-load-misses     #    0.09% of all L1-dcache hits    (55.59%)
+    10.517103778           1,12,695      L1-icache-load-misses                                         (55.56%)
+    10.517103778             53,268      dTLB-load-misses          #    2.19% of all dTLB cache hits   (55.59%)
+    10.517103778           3,22,018      dTLB-loads                                                    (55.57%)
+    10.517103778             12,681      iTLB-load-misses          #    2.95% of all iTLB cache hits   (55.50%)
+    10.517103778              6,830      iTLB-loads                                                    (55.52%)
+    10.517103778           3,49,437      branch-misses                                                 (55.52%)
+    10.517103778                336      context-switches                                            
+    10.517103778                  9      cpu-migrations                                              
+    10.517103778                  8      page-faults                                                 
+    10.639424314        4,38,79,694      cpu-cycles                                                    (55.49%)
+    10.639424314          74,91,327      L1-dcache-loads                                               (55.53%)
+    10.639424314           4,18,320      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.58%)
+    10.639424314           1,13,652      L1-icache-load-misses                                         (55.58%)
+    10.639424314             44,613      dTLB-load-misses          #    1.86% of all dTLB cache hits   (55.65%)
+    10.639424314             82,257      dTLB-loads                                                    (55.62%)
+    10.639424314             15,445      iTLB-load-misses          #    3.64% of all iTLB cache hits   (55.54%)
+    10.639424314             20,100      iTLB-loads                                                    (55.54%)
+    10.639424314           2,35,839      branch-misses                                                 (55.49%)
+    10.639424314                384      context-switches                                            
+    10.639424314                  8      cpu-migrations                                              
+    10.639424314                  8      page-faults                                                 
+    10.760747722        9,99,65,303      cpu-cycles                                                    (55.56%)
+    10.760747722          47,97,443      L1-dcache-loads                                               (55.56%)
+    10.760747722           4,13,384      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.56%)
+    10.760747722           1,46,907      L1-icache-load-misses                                         (55.52%)
+    10.760747722             87,432      dTLB-load-misses          #    3.66% of all dTLB cache hits   (55.57%)
+    10.760747722          10,18,301      dTLB-loads                                                    (55.58%)
+    10.760747722           1,13,364      iTLB-load-misses          #   26.66% of all iTLB cache hits   (55.53%)
+    10.760747722           4,55,756      iTLB-loads                                                    (55.57%)
+    10.760747722           5,16,480      branch-misses                                                 (55.56%)
+    10.760747722              1,112      context-switches                                            
+    10.760747722                 61      cpu-migrations                                              
+    10.760747722                 36      page-faults                                                 
+    10.881425006        4,20,49,957      cpu-cycles                                                    (55.55%)
+    10.881425006          46,52,120      L1-dcache-loads                                               (55.59%)
+    10.881425006           3,76,858      L1-dcache-load-misses     #    0.09% of all L1-dcache hits    (55.61%)
+    10.881425006           1,20,257      L1-icache-load-misses                                         (55.58%)
+    10.881425006             32,576      dTLB-load-misses          #    1.38% of all dTLB cache hits   (55.61%)
+    10.881425006             45,964      dTLB-loads                                                    (55.57%)
+    10.881425006              6,059      iTLB-load-misses          #    1.44% of all iTLB cache hits   (55.50%)
+    10.881425006              1,909      iTLB-loads                                                    (55.50%)
+    10.881425006           1,48,295      branch-misses                                                 (55.50%)
+    10.881425006                305      context-switches                                            
+    10.881425006                  1      cpu-migrations                                              
+    10.881425006                  4      page-faults                                                 
+    11.002014432        3,12,81,158      cpu-cycles                                                    (55.52%)
+    11.002014432          50,70,389      L1-dcache-loads                                               (55.53%)
+    11.002014432           5,81,765      L1-dcache-load-misses     #    0.14% of all L1-dcache hits    (55.55%)
+    11.002014432           1,62,800      L1-icache-load-misses                                         (55.55%)
+    11.002014432             58,200      dTLB-load-misses          #    2.49% of all dTLB cache hits   (55.62%)
+    11.002014432           1,27,064      dTLB-loads                                                    (55.62%)
+    11.002014432             16,109      iTLB-load-misses          #    3.87% of all iTLB cache hits   (55.55%)
+    11.002014432              3,930      iTLB-loads                                                    (55.55%)
+    11.002014432           1,36,089      branch-misses                                                 (55.51%)
+    11.002014432                393      context-switches                                            
+    11.002014432                 10      cpu-migrations                                              
+    11.002014432                 35      page-faults                                                 
+    11.123176414       12,26,57,749      cpu-cycles                                                    (55.57%)
+    11.123176414        3,41,70,444      L1-dcache-loads                                               (55.58%)
+    11.123176414          26,21,207      L1-dcache-load-misses     #    0.66% of all L1-dcache hits    (55.56%)
+    11.123176414           4,63,290      L1-icache-load-misses                                         (55.53%)
+    11.123176414           1,24,293      dTLB-load-misses          #    5.37% of all dTLB cache hits   (55.56%)
+    11.123176414           3,95,852      dTLB-loads                                                    (55.55%)
+    11.123176414             45,232      iTLB-load-misses          #   10.98% of all iTLB cache hits   (55.53%)
+    11.123176414             47,010      iTLB-loads                                                    (55.56%)
+    11.123176414           5,21,633      branch-misses                                                 (55.56%)
+    11.123176414              1,400      context-switches                                            
+    11.123176414                 63      cpu-migrations                                              
+    11.123176414                364      page-faults                                                 
+    11.244319848        5,66,39,098      cpu-cycles                                                    (55.54%)
+    11.244319848        1,00,87,463      L1-dcache-loads                                               (55.58%)
+    11.244319848          10,59,978      L1-dcache-load-misses     #    0.27% of all L1-dcache hits    (55.60%)
+    11.244319848           3,18,987      L1-icache-load-misses                                         (55.58%)
+    11.244319848           1,01,021      dTLB-load-misses          #    4.41% of all dTLB cache hits   (55.61%)
+    11.244319848           2,27,592      dTLB-loads                                                    (55.57%)
+    11.244319848             36,202      iTLB-load-misses          #    8.88% of all iTLB cache hits   (55.52%)
+    11.244319848             28,224      iTLB-loads                                                    (55.52%)
+    11.244319848           1,81,541      branch-misses                                                 (55.49%)
+    11.244319848                727      context-switches                                            
+    11.244319848                 15      cpu-migrations                                              
+    11.244319848                175      page-faults                                                 
+    11.365306304        4,79,45,464      cpu-cycles                                                    (55.54%)
+    11.365306304          51,83,764      L1-dcache-loads                                               (55.55%)
+    11.365306304           3,08,247      L1-dcache-load-misses     #    0.08% of all L1-dcache hits    (55.54%)
+    11.365306304             97,823      L1-icache-load-misses                                         (55.54%)
+    11.365306304             36,045      dTLB-load-misses          #    1.59% of all dTLB cache hits   (55.60%)
+    11.365306304             96,190      dTLB-loads                                                    (55.59%)
+    11.365306304             14,441      iTLB-load-misses          #    3.58% of all iTLB cache hits   (55.57%)
+    11.365306304             19,402      iTLB-loads                                                    (55.57%)
+    11.365306304           1,88,981      branch-misses                                                 (55.53%)
+    11.365306304                374      context-switches                                            
+    11.365306304                  9      cpu-migrations                                              
+    11.365306304                  0      page-faults                                                 
+    11.487692180        4,38,05,391      cpu-cycles                                                    (55.59%)
+    11.487692180          54,98,892      L1-dcache-loads                                               (55.60%)
+    11.487692180           5,75,596      L1-dcache-load-misses     #    0.15% of all L1-dcache hits    (55.57%)
+    11.487692180           1,62,392      L1-icache-load-misses                                         (55.55%)
+    11.487692180             63,454      dTLB-load-misses          #    2.82% of all dTLB cache hits   (55.57%)
+    11.487692180           1,13,072      dTLB-loads                                                    (55.54%)
+    11.487692180             19,443      iTLB-load-misses          #    4.87% of all iTLB cache hits   (55.51%)
+    11.487692180             10,452      iTLB-loads                                                    (55.54%)
+    11.487692180           1,64,109      branch-misses                                                 (55.54%)
+    11.487692180                372      context-switches                                            
+    11.487692180                 12      cpu-migrations                                              
+    11.487692180                 27      page-faults                                                 
+    11.608996323        3,37,75,254      cpu-cycles                                                    (55.52%)
+    11.608996323          45,43,730      L1-dcache-loads                                               (55.56%)
+    11.608996323           3,56,324      L1-dcache-load-misses     #    0.09% of all L1-dcache hits    (55.57%)
+    11.608996323           1,25,377      L1-icache-load-misses                                         (55.58%)
+    11.608996323             48,975      dTLB-load-misses          #    2.20% of all dTLB cache hits   (55.62%)
+    11.608996323             75,973      dTLB-loads                                                    (55.59%)
+    11.608996323              9,421      iTLB-load-misses          #    2.38% of all iTLB cache hits   (55.54%)
+    11.608996323              2,515      iTLB-loads                                                    (55.54%)
+    11.608996323           1,32,107      branch-misses                                                 (55.50%)
+    11.608996323                294      context-switches                                            
+    11.608996323                  7      cpu-migrations                                              
+    11.608996323                  7      page-faults                                                 
+    11.729587582        2,92,42,527      cpu-cycles                                                    (55.56%)
+    11.729587582          38,86,484      L1-dcache-loads                                               (55.56%)
+    11.729587582          10,97,378      L1-dcache-load-misses     #    0.29% of all L1-dcache hits    (55.53%)
+    11.729587582           7,20,147      L1-icache-load-misses                                         (55.52%)
+    11.729587582           1,67,952      dTLB-load-misses          #    7.59% of all dTLB cache hits   (55.57%)
+    11.729587582           9,57,653      dTLB-loads                                                    (55.57%)
+    11.729587582           1,01,858      iTLB-load-misses          #   25.82% of all iTLB cache hits   (55.56%)
+    11.729587582           3,12,500      iTLB-loads                                                    (55.59%)
+    11.729587582           1,21,865      branch-misses                                                 (55.55%)
+    11.729587582                846      context-switches                                            
+    11.729587582                 42      cpu-migrations                                              
+    11.729587582                 35      page-faults                                                 
+    11.851465061        3,13,76,572      cpu-cycles                                                    (55.57%)
+    11.851465061          34,83,715      L1-dcache-loads                                               (55.61%)
+    11.851465061           2,38,944      L1-dcache-load-misses     #    0.06% of all L1-dcache hits    (55.58%)
+    11.851465061             68,989      L1-icache-load-misses                                         (55.56%)
+    11.851465061             26,978      dTLB-load-misses          #    1.23% of all dTLB cache hits   (55.58%)
+    11.851465061             46,986      dTLB-loads                                                    (55.55%)
+    11.851465061              9,389      iTLB-load-misses          #    2.40% of all iTLB cache hits   (55.50%)
+    11.851465061              2,927      iTLB-loads                                                    (55.52%)
+    11.851465061           1,32,645      branch-misses                                                 (55.53%)
+    11.851465061                245      context-switches                                            
+    11.851465061                  1      cpu-migrations                                              
+    11.851465061                  1      page-faults                                                 
+    11.972843262        3,16,58,158      cpu-cycles                                                    (55.53%)
+    11.972843262          41,18,643      L1-dcache-loads                                               (55.55%)
+    11.972843262           4,46,993      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (55.54%)
+    11.972843262           1,33,223      L1-icache-load-misses                                         (55.56%)
+    11.972843262             41,428      dTLB-load-misses          #    1.91% of all dTLB cache hits   (55.61%)
+    11.972843262             80,603      dTLB-loads                                                    (55.60%)
+    11.972843262              7,915      iTLB-load-misses          #    2.05% of all iTLB cache hits   (55.56%)
+    11.972843262              1,129      iTLB-loads                                                    (55.56%)
+    11.972843262           1,11,018      branch-misses                                                 (55.53%)
+    11.972843262                285      context-switches                                            
+    11.972843262                 11      cpu-migrations                                              
+    11.972843262                 13      page-faults                                                 
+    12.093478080        5,18,60,748      cpu-cycles                                                    (55.57%)
+    12.093478080          76,70,002      L1-dcache-loads                                               (55.58%)
+    12.093478080           6,01,565      L1-dcache-load-misses     #    0.16% of all L1-dcache hits    (55.54%)
+    12.093478080           1,90,831      L1-icache-load-misses                                         (55.53%)
+    12.093478080             43,075      dTLB-load-misses          #    2.01% of all dTLB cache hits   (55.55%)
+    12.093478080             43,514      dTLB-loads                                                    (55.55%)
+    12.093478080              5,985      iTLB-load-misses          #    1.56% of all iTLB cache hits   (55.54%)
+    12.093478080                504      iTLB-loads                                                    (55.58%)
+    12.093478080           1,50,813      branch-misses                                                 (55.57%)
+    12.093478080                519      context-switches                                            
+    12.093478080                  7      cpu-migrations                                              
+    12.093478080                 15      page-faults                                                 
+#           time             counts unit events
+    12.215599404        3,69,88,658      cpu-cycles                                                    (55.55%)
+    12.215599404          49,83,052      L1-dcache-loads                                               (55.60%)
+    12.215599404           4,33,842      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (55.58%)
+    12.215599404           1,27,714      L1-icache-load-misses                                         (55.57%)
+    12.215599404             43,151      dTLB-load-misses          #    2.03% of all dTLB cache hits   (55.59%)
+    12.215599404             69,858      dTLB-loads                                                    (55.56%)
+    12.215599404              7,322      iTLB-load-misses          #    1.93% of all iTLB cache hits   (55.52%)
+    12.215599404              1,023      iTLB-loads                                                    (55.52%)
+    12.215599404           1,38,429      branch-misses                                                 (55.51%)
+    12.215599404                298      context-switches                                            
+    12.215599404                  8      cpu-migrations                                              
+    12.215599404                 12      page-faults                                                 
+    12.337103992        3,75,36,745      cpu-cycles                                                    (55.53%)
+    12.337103992          46,93,648      L1-dcache-loads                                               (55.55%)
+    12.337103992           2,99,643      L1-dcache-load-misses     #    0.08% of all L1-dcache hits    (55.51%)
+    12.337103992           1,04,432      L1-icache-load-misses                                         (55.53%)
+    12.337103992             39,899      dTLB-load-misses          #    1.89% of all dTLB cache hits   (55.59%)
+    12.337103992             58,230      dTLB-loads                                                    (55.60%)
+    12.337103992              9,392      iTLB-load-misses          #    2.50% of all iTLB cache hits   (55.58%)
+    12.337103992              1,416      iTLB-loads                                                    (55.58%)
+    12.337103992           1,55,770      branch-misses                                                 (55.55%)
+    12.337103992                343      context-switches                                            
+    12.337103992                  8      cpu-migrations                                              
+    12.337103992                  2      page-faults                                                 
+    12.459490581        5,00,89,798      cpu-cycles                                                    (55.58%)
+    12.459490581          80,55,362      L1-dcache-loads                                               (55.59%)
+    12.459490581           4,72,186      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (55.55%)
+    12.459490581           1,23,837      L1-icache-load-misses                                         (55.55%)
+    12.459490581             52,613      dTLB-load-misses          #    2.52% of all dTLB cache hits   (55.56%)
+    12.459490581             88,225      dTLB-loads                                                    (55.54%)
+    12.459490581             18,124      iTLB-load-misses          #    4.88% of all iTLB cache hits   (55.53%)
+    12.459490581              8,737      iTLB-loads                                                    (55.55%)
+    12.459490581           2,04,271      branch-misses                                                 (55.55%)
+    12.459490581                365      context-switches                                            
+    12.459490581                  7      cpu-migrations                                              
+    12.459490581                 25      page-faults                                                 
+    12.581012982        3,28,58,034      cpu-cycles                                                    (55.52%)
+    12.581012982          43,97,940      L1-dcache-loads                                               (55.56%)
+    12.581012982           3,50,208      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.55%)
+    12.581012982             94,905      L1-icache-load-misses                                         (55.58%)
+    12.581012982             38,010      dTLB-load-misses          #    1.84% of all dTLB cache hits   (55.61%)
+    12.581012982             49,685      dTLB-loads                                                    (55.59%)
+    12.581012982              6,965      iTLB-load-misses          #    1.89% of all iTLB cache hits   (55.55%)
+    12.581012982              1,818      iTLB-loads                                                    (55.55%)
+    12.581012982           1,48,093      branch-misses                                                 (55.52%)
+    12.581012982                251      context-switches                                            
+    12.581012982                  7      cpu-migrations                                              
+    12.581012982                  3      page-faults                                                 
+    12.701846228        3,36,92,124      cpu-cycles                                                    (55.55%)
+    12.701846228          36,44,616      L1-dcache-loads                                               (55.56%)
+    12.701846228           3,12,220      L1-dcache-load-misses     #    0.09% of all L1-dcache hits    (55.51%)
+    12.701846228             88,767      L1-icache-load-misses                                         (55.52%)
+    12.701846228             39,163      dTLB-load-misses          #    1.91% of all dTLB cache hits   (55.56%)
+    12.701846228             56,505      dTLB-loads                                                    (55.58%)
+    12.701846228              5,680      iTLB-load-misses          #    1.56% of all iTLB cache hits   (55.57%)
+    12.701846228              1,837      iTLB-loads                                                    (55.59%)
+    12.701846228           1,33,404      branch-misses                                                 (55.57%)
+    12.701846228                232      context-switches                                            
+    12.701846228                  1      cpu-migrations                                              
+    12.701846228                  4      page-faults                                                 
+    12.823672662        7,46,01,145      cpu-cycles                                                    (55.56%)
+    12.823672662        3,85,91,633      L1-dcache-loads                                               (55.60%)
+    12.823672662          26,97,601      L1-dcache-load-misses     #    0.78% of all L1-dcache hits    (55.55%)
+    12.823672662           6,56,749      L1-icache-load-misses                                         (55.56%)
+    12.823672662           1,58,148      dTLB-load-misses          #    7.78% of all dTLB cache hits   (55.56%)
+    12.823672662           5,89,593      dTLB-loads                                                    (55.56%)
+    12.823672662              9,606      iTLB-load-misses          #    2.66% of all iTLB cache hits   (55.53%)
+    12.823672662              3,151      iTLB-loads                                                    (55.54%)
+    12.823672662           1,43,098      branch-misses                                                 (55.55%)
+    12.823672662                975      context-switches                                            
+    12.823672662                 55      cpu-migrations                                              
+    12.823672662                 93      page-faults                                                 
+    12.945009527        3,20,03,664      cpu-cycles                                                    (55.52%)
+    12.945009527          30,20,223      L1-dcache-loads                                               (55.54%)
+    12.945009527           2,54,306      L1-dcache-load-misses     #    0.07% of all L1-dcache hits    (55.52%)
+    12.945009527             90,615      L1-icache-load-misses                                         (55.56%)
+    12.945009527             33,466      dTLB-load-misses          #    1.66% of all dTLB cache hits   (55.59%)
+    12.945009527             56,765      dTLB-loads                                                    (55.61%)
+    12.945009527              9,241      iTLB-load-misses          #    2.58% of all iTLB cache hits   (55.57%)
+    12.945009527              3,451      iTLB-loads                                                    (55.56%)
+    12.945009527           1,38,283      branch-misses                                                 (55.54%)
+    12.945009527                217      context-switches                                            
+    12.945009527                  2      cpu-migrations                                              
+    12.945009527                  4      page-faults                                                 
+    13.065629638        5,42,80,523      cpu-cycles                                                    (55.56%)
+    13.065629638          83,71,342      L1-dcache-loads                                               (55.57%)
+    13.065629638           7,06,060      L1-dcache-load-misses     #    0.21% of all L1-dcache hits    (55.52%)
+    13.065629638           1,57,429      L1-icache-load-misses                                         (55.53%)
+    13.065629638             32,396      dTLB-load-misses          #    1.62% of all dTLB cache hits   (55.53%)
+    13.065629638             54,459      dTLB-loads                                                    (55.56%)
+    13.065629638              7,279      iTLB-load-misses          #    2.05% of all iTLB cache hits   (55.56%)
+    13.065629638              2,386      iTLB-loads                                                    (55.58%)
+    13.065629638           2,32,216      branch-misses                                                 (55.58%)
+    13.065629638                586      context-switches                                            
+    13.065629638                  9      cpu-migrations                                              
+    13.065629638                 38      page-faults                                                 
+    13.187486802        5,17,20,665      cpu-cycles                                                    (55.55%)
+    13.187486802          75,25,839      L1-dcache-loads                                               (55.58%)
+    13.187486802           4,51,890      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (55.57%)
+    13.187486802           1,24,716      L1-icache-load-misses                                         (55.58%)
+    13.187486802             43,008      dTLB-load-misses          #    2.17% of all dTLB cache hits   (55.57%)
+    13.187486802             46,224      dTLB-loads                                                    (55.57%)
+    13.187486802             20,797      iTLB-load-misses          #    5.92% of all iTLB cache hits   (55.54%)
+    13.187486802             29,968      iTLB-loads                                                    (55.53%)
+    13.187486802           2,14,901      branch-misses                                                 (55.52%)
+    13.187486802                341      context-switches                                            
+    13.187486802                  7      cpu-migrations                                              
+    13.187486802                 18      page-faults                                                 
+    13.308914255        4,14,22,300      cpu-cycles                                                    (55.53%)
+    13.308914255          43,32,736      L1-dcache-loads                                               (55.54%)
+    13.308914255           2,71,185      L1-dcache-load-misses     #    0.08% of all L1-dcache hits    (55.51%)
+    13.308914255             87,872      L1-icache-load-misses                                         (55.55%)
+    13.308914255             31,466      dTLB-load-misses          #    1.60% of all dTLB cache hits   (55.57%)
+    13.308914255             43,636      dTLB-loads                                                    (55.60%)
+    13.308914255              7,210      iTLB-load-misses          #    2.07% of all iTLB cache hits   (55.58%)
+    13.308914255              4,889      iTLB-loads                                                    (55.58%)
+    13.308914255           1,52,768      branch-misses                                                 (55.55%)
+    13.308914255                315      context-switches                                            
+    13.308914255                  6      cpu-migrations                                              
+    13.308914255                  1      page-faults                                                 
+    13.429525608        4,33,72,078      cpu-cycles                                                    (55.58%)
+    13.429525608          51,54,245      L1-dcache-loads                                               (55.58%)
+    13.429525608           4,26,755      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (55.54%)
+    13.429525608           1,35,117      L1-icache-load-misses                                         (55.55%)
+    13.429525608             67,821      dTLB-load-misses          #    3.49% of all dTLB cache hits   (55.54%)
+    13.429525608           1,09,979      dTLB-loads                                                    (55.55%)
+    13.429525608             19,702      iTLB-load-misses          #    5.70% of all iTLB cache hits   (55.54%)
+    13.429525608             10,142      iTLB-loads                                                    (55.56%)
+    13.429525608           1,96,915      branch-misses                                                 (55.57%)
+    13.429525608                409      context-switches                                            
+    13.429525608                  7      cpu-migrations                                              
+    13.429525608                 25      page-faults                                                 
+    13.551472522        4,42,61,146      cpu-cycles                                                    (55.53%)
+    13.551472522          57,51,169      L1-dcache-loads                                               (55.56%)
+    13.551472522           4,29,291      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (55.55%)
+    13.551472522             81,215      L1-icache-load-misses                                         (55.59%)
+    13.551472522             36,192      dTLB-load-misses          #    1.88% of all dTLB cache hits   (55.58%)
+    13.551472522             46,733      dTLB-loads                                                    (55.59%)
+    13.551472522              6,007      iTLB-load-misses          #    1.75% of all iTLB cache hits   (55.55%)
+    13.551472522              5,717      iTLB-loads                                                    (55.54%)
+    13.551472522           1,72,917      branch-misses                                                 (55.53%)
+    13.551472522                273      context-switches                                            
+    13.551472522                  9      cpu-migrations                                              
+    13.551472522                  7      page-faults                                                 
+    13.673127763        3,18,55,151      cpu-cycles                                                    (55.55%)
+    13.673127763          34,62,100      L1-dcache-loads                                               (55.56%)
+    13.673127763           3,14,279      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.51%)
+    13.673127763             90,277      L1-icache-load-misses                                         (55.53%)
+    13.673127763             33,054      dTLB-load-misses          #    1.73% of all dTLB cache hits   (55.55%)
+    13.673127763             45,794      dTLB-loads                                                    (55.58%)
+    13.673127763              6,001      iTLB-load-misses          #    1.77% of all iTLB cache hits   (55.57%)
+    13.673127763              1,135      iTLB-loads                                                    (55.59%)
+    13.673127763           1,39,023      branch-misses                                                 (55.57%)
+    13.673127763                256      context-switches                                            
+    13.673127763                  2      cpu-migrations                                              
+    13.673127763                  4      page-faults                                                 
+    13.793836146       12,45,00,754      cpu-cycles                                                    (55.56%)
+    13.793836146        3,83,97,111      L1-dcache-loads                                               (55.59%)
+    13.793836146          25,01,046      L1-dcache-load-misses     #    0.78% of all L1-dcache hits    (55.55%)
+    13.793836146           3,92,543      L1-icache-load-misses                                         (55.57%)
+    13.793836146             26,064      dTLB-load-misses          #    1.38% of all dTLB cache hits   (55.56%)
+    13.793836146             41,692      dTLB-loads                                                    (55.56%)
+    13.793836146             10,975      iTLB-load-misses          #    3.24% of all iTLB cache hits   (55.52%)
+    13.793836146           2,26,016      iTLB-loads                                                    (55.54%)
+    13.793836146           5,14,549      branch-misses                                                 (55.56%)
+    13.793836146                872      context-switches                                            
+    13.793836146                 43      cpu-migrations                                              
+    13.793836146                 33      page-faults                                                 
+    13.915782750        2,98,32,066      cpu-cycles                                                    (55.51%)
+    13.915782750          34,22,899      L1-dcache-loads                                               (55.54%)
+    13.915782750           2,59,880      L1-dcache-load-misses     #    0.08% of all L1-dcache hits    (55.53%)
+    13.915782750             77,933      L1-icache-load-misses                                         (55.58%)
+    13.915782750             28,505      dTLB-load-misses          #    1.52% of all dTLB cache hits   (55.59%)
+    13.915782750             44,572      dTLB-loads                                                    (55.60%)
+    13.915782750              5,883      iTLB-load-misses          #    1.75% of all iTLB cache hits   (55.56%)
+    13.915782750                970      iTLB-loads                                                    (55.55%)
+    13.915782750           1,27,289      branch-misses                                                 (55.54%)
+    13.915782750                229      context-switches                                            
+    13.915782750                  3      cpu-migrations                                              
+    13.915782750                  0      page-faults                                                 
+    14.037071379        5,16,10,162      cpu-cycles                                                    (55.56%)
+    14.037071379          56,68,708      L1-dcache-loads                                               (55.57%)
+    14.037071379           3,23,927      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.53%)
+    14.037071379           1,12,291      L1-icache-load-misses                                         (55.54%)
+    14.037071379             27,835      dTLB-load-misses          #    1.49% of all dTLB cache hits   (55.53%)
+    14.037071379             42,024      dTLB-loads                                                    (55.57%)
+    14.037071379             19,064      iTLB-load-misses          #    5.73% of all iTLB cache hits   (55.55%)
+    14.037071379             10,088      iTLB-loads                                                    (55.57%)
+    14.037071379           2,19,660      branch-misses                                                 (55.58%)
+    14.037071379                329      context-switches                                            
+    14.037071379                 10      cpu-migrations                                              
+    14.037071379                 21      page-faults                                                 
+    14.158038456        5,73,51,588      cpu-cycles                                                    (55.55%)
+    14.158038456        1,02,23,503      L1-dcache-loads                                               (55.59%)
+    14.158038456           7,42,495      L1-dcache-load-misses     #    0.24% of all L1-dcache hits    (55.57%)
+    14.158038456           1,79,690      L1-icache-load-misses                                         (55.58%)
+    14.158038456             76,152      dTLB-load-misses          #    4.12% of all dTLB cache hits   (55.56%)
+    14.158038456           2,94,597      dTLB-loads                                                    (55.57%)
+    14.158038456             39,822      iTLB-load-misses          #   12.06% of all iTLB cache hits   (55.52%)
+    14.158038456             58,173      iTLB-loads                                                    (55.52%)
+    14.158038456           4,12,225      branch-misses                                                 (55.54%)
+    14.158038456                810      context-switches                                            
+    14.158038456                 25      cpu-migrations                                              
+    14.158038456                 15      page-faults                                                 
+    14.279692337        4,40,47,370      cpu-cycles                                                    (55.53%)
+    14.279692337          79,39,882      L1-dcache-loads                                               (55.54%)
+    14.279692337           5,50,607      L1-dcache-load-misses     #    0.18% of all L1-dcache hits    (55.52%)
+    14.279692337           2,14,815      L1-icache-load-misses                                         (55.56%)
+    14.279692337             61,416      dTLB-load-misses          #    3.35% of all dTLB cache hits   (55.57%)
+    14.279692337           1,27,627      dTLB-loads                                                    (55.60%)
+    14.279692337             20,846      iTLB-load-misses          #    6.36% of all iTLB cache hits   (55.56%)
+    14.279692337             23,733      iTLB-loads                                                    (55.56%)
+    14.279692337           1,97,209      branch-misses                                                 (55.56%)
+    14.279692337                521      context-switches                                            
+    14.279692337                  8      cpu-migrations                                              
+    14.279692337                  3      page-faults                                                 
+    14.401103823        6,74,13,308      cpu-cycles                                                    (55.58%)
+    14.401103823        1,16,78,596      L1-dcache-loads                                               (55.58%)
+    14.401103823           5,40,691      L1-dcache-load-misses     #    0.17% of all L1-dcache hits    (55.54%)
+    14.401103823           1,19,152      L1-icache-load-misses                                         (55.55%)
+    14.401103823             49,859      dTLB-load-misses          #    2.74% of all dTLB cache hits   (55.53%)
+    14.401103823             90,478      dTLB-loads                                                    (55.55%)
+    14.401103823             17,066      iTLB-load-misses          #    5.25% of all iTLB cache hits   (55.53%)
+    14.401103823             46,015      iTLB-loads                                                    (55.56%)
+    14.401103823           2,65,301      branch-misses                                                 (55.58%)
+    14.401103823                431      context-switches                                            
+    14.401103823                 15      cpu-migrations                                              
+    14.401103823                  1      page-faults                                                 
+    14.523506450        5,14,84,289      cpu-cycles                                                    (55.54%)
+    14.523506450          52,64,569      L1-dcache-loads                                               (55.57%)
+    14.523506450           4,42,474      L1-dcache-load-misses     #    0.14% of all L1-dcache hits    (55.56%)
+    14.523506450           1,37,034      L1-icache-load-misses                                         (55.59%)
+    14.523506450             56,044      dTLB-load-misses          #    3.10% of all dTLB cache hits   (55.57%)
+    14.523506450           1,29,295      dTLB-loads                                                    (55.58%)
+    14.523506450             24,585      iTLB-load-misses          #    7.62% of all iTLB cache hits   (55.54%)
+    14.523506450             21,840      iTLB-loads                                                    (55.54%)
+    14.523506450           2,42,582      branch-misses                                                 (55.53%)
+    14.523506450                438      context-switches                                            
+    14.523506450                 19      cpu-migrations                                              
+    14.523506450                 26      page-faults                                                 
+    14.644745323        3,94,41,162      cpu-cycles                                                    (55.55%)
+    14.644745323          43,96,982      L1-dcache-loads                                               (55.56%)
+    14.644745323           3,10,827      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.52%)
+    14.644745323             73,224      L1-icache-load-misses                                         (55.53%)
+    14.644745323             29,614      dTLB-load-misses          #    1.65% of all dTLB cache hits   (55.54%)
+    14.644745323             63,816      dTLB-loads                                                    (55.58%)
+    14.644745323             10,485      iTLB-load-misses          #    3.27% of all iTLB cache hits   (55.56%)
+    14.644745323              7,441      iTLB-loads                                                    (55.58%)
+    14.644745323           1,89,896      branch-misses                                                 (55.58%)
+    14.644745323                293      context-switches                                            
+    14.644745323                  7      cpu-migrations                                              
+    14.644745323                 12      page-faults                                                 
+    14.765871770       14,07,88,676      cpu-cycles                                                    (55.57%)
+    14.765871770        3,02,21,334      L1-dcache-loads                                               (55.60%)
+    14.765871770           3,73,445      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (55.56%)
+    14.765871770             96,671      L1-icache-load-misses                                         (55.56%)
+    14.765871770             44,114      dTLB-load-misses          #    2.48% of all dTLB cache hits   (55.55%)
+    14.765871770           3,09,160      dTLB-loads                                                    (55.56%)
+    14.765871770           1,32,896      iTLB-load-misses          #   41.26% of all iTLB cache hits   (55.51%)
+    14.765871770           5,52,274      iTLB-loads                                                    (55.54%)
+    14.765871770           6,19,019      branch-misses                                                 (55.56%)
+    14.765871770              1,044      context-switches                                            
+    14.765871770                 43      cpu-migrations                                              
+    14.765871770                 58      page-faults                                                 
+    14.887747109        3,77,52,470      cpu-cycles                                                    (55.52%)
+    14.887747109          44,54,717      L1-dcache-loads                                               (55.55%)
+    14.887747109           2,72,196      L1-dcache-load-misses     #    0.09% of all L1-dcache hits    (55.55%)
+    14.887747109             81,212      L1-icache-load-misses                                         (55.57%)
+    14.887747109             29,462      dTLB-load-misses          #    1.67% of all dTLB cache hits   (55.59%)
+    14.887747109             47,757      dTLB-loads                                                    (55.59%)
+    14.887747109              7,879      iTLB-load-misses          #    2.47% of all iTLB cache hits   (55.55%)
+    14.887747109              1,818      iTLB-loads                                                    (55.55%)
+    14.887747109           1,41,286      branch-misses                                                 (55.55%)
+    14.887747109                265      context-switches                                            
+    14.887747109                  2      cpu-migrations                                              
+    14.887747109                  0      page-faults                                                 
+    15.001417464        4,75,26,870      cpu-cycles                                                    (55.54%)
+    15.001417464          40,37,622      L1-dcache-loads                                               (55.55%)
+    15.001417464           3,06,488      L1-dcache-load-misses     #    0.10% of all L1-dcache hits    (55.53%)
+    15.001417464           1,08,535      L1-icache-load-misses                                         (55.54%)
+    15.001417464             57,610      dTLB-load-misses          #    3.29% of all dTLB cache hits   (55.56%)
+    15.001417464           1,48,826      dTLB-loads                                                    (55.59%)
+    15.001417464             24,922      iTLB-load-misses          #    7.86% of all iTLB cache hits   (55.56%)
+    15.001417464             21,482      iTLB-loads                                                    (55.57%)
+    15.001417464           2,28,407      branch-misses                                                 (55.57%)
+    15.001417464                500      context-switches                                            
+    15.001417464                  7      cpu-migrations                                              
+    15.001417464                 14      page-faults                                                 
