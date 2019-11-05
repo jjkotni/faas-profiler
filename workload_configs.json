@@ -7,8 +7,8 @@
         "instance1":{
             "application": "hello_python_mthread",
             "distribution": "Uniform",
-            "param_file": "params/1.json",
-            "rate": 30,
+            "param_file": "params/5.json",
+            "rate": 20,
             "activity_window": [5, 10]
         }
     },

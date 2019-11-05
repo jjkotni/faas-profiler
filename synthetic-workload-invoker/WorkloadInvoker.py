@@ -36,7 +36,6 @@ logger = ScriptLogger('workload_invoker', 'SWI.log')
 
 
 APIHOST = 'https://172.17.0.1'
-print(WSK_PATH)
 AUTH_KEY = subprocess.check_output(WSK_PATH + " property get --auth", shell=True).split()[2]
 AUTH_KEY = AUTH_KEY.decode("utf-8")
 user_pass = AUTH_KEY.split(':')
@@ -132,6 +131,12 @@ def BinaryDataHTTPInstanceGenerator(action, instance_times, blocking_cli, data_f
 
     return True
 
+def ApplyJSONOverrides(workload, overrides):
+    for (instance, desc) in workload['instances'].items():
+        desc.update(overrides)
+        workload['instances'][instance] = desc
+
+    return workload
 
 def main(argv):
     """
@@ -140,6 +145,10 @@ def main(argv):
     logger.info("Workload Invoker started")
     print("Log file -> logs/SWI.log")
     parser = OptionParser()
+    parser.add_option("-o", "--out_file", dest="out_file", default="perf-mon.out",
+                      help="Perf stats out-file", metavar="FILE")
+    parser.add_option("-r", "--rate_override", dest="rate_override",
+                      help="Override rate of invocation from arguments", metavar="FILE")
     parser.add_option("-c", "--config_json", dest="config_json",
                       help="The input json config file describing the synthetic workload.", metavar="FILE")
     (options, args) = parser.parse_args()
@@ -151,6 +160,11 @@ def main(argv):
     workload = ReadJSONConfig(options.config_json)
     if not CheckWorkloadValidity(workload=workload, supported_distributions=supported_distributions):
         return False    # Abort the function if json file not valid
+
+    overrides = {}
+    if(options.rate_override != None):
+        overrides['rate'] = int(options.rate_override)
+    workload = ApplyJSONOverrides(workload,overrides)
 
     [all_events, event_count] = GenericEventGenerator(workload)
 
@@ -188,7 +202,7 @@ def main(argv):
     try:
         if workload['perf_monitoring']['runtime_script']:
             runtime_script = 'bash ' + FAAS_ROOT + '/' + workload['perf_monitoring']['runtime_script'] + \
-                ' ' + str(int(workload['test_duration_in_seconds'])) + ' &'
+                ' ' + str(int(workload['test_duration_in_seconds'])) + ' ' + options.out_file +' &'
             logger.info(runtime_script)
             os.system(runtime_script)
             logger.info("Runtime monitoring script ran")
