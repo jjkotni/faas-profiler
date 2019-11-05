@@ -17,6 +17,7 @@ import sys
 import time
 import threading
 import logging
+import pdb
 
 # Local imports
 sys.path = ['./', '../'] + sys.path
@@ -26,16 +27,15 @@ from EventGenerator import GenericEventGenerator
 from commons.JSONConfigHelper import CheckJSONConfig, ReadJSONConfig
 from commons.Logger import ScriptLogger
 from WorkloadChecker import CheckWorkloadValidity
+from pathlib import Path
 
 logging.captureWarnings(True)
 
 # Global variables
 supported_distributions = {'Poisson', 'Uniform'}
 
-logger = ScriptLogger('workload_invoker', 'SWI.log')
-
-
 APIHOST = 'https://172.17.0.1'
+print(WSK_PATH)
 AUTH_KEY = subprocess.check_output(WSK_PATH + " property get --auth", shell=True).split()[2]
 AUTH_KEY = AUTH_KEY.decode("utf-8")
 user_pass = AUTH_KEY.split(':')
@@ -131,40 +131,65 @@ def BinaryDataHTTPInstanceGenerator(action, instance_times, blocking_cli, data_f
 
     return True
 
-def ApplyJSONOverrides(workload, overrides):
+def ApplyJSONOverrides(workload, workloadOverrides, instanceOverrides):
+    workload.update(workloadOverrides)
+
     for (instance, desc) in workload['instances'].items():
-        desc.update(overrides)
+        desc.update(instanceOverrides)
         workload['instances'][instance] = desc
 
     return workload
+
+def createDir(test_name):
+    log_dir = 'logs/' + test_name
+
+    if not os.path.exists(FAAS_ROOT + '/' + log_dir):
+        os.makedirs(log_dir, 0o777)
+
+    log_file = log_dir+'/SWI.log'
+    Path(FAAS_ROOT + '/' + log_file).touch()
+    os.chmod(log_file, 0o777)
+
+    pdb.set_trace()
+
+    return log_dir, log_file
 
 def main(argv):
     """
     The main function.
     """
-    logger.info("Workload Invoker started")
-    print("Log file -> logs/SWI.log")
     parser = OptionParser()
-    parser.add_option("-o", "--out_file", dest="out_file", default="perf-mon.out",
-                      help="Perf stats out-file", metavar="FILE")
+    parser.add_option("-n", "--test_name", dest="test_name", default="latest_test",
+                      help="Name of test", metavar="FILE")
     parser.add_option("-r", "--rate_override", dest="rate_override",
                       help="Override rate of invocation from arguments", metavar="FILE")
     parser.add_option("-c", "--config_json", dest="config_json",
                       help="The input json config file describing the synthetic workload.", metavar="FILE")
     (options, args) = parser.parse_args()
 
+    log_dir, log_file = createDir(options.test_name)
+    logger  = ScriptLogger('workload_invoker', log_file)
+
+    logger.info("Workload Invoker started")
+
+    print("Log file -> ", log_file,"\n")
+
     if not CheckJSONConfig(options.config_json):
         logger.error("Invalid or no JSON config file!")
         return False    # Abort the function if json file not valid
 
+    workloadOverrides = {}
+    workloadOverrides['log_dir'] = log_dir
+    instanceOverrides = {}
+    if(options.rate_override != None):
+        instanceOverrides['rate'] = int(options.rate_override)
+
     workload = ReadJSONConfig(options.config_json)
+    workload = ApplyJSONOverrides(workload,workloadOverrides, instanceOverrides)
+
     if not CheckWorkloadValidity(workload=workload, supported_distributions=supported_distributions):
         return False    # Abort the function if json file not valid
 
-    overrides = {}
-    if(options.rate_override != None):
-        overrides['rate'] = int(options.rate_override)
-    workload = ApplyJSONOverrides(workload,overrides)
 
     [all_events, event_count] = GenericEventGenerator(workload)
 
@@ -192,17 +217,15 @@ def main(argv):
         pass
 
     # Dump Test Metadata
-    os.system("date +%s%N | cut -b1-13 > " + FAAS_ROOT +
-              "/synthetic-workload-invoker/test_metadata.out")
-    os.system("echo " + options.config_json + " >> " + FAAS_ROOT +
-              "/synthetic-workload-invoker/test_metadata.out")
-    os.system("echo " + str(event_count) + " >> " + FAAS_ROOT +
-              "/synthetic-workload-invoker/test_metadata.out")
+    metadata_file = log_dir + "/test_metadata.out"
+    os.system("date +%s%N | cut -b1-13 > "           + FAAS_ROOT + '/' + metadata_file)
+    os.system("echo " + options.config_json + " >> " + FAAS_ROOT + '/' + metadata_file)
+    os.system("echo " + str(event_count) + " >> "    + FAAS_ROOT + '/' + metadata_file)
 
     try:
         if workload['perf_monitoring']['runtime_script']:
             runtime_script = 'bash ' + FAAS_ROOT + '/' + workload['perf_monitoring']['runtime_script'] + \
-                ' ' + str(int(workload['test_duration_in_seconds'])) + ' ' + options.out_file +' &'
+                ' ' + str(int(workload['test_duration_in_seconds'])) + ' ' + FAAS_ROOT + '/' + log_dir + '/perf-mon.out' + ' &'
             logger.info(runtime_script)
             os.system(runtime_script)
             logger.info("Runtime monitoring script ran")

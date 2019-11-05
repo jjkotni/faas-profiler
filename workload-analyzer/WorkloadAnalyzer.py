@@ -24,16 +24,12 @@ from Logger import ScriptLogger
 from PerfMonAnalyzer import *
 from TestDataframePlotting import *
 
-logger = ScriptLogger(loggername='workload_analyzer',
-                      filename=FAAS_ROOT+'/logs/WA.log')
-
-
-def GetTestMetadata():
+def GetTestMetadata(test_name, logger):
     """
     Returns the test start time from the output log of SWI.
     """
     test_start_time = None
-    with open(FAAS_ROOT+"/synthetic-workload-invoker/test_metadata.out") as f:
+    with open(FAAS_ROOT + "/logs/" + test_name + "/test_metadata.out") as f:
         lines = f.readlines()
         test_start_time = lines[0]
         config_file = lines[1]
@@ -63,7 +59,7 @@ def ExtractExtraAnnotations(json_annotations_data):
     return extra_data
 
 
-def ConstructConfigDataframe(config_file):
+def ConstructConfigDataframe(config_file, logger):
     """
     Returns a dataframe which describes the test in a standard format.
     """
@@ -182,7 +178,7 @@ def GetSystemdCgtopDetails(file_path):
             'docker_tasks': docker_tasks, 'memory': memory}
 
 
-def GetControlGroupsRecords(since=None):
+def GetControlGroupsRecords(logger,since=None):
     """
     Reads the systemd-cgtop records.
     """
@@ -250,17 +246,21 @@ def main(argv):
                       help='override the JSON test name', metavar='FILE')
     parser.add_option("-r", "--read_results", dest="read_results",
                       help="gather also the results of function invocations", action='store_true')
+    parser.add_option("-n", "--test_name", dest="test_name", default="latest_test",
+                      help="Name of test for Workload analysis", action='store_true')
     (options, args) = parser.parse_args()
 
     logger.info("Workload Analyzer started")
+    logger = ScriptLogger(loggername='workload_analyzer', filename=FAAS_ROOT + '/logs/' + test_name +'/WA.log')
+
     print("Log file -> logs/WA.log")
 
-    test_start_time, config_file = GetTestMetadata()
+    test_start_time, config_file = GetTestMetadata(options.test_name, logger)
     if FAAS_ROOT in config_file:
-        [test_name, config_df] = ConstructConfigDataframe(config_file)
+        [test_name, config_df] = ConstructConfigDataframe(config_file, logger)
     else:
         [test_name, config_df] = ConstructConfigDataframe(
-            FAAS_ROOT + '/' + config_file)
+            FAAS_ROOT + '/' + config_file, logger)
     
     read_results = True if options.read_results else False
     test_df = ConstructTestDataframe(since=test_start_time, limit=100000, 
@@ -293,7 +293,7 @@ def main(argv):
     ref = test_df['start'].min()
     test_df['start'] -= ref
     test_df['end'] -= ref
-    cgroups_df = GetControlGroupsRecords(since=test_start_time)
+    cgroups_df = GetControlGroupsRecords(logger, since=test_start_time)
     perf_mon_records = AnalyzePerfMonRecords(config_file)
     test_df['execution'] = test_df['duration'] - test_df['initTime']
 
