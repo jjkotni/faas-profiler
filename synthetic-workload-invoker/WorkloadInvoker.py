@@ -17,7 +17,6 @@ import sys
 import time
 import threading
 import logging
-import pdb
 
 # Local imports
 sys.path = ['./', '../'] + sys.path
@@ -149,8 +148,6 @@ def createDir(test_name):
     log_file = log_dir+'/SWI.log'
     Path(FAAS_ROOT + '/' + log_file).touch()
     os.chmod(log_file, 0o777)
-
-    pdb.set_trace()
 
     return log_dir, log_file
 
