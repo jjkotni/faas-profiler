@@ -85,7 +85,6 @@ def ReadPerfMon(perf_mon_file):
 
     records = {'timestamp': []}          # more fields are added dynamically
 
-    pdb.set_trace()
     for line in lines:
         separated = line.split(' ')
         separated = [v for v in separated if v != '']
