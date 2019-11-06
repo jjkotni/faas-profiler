@@ -23,19 +23,24 @@ def func(test_name, rate):
     test_start_time, actions_invoked = GetMetadata(test_name)
     test_df = ConstructTestDataframe(since=test_start_time, limit= actions_invoked, 
                                     read_results=True)
-    test_df['invokeTime'] = (1.0/rate) * test_df['idx']
-    requested_frame = test_df[['start', 'waitTime']].sort_values('start', ascending=True);
+
+    #waitTime is the difference between the time at which an event was triggered and the time at which 
+    #the function started executing. Hence, waitTime = startTime-invokeTime.
+    test_df['invokeTime'] = test_df['start'] - test_df['waitTime']
+    firstInvoke = test_df['invokeTime'].min()
+    test_def['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
+    requested_frame = test_df[['invokeTimeRel', 'waitTime']].sort_values('invokeTimeRel', ascending=True);
     pdb.set_trace()  
     return requested_frame 
 
 def main():
     axes =[]
     plt.figure()
-#    for i in [20, 45, 60, 120]: #gap between expts
+    for i in [45]: #gap between expts
 #        for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125 ]: #rate of invocation
     for idx, i in enumerate([20, 45, 60, 120]): #gap between expts
         axes.append(None)
-        for j in [3, 18, 30, 100, 125]: #rate of invocation
+        for j in [3,30]: #rate of invocation
             df_all_runs = None
             for k in [1]: #run number
                 test_name = "cs_" + str(k) + "_" + str(j) + "_" + str(i)
@@ -49,11 +54,11 @@ def main():
 
             label=str(j)
             if axes[idx] is None:
-                axes[idx] = df_mean.plot(y='waitTime', label=label)
+                axes[idx] = df_mean.plot(y='waitTime',x='invokeTimeRel', label=label)
             else:
-                df_mean.plot(y='waitTime', label=label, ax=axes[idx])
+                df_mean.plot(y='waitTime',x='invokeTimeRel', label=label, ax=axes[idx])
 
-        img = "plots/wait-time-5thread-" + str(i) + ".png"
+        img = "plots/wait-time-5thread-" + str(j) + ".png"
         plt.ylabel("Wait Time")
         plt.xlabel("Time Step")
         plt.legend(title="Invocation Rate")

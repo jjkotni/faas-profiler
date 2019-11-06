@@ -32,9 +32,8 @@ def add_cmdline_args(cmd, args):
         cmd.extend(("--cases", args.cases))
 
 
-def main():
-    pdb.set_trace()
-    '''
+def functionWorker():
+    print("Running worker")	    
     runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
     runner.argparser.add_argument("--cases",
                                   help="Comma separated list of cases. Available cases: %s. By default, run all cases."
@@ -53,7 +52,7 @@ def main():
             sys.exit(1)
     else:
         cases = CASES
-    '''
+    
     cases = CASES
 
     data = []
@@ -63,7 +62,7 @@ def main():
 
     runner.bench_func('json_dumps', bench_json_dumps, data)
 
-'''
+
 def main(params):
     pdb.set_trace()
     format = "%(asctime)s: %(message)s"
@@ -81,7 +80,8 @@ def main(params):
 
     return(result)
 
-#if __name__ == '__main__':
-#    params = {}
-#    params['workers'] = 1
-#    main(params)
+
+if __name__ == '__main__':
+    params = {}
+    params['workers'] = 1
+    main(params)
