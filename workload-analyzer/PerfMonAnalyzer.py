@@ -8,6 +8,7 @@ import json
 import os.path
 import pandas as pd
 import sys
+import pdb
 
 sys.path = ['./', '../'] + sys.path
 
@@ -84,6 +85,7 @@ def ReadPerfMon(perf_mon_file):
 
     records = {'timestamp': []}          # more fields are added dynamically
 
+    pdb.set_trace()
     for line in lines:
         separated = line.split(' ')
         separated = [v for v in separated if v != '']
