@@ -28,7 +28,7 @@ def func(test_name, rate):
     #the function started executing. Hence, waitTime = startTime-invokeTime.
     test_df['invokeTime'] = test_df['start'] - test_df['waitTime']
     firstInvoke = test_df['invokeTime'].min()
-    test_def['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
+    test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
     requested_frame = test_df[['invokeTimeRel', 'waitTime']].sort_values('invokeTimeRel', ascending=True);
     pdb.set_trace()  
     return requested_frame 
@@ -36,7 +36,7 @@ def func(test_name, rate):
 def main():
     axes =[]
     plt.figure()
-    for i in [45]: #gap between expts
+#    for i in [45]: #gap between expts
 #        for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125 ]: #rate of invocation
     for idx, i in enumerate([20, 45, 60, 120]): #gap between expts
         axes.append(None)
