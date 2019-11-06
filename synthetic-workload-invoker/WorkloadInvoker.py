@@ -17,6 +17,7 @@ import sys
 import time
 import threading
 import logging
+import pdb
 
 # Local imports
 sys.path = ['./', '../'] + sys.path
@@ -97,7 +98,9 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, param_file=None)
             before_time = time.time()
             future = session.post(url, params={'blocking': blocking_cli, 'result': RESULT}, auth=(
                 user_pass[0], user_pass[1]), json=param_file_body, verify=False)
+            print(future.result().content) 
             after_time = time.time()
+	
 
     return True
 
