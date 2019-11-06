@@ -87,7 +87,6 @@ def GetActivationRecordsSince(since, limit=100):
     res = request('POST', url, body=json.dumps(body), headers=headers,
                   auth='%s:%s' % (configs['db_username'], configs['db_password']))
 
-    pdb.set_trace()
     return json.loads(res.read())
 
 
