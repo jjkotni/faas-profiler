@@ -121,8 +121,10 @@ def GetActivation(activation_id, namespace='guest'):
     Returns details for an activation id.
     """
     configs = GetDBConfigs()
-    url = configs['db_protocol']+'://'+configs['db_host']+':'+configs['db_port'] + \
-        '/'+'whisk_local_activations'+'/'+namespace+'%2F'+activation_id
+    url = 'http://127.0.0.1:5984/local_activations/'+ namespace +'%2F'+ activation_id
+
+    #url = configs['db_protocol']+'://'+configs['db_host']+':'+configs['db_port'] + \
+    #    '/'+'whisk_local_activations'+'/'+namespace+'%2F'+activation_id
     headers = {
         'Content-Type': 'application/json',
     }
