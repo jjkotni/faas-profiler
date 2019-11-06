@@ -73,6 +73,7 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, param_file=None)
     url = base_url + action
     session = FuturesSession(max_workers=15)
     after_time, before_time = 0, 0
+    invoke_time = {}
 
     if param_file == None:
         for t in instance_times:
@@ -98,10 +99,11 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, param_file=None)
             before_time = time.time()
             future = session.post(url, params={'blocking': blocking_cli, 'result': RESULT}, auth=(
                 user_pass[0], user_pass[1]), json=param_file_body, verify=False)
-            print(future.result().content) 
+            invoke_time[future.result().content.activationId] = before_time
             after_time = time.time()
 	
 
+    pdb.set_trace()
     return True
 
 
