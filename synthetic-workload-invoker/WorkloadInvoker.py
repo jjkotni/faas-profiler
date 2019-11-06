@@ -67,7 +67,7 @@ def PROCESSInstanceGenerator(instance, instance_script, instance_times, blocking
     return True
 
 
-def HTTPInstanceGenerator(action, instance_times, blocking_cli, param_file=None):
+def HTTPInstanceGenerator(action, instance_times, blocking_cli, log_dir, param_file=None):
     if len(instance_times) == 0:
         return False
     url = base_url + action
@@ -102,10 +102,15 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, param_file=None)
             
             post_response = json.loads(future.result().content.decode())
             post_response['invoke_time'] = before_time  
-            invoke_records.append(post_response)   
+            pdb.set_trace()   
+            invoke_records.append(post_response['activationId'])   
             after_time = time.time()
 
-    pdb.set_trace()	
+    activations_file = FAAS_ROOT+'/'+log_dir+'/activationIds.out'
+    pdb.set_trace()
+    with open(activations_file, 'a') as f:
+        np.savetxt(f, invoke_records, delimiter=',')
+
     return True
 
 
@@ -217,7 +222,7 @@ def main(argv):
                            action, instance_times, blocking_cli, data_file]))
         else:
             threads.append(threading.Thread(target=HTTPInstanceGenerator, args=[
-                           action, instance_times, blocking_cli, param_file]))
+                           action, instance_times, blocking_cli, log_dir, param_file ]))
         pass
 
     # Dump Test Metadata
