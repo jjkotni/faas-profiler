@@ -1,10 +1,13 @@
+import pdb
 import json
 import sys
-
+import concurrent.futures
+import logging
+import threading
 import pyperf
 import six
 from six.moves import xrange
-
+from datetime import datetime
 
 EMPTY = ({}, 2000)
 SIMPLE_DATA = {'key1': 0, 'key2': True, 'key3': 'value', 'key4': 'foo',
@@ -28,15 +31,12 @@ def add_cmdline_args(cmd, args):
     if args.cases:
         cmd.extend(("--cases", args.cases))
 
-
-def main(params):
-    runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
-    runner.argparser.add_argument("--cases",
-                                  help="Comma separated list of cases. Available cases: %s. By default, run all cases."
-                                       % ', '.join(CASES))
+def functionWorker(runner, tid):
     runner.metadata['description'] = "Benchmark json.dumps()"
+    print("Entered functionWorker in thread ", str(tid))
 
     args = runner.parse_args()
+    
     if args.cases:
         cases = []
         for case in args.cases.split(','):
@@ -48,14 +48,45 @@ def main(params):
             sys.exit(1)
     else:
         cases = CASES
+    
+    cases = CASES
 
     data = []
     for case in cases:
         obj, count = globals()[case]
         data.append((obj, xrange(count)))
 
-    runner.bench_func('json_dumps', bench_json_dumps, data)
+    bmk_name = 'json_dumps_' + str(tid)
+    runner.bench_func(bmk_name, bench_json_dumps, data)
+
+
+def main(params):
+    format = "%(asctime)s: %(message)s"
+    logging.basicConfig(format=format, level=logging.INFO,
+                        datefmt="%H:%M:%S")
+    
+    threads = []
+    workers = int(params['workers'])
+    
+    runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
+    runner.argparser.add_argument("--cases",
+                                  help="Comma separated list of cases. Available cases: %s. By default, run all cases."
+                                      % ', '.join(CASES))
+    for i in range(workers):
+        #functionWorker(runner, i)
+        threads.append(threading.Thread(target=functionWorker, args=[runner,i]))	
+    
+    for idx, thread in enumerate(threads):
+        thread.start()
+        thread.join()
+    
+    out    =  'Executed '+str(workers)+' threads'
+    result = { 'output': out}
+
+    return(result)
 
 
 #if __name__ == '__main__':
-#    main()
+#    params = {}
+#    params['workers']=2 
+#    main(params)
