@@ -64,17 +64,22 @@ def main():
 #        for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125 ]: #rate of invocation
     for idx, i in enumerate([30]): #gap between expts
         for k in [1,2,3,4,5]: #run number
+            axes = None
             for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125]: #rate of invocation
                 test_name = "wt_" + str(k) + "_" + str(j) + "_" + str(i)
                 df = func(test_name,j)
                 label=str(j)
-                df.plot(y='waitTime',x='invokeTimeRel', label=label)
+                if axes is None:
+                    axes = df.plot(y='waitTime',x='invokeTimeRel', label=label)
+                else:
+                    df.plot(y='waitTime',x='invokeTimeRel', label=label, ax=axes)
 
             img = "plots/wait-time-" + str(k) + ".png"
             plt.ylabel("Wait Time")
             plt.xlabel("Time")
             plt.legend(title="Invocation Rate")
             plt.savefig(img)
+            plt.close()
             plt.figure()
 
 if __name__== "__main__":
