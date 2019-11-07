@@ -1,28 +1,53 @@
 import pdb
 from PerfMonAnalyzer import ReadPerfMon
-from WorkloadAnalyzer import ConstructTestDataframe
-from ContactDB import GetActivationRecordsSince
+from ContactDB import GetActivation
+from WorkloadAnalyzer import ExtractExtraAnnotations
 import matplotlib.pyplot as plt
 import pandas as pd
-import pdb
 
 def GetMetadata(test_name):
     """
     Returns the test start time from the output log of SWI.
     """
     test_start_time = None
-    with open("logs/" + test_name + "/test_metadata.out") as f:
-        lines = f.readlines()
-        test_start_time = lines[0]
-        config_file = lines[1]
-        invoked_actions = int(lines[2][:-1])
-        return int(test_start_time[:-1]),invoked_actions 
+    with open("logs/" + test_name + "/activationIds.out") as f:
+        lines = f.read().splitlines()
+        return lines 
+
+def ConstructTestDataframe(activationIds):
+    """
+    Constructs a dataframe for the performance information of all invocations.
+    """
+    perf_data = {'func_name': [], 'activationId': [], 'start': [], 'end': [
+    ], 'duration': [], 'waitTime': [], 'initTime': [], 'latency': [], 'lang': []}
+
+    perf_data['results'] = []
+
+    activations = []
+    for id in activationIds:
+        activations.append(GetActivation(id))
+
+    for activation in activations:
+        perf_data['func_name'].append(activation['name'])
+        perf_data['activationId'].append(activation['_id'])
+        perf_data['start'].append(activation['start'])
+        perf_data['end'].append(activation['end'])
+        perf_data['duration'].append(activation['duration'])
+        extra_data = ExtractExtraAnnotations(
+            activation['annotations'])
+        perf_data['waitTime'].append(extra_data['waitTime'])
+        perf_data['initTime'].append(extra_data['initTime'])
+        perf_data['lang'].append(extra_data['kind'])
+        perf_data['latency'].append(
+            perf_data['duration'][-1]+perf_data['waitTime'][-1])
+        perf_data['results'].append(activation['response']['result'])
+        # perf_data['statusCode'].append(activation['response']['statusCode'])
+    return pd.DataFrame(perf_data)
 
 
 def func(test_name, rate):
-    test_start_time, actions_invoked = GetMetadata(test_name)
-    test_df = ConstructTestDataframe(since=test_start_time, limit= actions_invoked, 
-                                    read_results=True)
+    lines = GetMetadata(test_name)
+    test_df = ConstructTestDataframe(lines)
 
     #waitTime is the difference between the time at which an event was triggered and the time at which 
     #the function started executing. Hence, waitTime = startTime-invokeTime.
@@ -30,7 +55,6 @@ def func(test_name, rate):
     firstInvoke = test_df['invokeTime'].min()
     test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
     requested_frame = test_df[['invokeTimeRel', 'waitTime']].sort_values('invokeTimeRel', ascending=True);
-    pdb.set_trace()  
     return requested_frame 
 
 def main():
@@ -38,32 +62,20 @@ def main():
     plt.figure()
 #    for i in [45]: #gap between expts
 #        for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125 ]: #rate of invocation
-    for idx, i in enumerate([20, 45, 60, 120]): #gap between expts
-        axes.append(None)
-        for j in [3,30]: #rate of invocation
-            df_all_runs = None
-            for k in [1]: #run number
-                test_name = "cs_" + str(k) + "_" + str(j) + "_" + str(i)
+    for idx, i in enumerate([30]): #gap between expts
+        for k in [1,2,3,4,5]: #run number
+            for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125]: #rate of invocation
+                test_name = "wt_" + str(k) + "_" + str(j) + "_" + str(i)
                 df = func(test_name,j)
-                if df_all_runs is None:
-                    df_all_runs = df
-                else:
-                    df_all_runs = pd.concat((df_all_runs, df))
-            by_row_index = df_all_runs.groupby(df_all_runs.index)
-            df_mean = by_row_index.mean()
+                label=str(j)
+                df.plot(y='waitTime',x='invokeTimeRel', label=label)
 
-            label=str(j)
-            if axes[idx] is None:
-                axes[idx] = df_mean.plot(y='waitTime',x='invokeTimeRel', label=label)
-            else:
-                df_mean.plot(y='waitTime',x='invokeTimeRel', label=label, ax=axes[idx])
-
-        img = "plots/wait-time-5thread-" + str(j) + ".png"
-        plt.ylabel("Wait Time")
-        plt.xlabel("Time Step")
-        plt.legend(title="Invocation Rate")
-        plt.savefig(img)
-        plt.figure()
+            img = "plots/wait-time-" + str(k) + ".png"
+            plt.ylabel("Wait Time")
+            plt.xlabel("Time")
+            plt.legend(title="Invocation Rate")
+            plt.savefig(img)
+            plt.figure()
 
 if __name__== "__main__":
   main()

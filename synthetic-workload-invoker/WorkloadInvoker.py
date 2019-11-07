@@ -18,6 +18,7 @@ import time
 import threading
 import logging
 import pdb
+import numpy as np
 
 # Local imports
 sys.path = ['./', '../'] + sys.path
@@ -101,15 +102,16 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, log_dir, param_f
                 user_pass[0], user_pass[1]), json=param_file_body, verify=False)
             
             post_response = json.loads(future.result().content.decode())
-            post_response['invoke_time'] = before_time  
-            pdb.set_trace()   
-            invoke_records.append(post_response['activationId'])   
+            post_response['invoke_time'] = before_time
+            try:
+                invoke_records.append(post_response['activationId'])
+            except:
+                pass
             after_time = time.time()
 
     activations_file = FAAS_ROOT+'/'+log_dir+'/activationIds.out'
-    pdb.set_trace()
     with open(activations_file, 'a') as f:
-        np.savetxt(f, invoke_records, delimiter=',')
+        np.savetxt(f, invoke_records, fmt='%s', delimiter=',')
 
     return True
 

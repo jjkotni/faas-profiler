@@ -1,23 +1,23 @@
-# started on Thu Nov  7 00:42:14 2019
+# started on Thu Nov  7 00:53:00 2019
 
 #           time             counts unit events
-     0.100460196                512      context-switches                                            
-     0.200758420                522      context-switches                                            
-     0.301334846                322      context-switches                                            
-     0.401841352                378      context-switches                                            
-     0.502357686                262      context-switches                                            
-     0.602904082                257      context-switches                                            
-     0.703435128                208      context-switches                                            
-     0.803795303                258      context-switches                                            
-     0.904146408                411      context-switches                                            
-     1.004659914                346      context-switches                                            
-     1.104956299                468      context-switches                                            
-     1.205483274                480      context-switches                                            
-     1.306341720                327      context-switches                                            
-     1.406778946                363      context-switches                                            
-     1.507337332                272      context-switches                                            
-     1.607888927                240      context-switches                                            
-     1.708255143                177      context-switches                                            
-     1.808783268                252      context-switches                                            
-     1.909418134                330      context-switches                                            
-     2.001111291                345      context-switches                                            
+     0.100782225                199      context-switches                                            
+     0.201402759              6,913      context-switches                                            
+     0.301996805                321      context-switches                                            
+     0.402590709                433      context-switches                                            
+     0.503179958                152      context-switches                                            
+     0.603770298                189      context-switches                                            
+     0.704376246                147      context-switches                                            
+     0.804953830                207      context-switches                                            
+     0.905539944                232      context-switches                                            
+     1.006140392                225      context-switches                                            
+     1.106677251                219      context-switches                                            
+     1.207129452              3,445      context-switches                                            
+     1.307709901              1,008      context-switches                                            
+     1.407955255              1,788      context-switches                                            
+     1.508377071              2,938      context-switches                                            
+     1.608610858              4,039      context-switches                                            
+     1.708965096              1,337      context-switches                                            
+     1.809258879              3,794      context-switches                                            
+     1.909612273              1,620      context-switches                                            
+     2.000564822              3,312      context-switches                                            

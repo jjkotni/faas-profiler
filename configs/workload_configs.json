@@ -9,7 +9,7 @@
             "distribution": "Uniform",
             "param_file": "params/5.json",
             "rate": 20,
-            "activity_window": [5, 10]
+            "activity_window": [0, 10]
         }
     },
     "perf_monitoring":{
