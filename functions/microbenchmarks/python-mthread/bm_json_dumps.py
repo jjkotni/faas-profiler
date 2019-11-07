@@ -33,7 +33,6 @@ def add_cmdline_args(cmd, args):
 
 
 def functionWorker():
-    print("Running worker")	    
     runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
     runner.argparser.add_argument("--cases",
                                   help="Comma separated list of cases. Available cases: %s. By default, run all cases."
@@ -64,16 +63,18 @@ def functionWorker():
 
 
 def main(params):
-    pdb.set_trace()
     format = "%(asctime)s: %(message)s"
     logging.basicConfig(format=format, level=logging.INFO,
                         datefmt="%H:%M:%S")
 
+    threads = []
     workers = int(params['workers'])
+    
+    for i in range(workers):
+        threads.append(threading.Thread(target=functionWorker))	
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-        executor.map(functionWorker, range(workers))
-
+    for thread in threads:
+        thread.start()
 
     out    =  'Executed '+str(workers)+' threads'
     result = { 'output': out}
@@ -83,5 +84,5 @@ def main(params):
 
 if __name__ == '__main__':
     params = {}
-    params['workers'] = 1
+    params['workers']=2 
     main(params)
