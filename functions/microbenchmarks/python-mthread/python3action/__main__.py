@@ -1,6 +1,6 @@
 import json
 import sys
-
+import traceback
 import pyperf
 import six
 from six.moves import xrange
@@ -27,10 +27,14 @@ def bench_json_dumps(data):
 def add_cmdline_args(cmd, args):
     if args.cases:
         cmd.extend(("--cases", args.cases))
+        cmd.extend(("--python", args.python))
 
 
 def main(params):
     runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
+    runner.argparser.add_argument("--python",
+                                  help="location of python"
+                                        "/usr/local/bin/python3")
     runner.argparser.add_argument("--cases",
                                   help="Comma separated list of cases. Available cases: %s. By default, run all cases."
                                        % ', '.join(CASES))
@@ -54,8 +58,12 @@ def main(params):
         obj, count = globals()[case]
         data.append((obj, xrange(count)))
 
-    runner.bench_func('json_dumps', bench_json_dumps, data)
+    try:
+        runner.bench_func('json_dumps', bench_json_dumps, data)
+    except Exception as e:
+        track = traceback.format_exc()
+        print(track)
 
-
-#if __name__ == '__main__':
-#    main()
+if __name__ == '__main__':
+    params = {}
+    main(params)
