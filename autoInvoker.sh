@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-for i in 1 2 3 4 5  
+for i in 1 2 3  
     do
-    for rate in 3 6 9 12 15 18 21 24 27 30 40 50 75 100 125; do
-        ./WorkloadInvoker -c configs/workload_configs.json -r $rate -n wt_"$i"_"$rate"_30
+    for rate in 10 20 30 40 50 60 70 80 90 100 110; do
+        ./WorkloadInvoker -c configs/workload_configs.json -r $rate -n "$1/$2/$3/$i"_"$rate"
         sleep 30
     done
 done

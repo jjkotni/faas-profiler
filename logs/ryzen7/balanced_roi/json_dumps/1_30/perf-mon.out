@@ -1,0 +1,23 @@
+# started on Mon Nov 11 22:29:18 2019
+
+#           time             counts unit events
+     0.100193480             42,578      context-switches                                            
+     0.200393240             43,577      context-switches                                            
+     0.300547530             38,846      context-switches                                            
+     0.400694740             37,375      context-switches                                            
+     0.500845221             45,431      context-switches                                            
+     0.601007581             44,685      context-switches                                            
+     0.701133851             47,730      context-switches                                            
+     0.801279182             46,455      context-switches                                            
+     0.901422961             39,595      context-switches                                            
+     1.001571042             42,518      context-switches                                            
+     1.101727692             40,415      context-switches                                            
+     1.201856253             31,616      context-switches                                            
+     1.302005103             46,611      context-switches                                            
+     1.402139263             45,850      context-switches                                            
+     1.502292443             47,872      context-switches                                            
+     1.602433474             41,663      context-switches                                            
+     1.702587064             35,794      context-switches                                            
+     1.802734304             36,220      context-switches                                            
+     1.902866134             38,849      context-switches                                            
+  2580.617360405       75,63,16,637      context-switches                                            
