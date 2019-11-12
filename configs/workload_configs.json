@@ -5,7 +5,7 @@
     "blocking_cli": false,
     "instances":{
         "instance1":{
-            "application": "bm_pidigits",
+            "application": "bm_json_dumps",
             "distribution": "Uniform",
             "param_file": "params/1.json",
             "rate": 20,

@@ -74,5 +74,5 @@ def main(params):
 
     return(result)
 
-#if __name__ == '__main__':
-#    main({'workers':2})
+if __name__ == '__main__':
+    main({'workers':1})

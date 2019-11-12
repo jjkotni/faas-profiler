@@ -54,6 +54,7 @@ def func(test_name, rate):
     test_df['invokeTime'] = test_df['start'] - test_df['waitTime']
     test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
     requested_frame = test_df[['invokeTimeRel', 'latency']].sort_values('invokeTimeRel', ascending=True);
+    pdb.set_trace()
     return requested_frame 
 
 def main():
@@ -62,7 +63,7 @@ def main():
 #    for i in [45]: #gap between expts
 #        for j in [3,6, 9, 12, 15, 18, 21, 24, 27, 30, 40, 50, 75, 100, 125 ]: #rate of invocation
     for idx, i in enumerate([30]): #gap between expts
-        for k in [1,2,3]: #run number
+        for k in [1]: #run number
             axes = None
             for j in [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]: #rate of invocation
                 test_name = "ryzen7/balanced_roi/pidigits/" + str(k) + "_" + str(j) 
