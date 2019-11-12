@@ -176,6 +176,7 @@ def main(argv):
                       help="Override rate of invocation from arguments", metavar="FILE")
     parser.add_option("-c", "--config_json", dest="config_json",
                       help="The input json config file describing the synthetic workload.", metavar="FILE")
+    parser.add_option("-b", "--benchmark", dest="benchmark",metavar="FILE")
     (options, args) = parser.parse_args()
 
     log_dir, log_file = createDir(options.test_name)
@@ -194,6 +195,9 @@ def main(argv):
     instanceOverrides = {}
     if(options.rate_override != None):
         instanceOverrides['rate'] = int(options.rate_override)
+
+    if(options.benchmark != None):
+        instanceOverrides['application'] = int(options.benchmark)
 
     workload = ReadJSONConfig(options.config_json)
     workload = ApplyJSONOverrides(workload,workloadOverrides, instanceOverrides)
