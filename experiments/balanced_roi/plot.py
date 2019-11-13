@@ -15,16 +15,27 @@ from WorkloadAnalyzer import ExtractExtraAnnotations
 from optparse import OptionParser
 
 
-
 def GetMetadata(test_name):
     """
     Returns the test start time from the output log of SWI.
     """
     test_start_time = None
-
+    
     with open(os.environ['FAAS_ROOT'] +"/logs/" + test_name + "/activationIds.out") as f:
         lines = f.read().splitlines()
         return lines
+
+def filterActivations(activations):
+    filteredActivations=[]
+    failedActivations = 0
+    for activation in activations:
+        if('error' in activation['response']['result']):
+            failedActivations += 1
+        else:
+            filteredActivations.append(activation)
+
+    print("Failed activations: ", str(failedActivations), "\n");
+    return filteredActivations
 
 def ConstructTestDataframe(activationIds):
     """
@@ -57,19 +68,6 @@ def ConstructTestDataframe(activationIds):
         perf_data['results'].append(activation['response']['result'])
     return pd.DataFrame(perf_data)
 
-def filterActivations(activations):
-    filteredActivations=[]
-    failedActivations = 0
-    for activation in activations:
-        if('error' in activation['response']['result'] or 'error' in activation['response']):
-            failedActivations += 1
-        else:
-            filteredActivations.append(activation)
-
-    print("Failed activations: ", str(failedActivations), "\n");
-    return filteredActivations
-
-
 def func(test_name, rate):
     lines = GetMetadata(test_name)
     test_df = ConstructTestDataframe(lines)
@@ -77,8 +75,8 @@ def func(test_name, rate):
     #waitTime is the difference between the time at which an event was triggered and the time at which 
     #the function started executing. Hence, waitTime = startTime-invokeTime.
     test_df['invokeTime'] = test_df['start'] - test_df['waitTime']
+    test_df['latency'] = test_df['duration'] + test_df['waitTime']
     firstInvoke = test_df['invokeTime'].min()
-    pdb.set_trace()
     test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
     requested_frame = test_df[['invokeTimeRel', 'latency']].sort_values('invokeTimeRel', ascending=True)
     return requested_frame 
@@ -87,18 +85,27 @@ def main(benchmark, machine):
     axes =[]
     plt.figure()
 
-    for k in [1,2]: #run number
-        axes = None
-        for j in [40, 50]: #rate of invocation
-            test_name = machine + "/balanced_roi/" + benchmark + "/" + str(k) + "_" + str(j)
-            df = func(test_name,j)
-            label=str(j)
-            if axes is None:
-                axes = df.plot(y='latency',x='invokeTimeRel', label=label)
-            else:
-                df.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
+    img_dir = os.environ['FAAS_ROOT'] + "/plots/" + machine + "/balanced_roi/" + benchmark
 
-        img = "plots/balanced_roi/latency_" + str(k) + ".png"
+    if not os.path.exists(img_dir):
+        os.makedirs(img_dir, 0o777)
+
+    for k in [1,2,3]: #run number
+        axes = None
+        for j in [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140]: #rate of invocation
+            test_name = machine + "/balanced_roi/" + benchmark + "/" + str(k) + "_" + str(j)
+            try:
+                df = func(test_name,j)
+                label=str(j)
+                if axes is None:
+                    axes = df.plot(y='latency',x='invokeTimeRel', label=label)
+                else:
+                    df.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
+            except Exception as e:
+                print("Plot failed for run ", str(k), ", ROI ", str(j))
+                print(e)
+
+        img = img_dir + "/latency_" + str(k) + ".png"
         plt.ylabel("Total Latency")
         plt.xlabel("Time")
         plt.legend(title="Invocation Rate")
