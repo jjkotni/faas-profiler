@@ -99,7 +99,7 @@ def main(benchmark, machine):
         balanced_test_name = machine + "/balanced_roi/" + benchmark + "/1_" + str(50)#str(10*j)
         balanced_df = func(balanced_test_name)
         single_thread_QoS = balanced_df['latency'].quantile(0.99)
-        label= str(10*j) + ", single thread"
+        label= str(10*j) + ",1"
         axes = balanced_df.plot(y='latency',x='invokeTimeRel', label=label)
 
         multi_thread_QoS = 0
@@ -107,7 +107,7 @@ def main(benchmark, machine):
             mt_test_name = machine + "/mt_roi/" + benchmark + "/" + str(k) + "_" + str(j)
             try:
                 df = func(mt_test_name)
-                label=str(j)
+                label="10, "+ str(j)
                 multi_thread_QoS += df['latency'].quantile(0.99)
                 df.plot(y='latency', x='invokeTimeRel', label=label, ax=axes)
             except Exception as e:
@@ -121,16 +121,20 @@ def main(benchmark, machine):
         qos_results['multi_thread'].append(multi_thread_QoS)
         qos_results['qos_improvement'].append((100.0*(single_thread_QoS-multi_thread_QoS)/multi_thread_QoS))
 
-        img = img_dir + "/latency_" + str(k) + ".png"
+        img = img_dir + "/latency_" + str(j) + ".png"
         plt.ylabel("Total Latency")
         plt.xlabel("Time")
-        plt.legend(title="Invocation Rate")
+        plt.legend(title="(IPS, Workers)")
         plt.savefig(img)
         plt.close()
         plt.figure()
 
     qos_results = pd.DataFrame(qos_results)
-    qos_results.plot(y='qos_improvement', x='num_threads')
+    qos_axes = qos_results.plot(y='qos_improvement', x='num_threads', kind = 'scatter')
+    
+    for i, val in enumerate(qos_results['qos_improvement']):
+        qos_axes.annotate(str(round(val,2))+"%", (qos_results['num_threads'][i], qos_results['qos_improvement'][i]))
+
     img = img_dir + "/QoS.png"
     plt.ylabel("QoS Improvement(%)")
     plt.xlabel("Number of Threads")
