@@ -82,6 +82,9 @@ def func(test_name):
     return requested_frame 
 
 def main(benchmark, machine):
+    runs = [1]
+    threads = [2]
+
     axes =[]
     plt.figure()
 
@@ -90,22 +93,33 @@ def main(benchmark, machine):
     if not os.path.exists(img_dir):
         os.makedirs(img_dir, 0o777)
 
-    for j in [2]: #number of threads
-        balanced_test_name = machine + "/balanced_roi/" + benchmark + "/1_" + str(10*j)
+    qos_results = {'single_thread':[], 'multi_thread':[], 'num_threads':[], 'qos_improvement':[]}
+
+    for j in threads: #number of threads
+        balanced_test_name = machine + "/balanced_roi/" + benchmark + "/1_" + str(50)#str(10*j)
         balanced_df = func(balanced_test_name)
+        single_thread_QoS = balanced_df['latency'].quantile(0.99)
         label= str(10*j) + ", single thread"
         axes = balanced_df.plot(y='latency',x='invokeTimeRel', label=label)
 
-        for k in [1]: #run number
+        multi_thread_QoS = 0
+        for k in runs: #run number
             mt_test_name = machine + "/mt_roi/" + benchmark + "/" + str(k) + "_" + str(j)
-
             try:
                 df = func(mt_test_name)
                 label=str(j)
-                df.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
+                multi_thread_QoS += df['latency'].quantile(0.99)
+                df.plot(y='latency', x='invokeTimeRel', label=label, ax=axes)
             except Exception as e:
                 print("Plot failed for run ", str(k), ", ROI ", str(j))
                 print(e)
+
+        multi_thread_QoS = multi_thread_QoS/(1.0*len(runs))
+
+        qos_results['num_threads'].append(j)
+        qos_results['single_thread'].append(single_thread_QoS)
+        qos_results['multi_thread'].append(multi_thread_QoS)
+        qos_results['qos_improvement'].append((100.0*(single_thread_QoS-multi_thread_QoS)/multi_thread_QoS))
 
         img = img_dir + "/latency_" + str(k) + ".png"
         plt.ylabel("Total Latency")
@@ -114,6 +128,18 @@ def main(benchmark, machine):
         plt.savefig(img)
         plt.close()
         plt.figure()
+
+    qos_results = pd.DataFrame(qos_results)
+    qos_results.plot(y='qos_improvement', x='num_threads')
+    img = img_dir + "/QoS.png"
+    plt.ylabel("QoS Improvement(%)")
+    plt.xlabel("Number of Threads")
+    plt.savefig(img)
+    plt.close()
+    plt.figure()
+
+
+    pd.DataFrame(qos_results).to_csv()
 
 if __name__== "__main__":
     parser = OptionParser()
