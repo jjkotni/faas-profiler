@@ -17,7 +17,7 @@ from GenConfigs import *
 #DB_CONFIG_FILE = os.path.expanduser(
 #    WSK_PATH[:-3]+'/../ansible/db_local.ini')
 
-DB_CONFIG_FILE = '/home/kjj/tmp/openwhisk/src/ansible/db_local.ini'
+DB_CONFIG_FILE = os.environ["HOME"] + '/tmp/openwhisk/src/ansible/db_local.ini'
 
 # Examples:
 # print(GetDBConfigs())

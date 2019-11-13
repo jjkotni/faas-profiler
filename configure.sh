@@ -2,9 +2,9 @@
 # It should be run oly once.
 
 # Installing some dependencies if needed
-sudo apt-get install -y moreutils
-sudo python3.6 -m pip install -r requirements.txt
-#sudo pip3 install -r requirements.txt
+#sudo apt-get install -y moreutils
+#sudo python3.6 -m pip install -r requirements.txt
+pip3 install --user -r requirements.txt
 
 #Install CAT tool for pqos monitoring script
 sudo apt install intel-cmt-cat

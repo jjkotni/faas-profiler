@@ -1,5 +1,5 @@
 #This script should always be in the root folder of fass-profiler
-#Usage: ./run_experiments.sh balanced_roi<expt-name> bm_json_dumps<bmk-name> csl-d4<machine-name>
+#Usage: ./run_experiments.sh balanced_roi<expt-name> bm_json_dumps<bmk-name> csl-d4<machine-name> run_plots_only<0 or 1>
 
 EXPT=$1
 BMK=$2 
