@@ -144,7 +144,19 @@ def BinaryDataHTTPInstanceGenerator(action, instance_times, blocking_cli, data_f
 
     return True
 
-def ApplyJSONOverrides(workload, workloadOverrides, instanceOverrides):
+def ApplyJSONOverrides(workload, log_dir, rate_override, benchmark, param_file):
+    workloadOverrides = {}
+    workloadOverrides['log_dir'] = log_dir
+    instanceOverrides = {}
+    if(rate_override != None):
+        instanceOverrides['rate'] = int(rate_override)
+
+    if(benchmark != None):
+        instanceOverrides['application'] = benchmark
+
+    if(param_file != None):
+        instanceOverrides['param_file'] = param_file
+
     workload.update(workloadOverrides)
 
     for (instance, desc) in workload['instances'].items():
@@ -176,7 +188,8 @@ def main(argv):
                       help="Override rate of invocation from arguments", metavar="FILE")
     parser.add_option("-c", "--config_json", dest="config_json",
                       help="The input json config file describing the synthetic workload.", metavar="FILE")
-    parser.add_option("-b", "--benchmark", dest="benchmark",metavar="FILE")
+    parser.add_option("-b", "--benchmark",  dest="benchmark",  metavar="FILE")
+    parser.add_option("-p", "--param_file", dest="param_file", metavar="FILE")
     (options, args) = parser.parse_args()
 
     log_dir, log_file = createDir(options.test_name)
@@ -190,17 +203,9 @@ def main(argv):
         logger.error("Invalid or no JSON config file!")
         return False    # Abort the function if json file not valid
 
-    workloadOverrides = {}
-    workloadOverrides['log_dir'] = log_dir
-    instanceOverrides = {}
-    if(options.rate_override != None):
-        instanceOverrides['rate'] = int(options.rate_override)
-
-    if(options.benchmark != None):
-        instanceOverrides['application'] = int(options.benchmark)
-
     workload = ReadJSONConfig(options.config_json)
-    workload = ApplyJSONOverrides(workload,workloadOverrides, instanceOverrides)
+    workload = ApplyJSONOverrides(workload, log_dir, options.rate_override,
+                                  options.benchmark, options.param_file)
 
     if not CheckWorkloadValidity(workload=workload, supported_distributions=supported_distributions):
         return False    # Abort the function if json file not valid
