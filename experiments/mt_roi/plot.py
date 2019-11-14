@@ -121,6 +121,8 @@ def main(benchmark, machine):
         qos_results['multi_thread'].append(multi_thread_QoS)
         qos_results['qos_improvement'].append((100.0*(single_thread_QoS-multi_thread_QoS)/multi_thread_QoS))
 
+        pdb.set_trace()
+
         img = img_dir + "/latency_" + str(j) + ".png"
         plt.ylabel("Total Latency")
         plt.xlabel("Time")

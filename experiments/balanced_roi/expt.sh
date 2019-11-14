@@ -3,11 +3,11 @@
 BENCHMARK=$1
 MACHINE_NAME=$2
 
-for RUN in 1 2 #run number
+for RUN in 1 #run number
 do
 	for RATE in 50 #invocation rate
 	do
 		./WorkloadInvoker -c $FAAS_ROOT/experiments/balanced_roi/config.json -r $RATE -b $BENCHMARK -n "$MACHINE_NAME/balanced_roi/$BENCHMARK/$RUN"_"$RATE"
-		sleep $((10*$RATE))
+		#sleep $((10*$RATE))
 	done
 done

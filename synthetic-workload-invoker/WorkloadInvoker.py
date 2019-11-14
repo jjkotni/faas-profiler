@@ -110,7 +110,7 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, log_dir, param_f
             after_time = time.time()
 
     activations_file = FAAS_ROOT+'/'+log_dir+'/activationIds.out'
-    with open(activations_file, 'a') as f:
+    with open(activations_file, 'w') as f:
         np.savetxt(f, invoke_records, fmt='%s', delimiter=',')
 
     return True
