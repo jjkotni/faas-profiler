@@ -11,7 +11,7 @@ export FAAS_ROOT=$(pwd)
 
 export WSK_CONFIG_FILE=~/openwhisk-devtools/docker-compose/.wskprops
 
-bash $FAAS_ROOT/functions/pyperfbenchmark/deploy.sh
+#bash $FAAS_ROOT/functions/pyperfbenchmark/deploy.sh
 
 #Run expt init doing the following
 python3.6 expt_setup.py -e $EXPT -b $BMK -m $MACHINE

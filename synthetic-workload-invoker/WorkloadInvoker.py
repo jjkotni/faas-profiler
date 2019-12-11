@@ -109,8 +109,8 @@ def HTTPInstanceGenerator(action, instance_times, blocking_cli, log_dir, param_f
                 pass
             after_time = time.time()
 
-    activations_file = FAAS_ROOT+'/'+log_dir+'/activationIds.out'
-    with open(activations_file, 'w') as f:
+    activations_file = FAAS_ROOT+'/'+log_dir+'/activationIds_' + action + '.out'
+    with open(activations_file, 'w+') as f:
         np.savetxt(f, invoke_records, fmt='%s', delimiter=',')
 
     return True
@@ -215,6 +215,7 @@ def main(argv):
 
     threads = []
 
+
     for (instance, instance_times) in all_events.items():
         # Previous method to run processes
         # instance_script = 'bash ' + FAAS_ROOT + '/invocation-scripts/' + \
@@ -241,6 +242,7 @@ def main(argv):
     os.system("date +%s%N | cut -b1-13 > "           + FAAS_ROOT + '/' + metadata_file)
     os.system("echo " + options.config_json + " >> " + FAAS_ROOT + '/' + metadata_file)
     os.system("echo " + str(event_count) + " >> "    + FAAS_ROOT + '/' + metadata_file)
+
 
     try:
         if workload['perf_monitoring']['runtime_script']:
