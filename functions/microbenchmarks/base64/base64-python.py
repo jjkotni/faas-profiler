@@ -7,7 +7,7 @@
 import base64
 
 def main(params):
-    STR_SIZE = 1000000
+    STR_SIZE = 1000
     TRIES = 100
     str1 = b"a" * STR_SIZE
     str2 = b""

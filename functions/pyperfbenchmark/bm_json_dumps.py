@@ -1,10 +1,12 @@
+import psutil
+import os
+import tracemalloc
 import json
 import sys
 import threading
 import pyperf
 import six
 from six.moves import xrange
-
 
 EMPTY = ({}, 2000)
 SIMPLE_DATA = {'key1': 0, 'key2': True, 'key3': 'value', 'key4': 'foo',
@@ -74,5 +76,8 @@ def main(params):
 
     return(result)
 
-#if __name__ == '__main__':
-#    main({'workers':2})
+if __name__ == '__main__':
+    tracemalloc.start()
+    main({'workers':1})
+    process = psutil.Process(os.getpid())
+    print((process.memory_info().rss)/1024)  # in bytes

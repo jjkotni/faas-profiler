@@ -13,13 +13,18 @@ VENV=virtualenv/bin/activate_this.py
 MAIN=__main__.py
 PYPERF=$SITE/pyperf
 SIX=$SITE/six.py
+PYMEM=$SITE/mpkmemalloc-1.0.0.egg-info
 
 # Create chain of arguments
 ARG=$VENV
 ARG+=" "$MAIN
 ARG+=" "$PYPERF
 ARG+=" "$SIX
+ARG+=" "$PYMEM
 
 # This command creates the zip archive needed!
 zip -r $ZIP_NAME $ARG
 
+mkdir $1
+mv $ZIP_NAME $1
+mv __main__.py $1

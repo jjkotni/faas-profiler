@@ -8,7 +8,7 @@ fi
 
 TEST_DURATION=$1
 PERF_OUT_FILE=$2
-PERF_SAMPLING_INTERVAL=100  # ms (min = 10ms)
+PERF_SAMPLING_INTERVAL=10000  # ms (min = 10ms)
 PQOS_SAMPLING_INTERVAL=1    # set sampling interval to Nx100ms
 
 # Clear existing output files

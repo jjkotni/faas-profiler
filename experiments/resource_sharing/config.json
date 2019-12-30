@@ -5,14 +5,14 @@
     "blocking_cli": false,
     "instances":{
         "instance1":{
-            "application": "bm_json_dumps",
+            "application": "json",
             "distribution": "Uniform",
-            "param_file": "params/1.json",
+            "param_file": "1.json",
             "rate": 10,
-            "activity_window": [0, 20]
+            "activity_window": [0, 5]
         },
         "instance2":{
-            "application": "bm_deltablue",
+            "application": "float",
             "distribution": "Uniform",
             "param_file": "params/1.json",
             "rate": 10,

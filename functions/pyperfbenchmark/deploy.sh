@@ -1,5 +1,6 @@
 #Usage: set FAAS_ROOT as home directory for faas-profiler and run the script to deploy all pyperfbenchmarks
 export WSK_CONFIG_FILE=~/openwhisk-devtools/docker-compose/.wskprops
+export FAAS_ROOT=/home/kjj/faas-profiler
 
 PYPERF_DIR=$FAAS_ROOT/functions/pyperfbenchmark
 BENCHMARKS=()

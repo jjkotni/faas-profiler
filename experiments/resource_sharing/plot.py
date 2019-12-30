@@ -67,10 +67,10 @@ def AnalyzePerfMonRecords(test_name):
     # Perf Tool
     perf_mon_file = os.environ['FAAS_ROOT'] +"/logs/" + test_name + '/perf-mon.out'
 
-    if not os.path.isfile(perf_mon_file):
-        logger.error("The perf output file missing!")
-    else:
-        records['perf_records'] = ReadPerfMon(perf_mon_file)
+    #if not os.path.isfile(perf_mon_file):
+        #logger.error("The perf output file missing!")
+    #else:
+    records['perf_records'] = ReadPerfMon(perf_mon_file)
 
     return records
 
@@ -80,7 +80,7 @@ def GetMetadata(test_name):
     """
     test_start_time = None
     
-    with open(os.environ['FAAS_ROOT'] +"/logs/" + test_name + "/activationIds.out") as f:
+    with open(os.environ['FAAS_ROOT'] +"/logs/" + test_name + "/activationIds_float.out") as f:
         lines = f.read().splitlines()
         return lines
 
@@ -137,7 +137,9 @@ def func(test_name, rate):
     test_df['latency'] = test_df['duration'] + test_df['waitTime']
     firstInvoke = test_df['invokeTime'].min()
     test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
-    requested_frame = test_df[['invokeTimeRel', 'latency']].sort_values('invokeTimeRel', ascending=True)
+    requested_frame = test_df[['invokeTimeRel', 'latency', 'duration']].sort_values('invokeTimeRel', ascending=True)
+    print("Duration: ",test_df['duration'].sum())
+    print("Max Duration: ",test_df['duration'].max())
     return requested_frame 
 
 def main(benchmark, machine):
@@ -149,9 +151,9 @@ def main(benchmark, machine):
     if not os.path.exists(img_dir):
         os.makedirs(img_dir, 0o777)
 
-    for k in [3]: #run number
+    for k in [1]: #run number
         axes = None
-        for j in [20]: #rate of invocation
+        for j in [10]: #rate of invocation
             test_name = machine + "/resource_sharing/" + benchmark + "/" + str(k) + "_" + str(j)
             try:
                 perf_df = AnalyzePerfMonRecords(test_name)['perf_records']
@@ -173,13 +175,14 @@ def main(benchmark, machine):
                 print("Plot failed for run ", str(k), ", ROI ", str(j))
                 print(e)
 
-        img = img_dir + "/latency_" + str(k) + ".png"
-        plt.ylabel("Total Latency")
-        plt.xlabel("Time")
+        img = img_dir + "/latency_" + str(k) + "new.png"
+        plt.ylabel("Execution Time(ms)")
+        plt.xlabel("Time(s)")
         plt.legend(title="Invocation Rate")
         plt.savefig(img)
         plt.close()
         plt.figure()
+        
         
 
 if __name__== "__main__":

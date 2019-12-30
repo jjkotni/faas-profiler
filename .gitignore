@@ -7,3 +7,6 @@ GenConfigs.py
 
 # compiled bytecode
 __pycache__/
+
+# virtual envs
+functions/pyperfbenchmark/virtualenv/*

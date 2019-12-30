@@ -1,0 +1,6 @@
+# started on Thu Dec 12 02:21:35 2019
+
+#           time             counts unit events
+    10.000701384     69,735,112,542      cpu-cycles                                                    (47.58%)
+    10.000701384     19,510,266,051      cpu-cycles:k                                                  (56.98%)
+    10.000701384     50,359,455,411      cpu-cycles:u                                                  (56.95%)
