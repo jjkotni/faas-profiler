@@ -12,7 +12,7 @@ import itertools
 
 from six.moves import map as imap
 import pyperf
-import threading
+from multiprocessing import Process
 
 
 DEFAULT_DIGITS = 2000
@@ -76,15 +76,15 @@ def main(params):
     runner.metadata['description'] = "Compute digits of pi."
     runner.metadata['pidigits_ndigit'] = args.digits
 
-    threads = []
+    processes = []
     for i in range(workers):
-        threads.append(threading.Thread(target=functionWorker, args=[runner,i, args.digits]))
+        processes.append(Process(target=functionWorker, args=(runner,i, args.digits)))
     
-    for idx, thread in enumerate(threads):
-        thread.start()
-        thread.join()
+    for idx, process in enumerate(processes):
+        process.start()
+        process.join()
     
-    out    =  'Executed '+str(workers)+' threads'
+    out    =  'Executed '+str(workers)+' processes'
     result = {'output': out}
 
     return(result)

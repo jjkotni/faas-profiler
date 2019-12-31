@@ -1,12 +1,10 @@
-import psutil
-import os
-import tracemalloc
 import json
 import sys
-import threading
+
 import pyperf
 import six
 from six.moves import xrange
+
 
 EMPTY = ({}, 2000)
 SIMPLE_DATA = {'key1': 0, 'key2': True, 'key3': 'value', 'key4': 'foo',
@@ -31,7 +29,13 @@ def add_cmdline_args(cmd, args):
         cmd.extend(("--cases", args.cases))
 
 
-def functionWorker(runner, tid):
+def main():
+    runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
+    runner.argparser.add_argument("--cases",
+                                  help="Comma separated list of cases. Available cases: %s. By default, run all cases."
+                                       % ', '.join(CASES))
+    runner.metadata['description'] = "Benchmark json.dumps()"
+
     args = runner.parse_args()
     if args.cases:
         cases = []
@@ -50,34 +54,8 @@ def functionWorker(runner, tid):
         obj, count = globals()[case]
         data.append((obj, xrange(count)))
 
-    func_name = 'json_dumps_' + str(tid)
-    runner.bench_func(func_name, bench_json_dumps, data)
+    runner.bench_func('json_dumps', bench_json_dumps, data)
 
-def main(params):
-    nloops  = ('loops'   in params) and int(params['loops']) or 1
-    workers = ('workers' in params) and int(params['workers']) or 1
-    
-    runner  = pyperf.Runner(add_cmdline_args=add_cmdline_args, loops = nloops)
-
-    runner.argparser.add_argument("--cases",
-                                  help="Comma separated list of cases. Available cases: %s. By default, run all cases."
-                                      % ', '.join(CASES))
-
-    threads = []
-    for i in range(workers):
-        threads.append(threading.Thread(target=functionWorker, args=[runner,i]))    
-    
-    for idx, thread in enumerate(threads):
-        thread.start()
-        thread.join()
-    
-    out    =  'Executed '+str(workers)+' threads'
-    result = {'output': out}
-
-    return(result)
 
 if __name__ == '__main__':
-    tracemalloc.start()
-    main({'workers':1})
-    process = psutil.Process(os.getpid())
-    print((process.memory_info().rss)/1024)  # in bytes
+    main()

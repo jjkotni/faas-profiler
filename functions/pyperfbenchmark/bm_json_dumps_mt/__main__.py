@@ -1,16 +1,10 @@
-import pdb
 import json
 import sys
 import threading
 import pyperf
 import six
 from six.moves import xrange
-#from mpkmemalloc import *
-import tracemalloc
-import gc
-import os
-import psutil
-import time
+from mpkmemalloc import *
 
 EMPTY = ({}, 2000)
 SIMPLE_DATA = {'key1': 0, 'key2': True, 'key3': 'value', 'key4': 'foo',
@@ -33,8 +27,7 @@ def add_cmdline_args(cmd, args):
         cmd.extend(("--cases", args.cases))
 
 def functionWorker(runner, tid, tname):
-    # print("Tname passed in worker is ", tname)
-    #pymem_set_pkru(tname)
+    pymem_set_pkru(tname)
     args = runner.parse_args()
     if args.cases:
         cases = []
@@ -55,16 +48,12 @@ def functionWorker(runner, tid, tname):
 
     func_name = 'json_dumps_' + str(tid)
     runner.bench_func(func_name, bench_json_dumps, data)
-    #pymem_reset_pkru()
 
 def main(params):
-    #tracemalloc.start()
-    #pymem_setup_allocators()
+    pymem_setup_allocators()
 
-    workers = len(params) if (len(params)>0) else 1
-
-    print("Identified ", str(workers), " workers")
-    workers = 4
+    #workers = len(params) if (len(params)>0) else 1
+    workers = params['workers'] if ('workers' in params) else 1
 
     runner  = pyperf.Runner(add_cmdline_args=add_cmdline_args, loops = 1)
 
@@ -77,29 +66,34 @@ def main(params):
         threads.append(threading.Thread(target=functionWorker, args=[runner,i, tname], name=tname))
 
     for idx, thread in enumerate(threads):
-        # print("Executing ", thread.name)
-        #pkey_thread_mapper(thread.name)
+        pkey_thread_mapper(thread.name)
         thread.start()
         thread.join()
-        # print("Finished executing ", thread.name)
-    #pymem_set_pkru(thread.name)
+    pymem_set_pkru(thread.name)
 
     result = {}
     for activation in params:
         result[activation] = "Finished thread execution"
 
-    #process = psutil.Process(os.getpid())
-    #print((process.memory_info().rss)/1024)  # in bytes
-
     return(result)
 
 if __name__ == '__main__':
-    tracemalloc.start()
-    main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {}})
-    snapshot = tracemalloc.take_snapshot()
-    process = psutil.Process(os.getpid())
-    print((process.memory_info().rss)/1024)  # in bytes
-    top_stats = snapshot.statistics('lineno')
+    #tracemalloc.start()
+    #main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {}})
+    main({'workers':2})
+    #snapshot = tracemalloc.take_snapshot()
+    #process = psutil.Process(os.getpid())
+    #start = time.time()
+    #time_set_allocators()
+    #set_alloc_time = time.time() - start
+    #start = time.time()
+    #time_set_pkru()
+    #set_pkru_time = time.time() - start
+    #print("Setup allocators time: ", str(set_alloc_time), ", Set PKRU time: ", str(set_pkru_time))
+    #print("Setup allocators time: ", str(timeit.timeit(time_set_allocators, 10000)))
+    #print("Set PKRU time: ", str(timeit.timeit(time_set_pkru, 10000)))
+    #print("Memory used: ", str((process.memory_info().rss)/1024))  # in bytes
+    #top_stats = snapshot.statistics('lineno')
 
 # print("[ Top 10  ]")
 # for stat in top_stats[:10]:

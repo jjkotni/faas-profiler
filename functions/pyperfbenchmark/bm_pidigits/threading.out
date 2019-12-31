@@ -1,0 +1,1550 @@
+execve("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/python", ["python", "__main__.py"], [/* 72 vars */]) = 0
+brk(NULL)                               = 0xab4000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=350489, ...}) = 0
+mmap(NULL, 350489, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffff7fa1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fa0000
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff7bba000
+mprotect(0x7ffff7bd2000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff7dd1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7ffff7dd1000
+mmap(0x7ffff7dd3000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff79b6000
+mprotect(0x7ffff79b9000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff7bb8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ffff7bb8000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=10656, ...}) = 0
+mmap(NULL, 2105608, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff77b3000
+mprotect(0x7ffff77b5000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff79b4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7ffff79b4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0;\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=166032, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f9f000
+mmap(NULL, 2261096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff758a000
+mprotect(0x7ffff75b0000, 2097152, PROT_NONE) = 0
+mmap(0x7ffff77b0000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7ffff77b0000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\35\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=104864, ...}) = 0
+mmap(NULL, 2199848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff7370000
+mprotect(0x7ffff7389000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff7588000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7ffff7588000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff7067000
+mprotect(0x7ffff716f000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff736e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7ffff736e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f9e000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff6c9d000
+mprotect(0x7ffff6e5d000, 2097152, PROT_NONE) = 0
+mmap(0x7ffff705d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7ffff705d000
+mmap(0x7ffff7063000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7063000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f9d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f9c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f9b000
+arch_prctl(ARCH_SET_FS, 0x7ffff7f9c700) = 0
+mprotect(0x7ffff705d000, 16384, PROT_READ) = 0
+mprotect(0x7ffff736e000, 4096, PROT_READ) = 0
+mprotect(0x7ffff7588000, 4096, PROT_READ) = 0
+mprotect(0x7ffff77b0000, 8192, PROT_READ) = 0
+mprotect(0x7ffff79b4000, 4096, PROT_READ) = 0
+mprotect(0x7ffff7bb8000, 4096, PROT_READ) = 0
+mprotect(0x7ffff7dd1000, 4096, PROT_READ) = 0
+mprotect(0x9e5000, 4096, PROT_READ)     = 0
+mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+munmap(0x7ffff7fa1000, 350489)          = 0
+set_tid_address(0x7ffff7f9c9d0)         = 136445
+set_robust_list(0x7ffff7f9c9e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7ffff7bbfb50, [], SA_RESTORER|SA_SIGINFO, 0x7ffff7bcb390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7ffff7bbfbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ffff7bcb390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0xab4000
+brk(0xad5000)                           = 0xad5000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3280288, ...}) = 0
+mmap(NULL, 3280288, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffff697c000
+close(3)                                = 0
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7ffff7ff0000
+close(3)                                = 0
+futex(0x7ffff70628c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("nE@\215\356\322p/\363\2L\3;s&\370m@!\243\\Z\200O", 24, GRND_NONBLOCK) = 24
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fb0000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f5b000
+munmap(0x7ffff7f5b000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f5b000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 17), ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/python", {st_mode=S_IFREG|0775, st_size=4727904, ...}) = 0
+readlink("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/python", "python3.6", 4096) = 9
+readlink("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/python3.6", 0x7ffffffea760, 4096) = -1 EINVAL (Invalid argument)
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/Modules/Setup", 0x7fffffff3810) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/lib/python3.6/os.py", 0x7ffffffeb6f0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/lib/python3.6/os.pyc", 0x7ffffffeb6f0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/pybuilddir.txt", 0x7fffffff3810) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin/lib/python3.6/lib-dynload", 0x7fffffff3810) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+brk(0xaf8000)                           = 0xaf8000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7f1b000
+sysinfo({uptime=243018, loads=[131616, 154400, 157216], totalram=33466380288, freeram=23125315584, sharedram=1472839680, bufferram=1003245568, totalswap=34274799616, freeswap=34274799616, procs=1517, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+brk(0xb1a000)                           = 0xb1a000
+sigaltstack({ss_sp=0xad2550, ss_flags=0, ss_size=8192}, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python36.zip", 0x7fffffffc4e0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python36.zip", 0x7fffffffbd60) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 56 entries */, 32768)    = 1896
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7fffffffc0a0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__init__.abi3.so", 0x7fffffffc0a0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__init__.so", 0x7fffffffc0a0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5642, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7edb000
+munmap(0x7ffff7edb000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7edb000
+munmap(0x7ffff7edb000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7edb000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5642, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+read(3, "3\r\r\n\376$\374]\n\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3931) = 3930
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/codecs.py", {st_mode=S_IFREG|0644, st_size=36276, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/codecs.py", {st_mode=S_IFREG|0644, st_size=36276, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/codecs.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33956, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=33956, ...}) = 0
+read(3, "3\r\r\n\374$\374]\264\215\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0:\0\0\0@\0\0"..., 33957) = 33956
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents(3, /* 128 entries */, 32768)   = 4336
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15577, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15577, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__pycache__/aliases.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6274, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6274, ...}) = 0
+read(3, "3\r\r\n\376$\374]\331<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0D\1\0\0@\0\0"..., 6275) = 6274
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__pycache__/utf_8.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1592, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1592, ...}) = 0
+read(3, "3\r\r\n\376$\374]\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1593) = 1592
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7ffff7bcb390}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, {SIG_IGN, [], SA_RESTORER, 0x7ffff7bcb390}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], SA_RESTORER, 0x7ffff7bcb390}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], SA_RESTORER, 0x7ffff7bcb390}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x5f0dd0, [], SA_RESTORER, 0x7ffff7bcb390}, {SIG_DFL, [], 0}, 8) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/encodings/__pycache__/latin_1.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1874, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1874, ...}) = 0
+read(3, "3\r\r\n\376$\374]\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 1875) = 1874
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/io.py", {st_mode=S_IFREG|0644, st_size=3517, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/io.py", {st_mode=S_IFREG|0644, st_size=3517, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/io.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3443, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3443, ...}) = 0
+read(3, "3\r\r\n\374$\374]\275\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 3444) = 3443
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/abc.py", {st_mode=S_IFREG|0644, st_size=8727, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/abc.py", {st_mode=S_IFREG|0644, st_size=8727, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7571, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7571, ...}) = 0
+read(3, "3\r\r\n\374$\374]\27\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7572) = 7571
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/_weakrefset.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7884, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7884, ...}) = 0
+read(3, "3\r\r\n\374$\374]I\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 7885) = 7884
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 17), ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(1)                                  = 3
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 17), ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(2)                                  = 3
+close(3)                                = 0
+fstat(2, {st_mode=S_IFREG|0664, st_size=24248, ...}) = 0
+ioctl(2, TCGETS, 0x7fffffffd380)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(2, 0, SEEK_CUR)                   = 24401
+ioctl(2, TCGETS, 0x7fffffffd640)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7fffffffd610)        = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/_bootlocale.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1036, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1036, ...}) = 0
+read(3, "3\r\r\n\374$\374]\25\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 1037) = 1036
+read(3, "", 1)                          = 0
+close(3)                                = 0
+lseek(2, 0, SEEK_CUR)                   = 25524
+lseek(2, 0, SEEK_CUR)                   = 25572
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site.py", {st_mode=S_IFREG|0664, st_size=27543, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site.py", {st_mode=S_IFREG|0664, st_size=27543, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/site.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=20726, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=20726, ...}) = 0
+brk(0xb3b000)                           = 0xb3b000
+read(3, "3\r\r\nU\350\n^\227k\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\24\0\0\0@\0\0"..., 20727) = 20726
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7e9b000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/os.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=29684, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=29684, ...}) = 0
+read(3, "3\r\r\n\374$\374]\226\222\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0@\0\0"..., 29685) = 29684
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/stat.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3907, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3907, ...}) = 0
+read(3, "3\r\r\n\374$\374]\256\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 3908) = 3907
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/posixpath.py", {st_mode=S_IFREG|0644, st_size=15772, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/posixpath.py", {st_mode=S_IFREG|0644, st_size=15772, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/posixpath.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10479, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10479, ...}) = 0
+read(3, "3\r\r\n\374$\374]\234=\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0\0@\0\0"..., 10480) = 10479
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7e76000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/genericpath.py", {st_mode=S_IFREG|0644, st_size=4756, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/genericpath.py", {st_mode=S_IFREG|0644, st_size=4756, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/genericpath.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3782, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3782, ...}) = 0
+read(3, "3\r\r\n\374$\374]\224\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3783) = 3782
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=26392, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=26392, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/_collections_abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=28853, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=28853, ...}) = 0
+read(3, "3\r\r\n\374$\374]\30g\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 28854) = 28853
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7e36000
+munmap(0x7ffff7e36000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7e36000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+getdents(3, /* 42 entries */, 32768)    = 2608
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/orig-prefix.txt", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+ioctl(3, TCGETS, 0x7fffffffc2b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7fffffffc250)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+read(3, "/usr", 5)                      = 4
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/lib64/python3.6", 0x7fffffffc350) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.6/plat-x86_64-linux-gnu", 0x7fffffffc350) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.6/lib-tk", 0x7fffffffc350) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/no-global-site-packages.txt", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib64/python3.6/site-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib/python3.6/site-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib/site-python", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/python3.6/lib-dynload", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/local/lib/python3.6/dist-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib/python3/dist-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib/dist-python", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib64/python3.6/site-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 20 entries */, 32768)    = 784
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/site-python", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/python3.6/lib-dynload", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/local/lib/python3.6/dist-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3/dist-packages", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/dist-python", 0x7fffffffc250) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+open("/usr/lib/python3.6", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents(3, /* 205 entries */, 32768)   = 6816
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/lib/python3.6/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/usr/lib/python3.6/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/sitecustomize.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
+read(3, "3\r\r\n\312P\324Y\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0@\0\0"..., 119) = 118
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("__main__.py", {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+open("__main__.py", O_RDONLY)           = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "# coding: utf-8\n\"\"\"\nCalculating "..., 2183) = 2183
+read(3, "  main({'workers':4})\n", 4096) = 22
+close(3)                                = 0
+stat("__main__.py", {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+readlink("__main__.py", 0x7ffffffec910, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", 4096) = 62
+lstat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits/__main__.py", {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+open("__main__.py", O_RDONLY)           = 3
+fcntl(3, F_GETFD)                       = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+ioctl(3, TCGETS, 0x7fffffffd8b0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=2205, ...}) = 0
+read(3, "# coding: utf-8\n\"\"\"\nCalculating "..., 4096) = 2205
+lseek(3, 0, SEEK_SET)                   = 0
+brk(0xb62000)                           = 0xb62000
+read(3, "# coding: utf-8\n\"\"\"\nCalculating "..., 4096) = 2205
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff693c000
+read(3, "", 4096)                       = 0
+brk(0xb59000)                           = 0xb59000
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 7 entries */, 32768)     = 232
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 20 entries */, 32768)    = 784
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/six.py", {st_mode=S_IFREG|0664, st_size=33045, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/six.py", {st_mode=S_IFREG|0664, st_size=33045, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/__pycache__/six.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=26723, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=26723, ...}) = 0
+read(3, "3\r\r\np\350\n^\25\201\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0M\0\0\0@\0\0"..., 26724) = 26723
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__future__.py", {st_mode=S_IFREG|0644, st_size=4841, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__future__.py", {st_mode=S_IFREG|0644, st_size=4841, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/__future__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4223, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4223, ...}) = 0
+read(3, "3\r\r\n\374$\374]\351\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0@\0\0"..., 4224) = 4223
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/functools.py", {st_mode=S_IFREG|0644, st_size=31346, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/functools.py", {st_mode=S_IFREG|0644, st_size=31346, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/functools.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=24118, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=24118, ...}) = 0
+read(3, "3\r\r\n\374$\374]rz\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0+\0\0\0@\0\0"..., 24119) = 24118
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7fffffff9d40) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__init__.abi3.so", 0x7fffffff9d40) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__init__.so", 0x7fffffff9d40) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45812, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45812, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=45816, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=45816, ...}) = 0
+read(3, "3\r\r\n\376$\374]\364\262\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0$\0\0\0@\0\0"..., 45817) = 45816
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xb7a000)                           = 0xb7a000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/operator.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13969, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13969, ...}) = 0
+read(3, "3\r\r\n\374$\374]o*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0006\0\0\0@\0\0"..., 13970) = 13969
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff68fc000
+munmap(0x7ffff68fc000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff68fc000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/keyword.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1821, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1821, ...}) = 0
+read(3, "3\r\r\n3%\374]\241\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0!\0\0\0@\0\0"..., 1822) = 1821
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/heapq.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14348, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14348, ...}) = 0
+read(3, "3\r\r\n\374$\374]\221Y\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 14349) = 14348
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/reprlib.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5456, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5456, ...}) = 0
+read(3, "3\r\r\n\374$\374]\330\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 5457) = 5456
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/types.py", {st_mode=S_IFREG|0644, st_size=8870, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/types.py", {st_mode=S_IFREG|0644, st_size=8870, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/types.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8257, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8257, ...}) = 0
+read(3, "3\r\r\n\374$\374]\246\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 8258) = 8257
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 5 entries */, 32768)     = 144
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/collections/__pycache__/abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=183, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=183, ...}) = 0
+read(3, "3\r\r\n\376$\374]D\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 184) = 183
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/weakref.py", {st_mode=S_IFREG|0644, st_size=20466, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/weakref.py", {st_mode=S_IFREG|0644, st_size=20466, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/weakref.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19199, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19199, ...}) = 0
+read(3, "3\r\r\n\374$\374]\362O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 19200) = 19199
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/struct.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=368, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=368, ...}) = 0
+read(3, "3\r\r\n\374$\374]\1\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 369) = 368
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7fffffffc090) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__init__.abi3.so", 0x7fffffffc090) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__init__.so", 0x7fffffffc090) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__init__.py", {st_mode=S_IFREG|0664, st_size=846, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__init__.py", {st_mode=S_IFREG|0664, st_size=846, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=939, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=939, ...}) = 0
+read(3, "3\r\r\no\350\n^N\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 940) = 939
+read(3, "", 1)                          = 0
+close(3)                                = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=312, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=312, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 312
+lseek(3, -188, SEEK_CUR)                = 124
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 188
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 24 entries */, 32768)    = 800
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_utils.py", {st_mode=S_IFREG|0664, st_size=14030, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_utils.py", {st_mode=S_IFREG|0664, st_size=14030, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_utils.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=12503, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=12503, ...}) = 0
+read(3, "3\r\r\no\350\n^\3166\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0/\0\0\0@\0\0"..., 12504) = 12503
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/contextlib.py", {st_mode=S_IFREG|0644, st_size=13162, ...}) = 0
+stat("/usr/lib/python3.6/contextlib.py", {st_mode=S_IFREG|0644, st_size=13162, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/contextlib.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11158, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11158, ...}) = 0
+read(3, "3\r\r\n\374$\374]j3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 11159) = 11158
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff68bc000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/datetime.py", {st_mode=S_IFREG|0644, st_size=82034, ...}) = 0
+stat("/usr/lib/python3.6/datetime.py", {st_mode=S_IFREG|0644, st_size=82034, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/datetime.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=54511, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=54511, ...}) = 0
+read(3, "3\r\r\n\374$\374]r@\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 54512) = 54511
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xb9f000)                           = 0xb9f000
+brk(0xb85000)                           = 0xb85000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/statistics.py", {st_mode=S_IFREG|0644, st_size=20673, ...}) = 0
+stat("/usr/lib/python3.6/statistics.py", {st_mode=S_IFREG|0644, st_size=20673, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/statistics.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18174, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18174, ...}) = 0
+read(3, "3\r\r\n\374$\374]\301P\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 18175) = 18174
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/decimal.py", {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+stat("/usr/lib/python3.6/decimal.py", {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/decimal.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=351, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=351, ...}) = 0
+read(3, "3\r\r\n\374$\374]@\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 352) = 351
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_decimal.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=183248, ...}) = 0
+futex(0x7ffff7bb90a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_decimal.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \201\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=183248, ...}) = 0
+mmap(NULL, 2278648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff668f000
+mprotect(0x7ffff66b3000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff68b2000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7ffff68b2000
+close(3)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=350489, ...}) = 0
+mmap(NULL, 350489, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffff6639000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libmpdec.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 P\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=228016, ...}) = 0
+mmap(NULL, 2323088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff6401000
+mprotect(0x7ffff6438000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff6637000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x36000) = 0x7ffff6637000
+close(3)                                = 0
+mprotect(0x7ffff6637000, 4096, PROT_READ) = 0
+mprotect(0x7ffff68b2000, 4096, PROT_READ) = 0
+munmap(0x7ffff6639000, 350489)          = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+stat("/usr/lib/python3.6/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/numbers.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12142, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12142, ...}) = 0
+read(3, "3\r\r\n\374$\374]\3(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 12143) = 12142
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff664f000
+munmap(0x7ffff664f000, 262144)          = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/fractions.py", {st_mode=S_IFREG|0644, st_size=23639, ...}) = 0
+stat("/usr/lib/python3.6/fractions.py", {st_mode=S_IFREG|0644, st_size=23639, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/fractions.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18426, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18426, ...}) = 0
+read(3, "3\r\r\n\374$\374]W\\\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 18427) = 18426
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/re.py", {st_mode=S_IFREG|0644, st_size=15552, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/re.py", {st_mode=S_IFREG|0644, st_size=15552, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/re.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14114, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14114, ...}) = 0
+read(3, "3\r\r\n\374$\374]\300<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 14115) = 14114
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/enum.py", {st_mode=S_IFREG|0644, st_size=33606, ...}) = 0
+stat("/usr/lib/python3.6/enum.py", {st_mode=S_IFREG|0644, st_size=33606, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/enum.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23453, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=23453, ...}) = 0
+read(3, "3\r\r\n\374$\374]F\203\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0\0@\0\0"..., 23454) = 23453
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xba9000)                           = 0xba9000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff664f000
+brk(0xba3000)                           = 0xba3000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19338, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19338, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/sre_compile.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10334, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10334, ...}) = 0
+read(3, "3\r\r\n\374$\374]\212K\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 10335) = 10334
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_parse.py", {st_mode=S_IFREG|0644, st_size=36536, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_parse.py", {st_mode=S_IFREG|0644, st_size=36536, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/sre_parse.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20414, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=20414, ...}) = 0
+read(3, "3\r\r\n\374$\374]\270\216\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 20415) = 20414
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6821, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6821, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/sre_constants.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6028, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6028, ...}) = 0
+read(3, "3\r\r\n\374$\374]\245\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 6029) = 6028
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/copyreg.py", {st_mode=S_IFREG|0644, st_size=7007, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/copyreg.py", {st_mode=S_IFREG|0644, st_size=7007, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/copyreg.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4300, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4300, ...}) = 0
+read(3, "3\r\r\n\374$\374]_\33\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 4301) = 4300
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/bisect.py", {st_mode=S_IFREG|0644, st_size=2595, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/bisect.py", {st_mode=S_IFREG|0644, st_size=2595, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/bisect.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2732, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2732, ...}) = 0
+read(3, "3\r\r\n\374$\374]#\n\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 2733) = 2732
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/shlex.py", {st_mode=S_IFREG|0644, st_size=12956, ...}) = 0
+stat("/usr/lib/python3.6/shlex.py", {st_mode=S_IFREG|0644, st_size=12956, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/shlex.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6970, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6970, ...}) = 0
+read(3, "3\r\r\n\374$\374]\2342\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 6971) = 6970
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff63c1000
+munmap(0x7ffff63c1000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff63c1000
+munmap(0x7ffff63c1000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff63c1000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_metadata.py", {st_mode=S_IFREG|0664, st_size=4807, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_metadata.py", {st_mode=S_IFREG|0664, st_size=4807, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_metadata.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=4784, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=4784, ...}) = 0
+read(3, "3\r\r\no\350\n^\307\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 4785) = 4784
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_formatter.py", {st_mode=S_IFREG|0664, st_size=2878, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_formatter.py", {st_mode=S_IFREG|0664, st_size=2878, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_formatter.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3206, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3206, ...}) = 0
+read(3, "3\r\r\no\350\n^>\v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3207) = 3206
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_bench.py", {st_mode=S_IFREG|0664, st_size=28417, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_bench.py", {st_mode=S_IFREG|0664, st_size=28417, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_bench.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=27586, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=27586, ...}) = 0
+read(3, "3\r\r\no\350\n^\1o\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 27587) = 27586
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xbc7000)                           = 0xbc7000
+brk(0xbb9000)                           = 0xbb9000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_runner.py", {st_mode=S_IFREG|0664, st_size=23644, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_runner.py", {st_mode=S_IFREG|0664, st_size=23644, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_runner.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=15241, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=15241, ...}) = 0
+read(3, "3\r\r\n\203\0\v^\\\\\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 15242) = 15241
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_cli.py", {st_mode=S_IFREG|0664, st_size=19907, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_cli.py", {st_mode=S_IFREG|0664, st_size=19907, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_cli.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=13491, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=13491, ...}) = 0
+read(3, "3\r\r\no\350\n^\303M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 13492) = 13491
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_cpu_utils.py", {st_mode=S_IFREG|0664, st_size=4308, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_cpu_utils.py", {st_mode=S_IFREG|0664, st_size=4308, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_cpu_utils.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3738, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3738, ...}) = 0
+read(3, "3\r\r\no\350\n^\324\20\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3739) = 3738
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7fffffff97b0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__init__.abi3.so", 0x7fffffff97b0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__init__.so", 0x7fffffff97b0) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__init__.py", {st_mode=S_IFREG|0664, st_size=90581, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__init__.py", {st_mode=S_IFREG|0664, st_size=90581, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=67152, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=67152, ...}) = 0
+read(3, "3\r\r\n\341\276\334]\325a\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0w\0\0\0@\0\0"..., 67153) = 67152
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xbda000)                           = 0xbda000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6381000
+mmap(NULL, 299008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6338000
+munmap(0x7ffff7e76000, 151552)          = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/signal.py", {st_mode=S_IFREG|0644, st_size=2123, ...}) = 0
+stat("/usr/lib/python3.6/signal.py", {st_mode=S_IFREG|0644, st_size=2123, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/signal.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2515, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2515, ...}) = 0
+read(3, "3\r\r\n\374$\374]K\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 2516) = 2515
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/subprocess.py", {st_mode=S_IFREG|0644, st_size=62339, ...}) = 0
+stat("/usr/lib/python3.6/subprocess.py", {st_mode=S_IFREG|0644, st_size=62339, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/subprocess.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35485, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=35485, ...}) = 0
+read(3, "3\r\r\n\374$\374]\203\363\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\26\0\0\0@\0\0"..., 35486) = 35485
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/warnings.py", {st_mode=S_IFREG|0644, st_size=18488, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/warnings.py", {st_mode=S_IFREG|0644, st_size=18488, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/warnings.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13314, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13314, ...}) = 0
+read(3, "3\r\r\n\374$\374]8H\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 13315) = 13314
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/selectors.py", {st_mode=S_IFREG|0644, st_size=19438, ...}) = 0
+stat("/usr/lib/python3.6/selectors.py", {st_mode=S_IFREG|0644, st_size=19438, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/selectors.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17697, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17697, ...}) = 0
+read(3, "3\r\r\n\374$\374]\356K\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 17698) = 17697
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff62f8000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/threading.py", {st_mode=S_IFREG|0644, st_size=49029, ...}) = 0
+stat("/usr/lib/python3.6/threading.py", {st_mode=S_IFREG|0644, st_size=49029, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/threading.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=37234, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=37234, ...}) = 0
+read(3, "3\r\r\n\374$\374]\205\277\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\35\0\0\0@\0\0"..., 37235) = 37234
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/traceback.py", {st_mode=S_IFREG|0644, st_size=23458, ...}) = 0
+stat("/usr/lib/python3.6/traceback.py", {st_mode=S_IFREG|0644, st_size=23458, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/traceback.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19646, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19646, ...}) = 0
+read(3, "3\r\r\n\374$\374]\242[\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\23\0\0\0@\0\0"..., 19647) = 19646
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/linecache.py", {st_mode=S_IFREG|0644, st_size=5312, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/linecache.py", {st_mode=S_IFREG|0644, st_size=5312, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/linecache.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3834, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3834, ...}) = 0
+read(3, "3\r\r\n\374$\374]\300\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 3835) = 3834
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/tokenize.py", {st_mode=S_IFREG|0644, st_size=29496, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/tokenize.py", {st_mode=S_IFREG|0644, st_size=29496, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/tokenize.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18703, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18703, ...}) = 0
+read(3, "3\r\r\n\374$\374]8s\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0-\0\0\0@\0\0"..., 18704) = 18703
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/token.py", {st_mode=S_IFREG|0644, st_size=3075, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/token.py", {st_mode=S_IFREG|0644, st_size=3075, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/token.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3376, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3376, ...}) = 0
+read(3, "3\r\r\n\374$\374]\3\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3377) = 3376
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff62b8000
+munmap(0x7ffff62b8000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff62b8000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 16 entries */, 32768)    = 584
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_common.py", {st_mode=S_IFREG|0664, st_size=20209, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_common.py", {st_mode=S_IFREG|0664, st_size=20209, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__pycache__/_common.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=15334, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=15334, ...}) = 0
+read(3, "3\r\r\nJ%~]\361N\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0Z\0\0\0@\0\0"..., 15335) = 15334
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/socket.py", {st_mode=S_IFREG|0644, st_size=27443, ...}) = 0
+stat("/usr/lib/python3.6/socket.py", {st_mode=S_IFREG|0644, st_size=27443, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/socket.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=22013, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=22013, ...}) = 0
+read(3, "3\r\r\n\374$\374]3k\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 22014) = 22013
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0xbfb000)                           = 0xbfb000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6278000
+munmap(0x7ffff6278000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6278000
+munmap(0x7ffff6278000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6278000
+brk(0xc1d000)                           = 0xc1d000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_compat.py", {st_mode=S_IFREG|0664, st_size=11191, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_compat.py", {st_mode=S_IFREG|0664, st_size=11191, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__pycache__/_compat.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=9783, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=9783, ...}) = 0
+read(3, "3\r\r\ni\22\26]\267+\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0!\0\0\0@\0\0"..., 9784) = 9783
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/shutil.py", {st_mode=S_IFREG|0644, st_size=40540, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/shutil.py", {st_mode=S_IFREG|0644, st_size=40540, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/shutil.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=30760, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=30760, ...}) = 0
+read(3, "3\r\r\n\374$\374]\\\236\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0A\0\0\0@\0\0"..., 30761) = 30760
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/fnmatch.py", {st_mode=S_IFREG|0644, st_size=3166, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/fnmatch.py", {st_mode=S_IFREG|0644, st_size=3166, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/fnmatch.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2930, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2930, ...}) = 0
+read(3, "3\r\r\n\374$\374]^\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 2931) = 2930
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/bz2.py", {st_mode=S_IFREG|0644, st_size=12478, ...}) = 0
+stat("/usr/lib/python3.6/bz2.py", {st_mode=S_IFREG|0644, st_size=12478, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/bz2.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11282, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11282, ...}) = 0
+read(3, "3\r\r\n\374$\374]\2760\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 11283) = 11282
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/_compression.py", {st_mode=S_IFREG|0644, st_size=5340, ...}) = 0
+stat("/usr/lib/python3.6/_compression.py", {st_mode=S_IFREG|0644, st_size=5340, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/_compression.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4104, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4104, ...}) = 0
+read(3, "3\r\r\n\374$\374]\334\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 4105) = 4104
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=22112, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\26\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=22112, ...}) = 0
+mmap(NULL, 2117176, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff6073000
+mprotect(0x7ffff6077000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff6276000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7ffff6276000
+close(3)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=350489, ...}) = 0
+mmap(NULL, 350489, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffff601d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\23\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=66800, ...}) = 0
+mmap(NULL, 2161864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff5e0d000
+mprotect(0x7ffff5e1c000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff601b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7ffff601b000
+close(3)                                = 0
+mprotect(0x7ffff601b000, 4096, PROT_READ) = 0
+mprotect(0x7ffff6276000, 4096, PROT_READ) = 0
+munmap(0x7ffff601d000, 350489)          = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/lzma.py", {st_mode=S_IFREG|0644, st_size=12983, ...}) = 0
+stat("/usr/lib/python3.6/lzma.py", {st_mode=S_IFREG|0644, st_size=12983, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/lzma.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11992, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11992, ...}) = 0
+read(3, "3\r\r\n\374$\374]\2672\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0$\0\0\0@\0\0"..., 11993) = 11992
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=41888, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300#\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=41888, ...}) = 0
+mmap(NULL, 2136968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff5c03000
+mprotect(0x7ffff5c0b000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff5e0a000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7ffff5e0a000
+close(3)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=350489, ...}) = 0
+mmap(NULL, 350489, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffff601d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320 \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=137400, ...}) = 0
+mmap(NULL, 2232456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff59e1000
+mprotect(0x7ffff5a02000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff5c01000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7ffff5c01000
+close(3)                                = 0
+mprotect(0x7ffff5c01000, 4096, PROT_READ) = 0
+mprotect(0x7ffff5e0a000, 4096, PROT_READ) = 0
+munmap(0x7ffff601d000, 350489)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6033000
+munmap(0x7ffff6033000, 262144)          = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_pslinux.py", {st_mode=S_IFREG|0664, st_size=79839, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_pslinux.py", {st_mode=S_IFREG|0664, st_size=79839, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__pycache__/_pslinux.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=47917, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=47917, ...}) = 0
+read(3, "3\r\r\n\345\271\326]\3377\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 47918) = 47917
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff6033000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/base64.py", {st_mode=S_IFREG|0755, st_size=20378, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/base64.py", {st_mode=S_IFREG|0755, st_size=20378, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/base64.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17115, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17115, ...}) = 0
+read(3, "3\r\r\n3%\374]\232O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 17116) = 17115
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/glob.py", {st_mode=S_IFREG|0644, st_size=5638, ...}) = 0
+stat("/usr/lib/python3.6/glob.py", {st_mode=S_IFREG|0644, st_size=5638, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/glob.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4259, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4259, ...}) = 0
+read(3, "3\r\r\n\374$\374]\6\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 4260) = 4259
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psposix.py", {st_mode=S_IFREG|0664, st_size=6159, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psposix.py", {st_mode=S_IFREG|0664, st_size=6159, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/__pycache__/_psposix.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3726, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3726, ...}) = 0
+read(3, "3\r\r\ni\22\26]\17\30\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3727) = 3726
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psutil_linux.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=92104, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psutil_linux.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220 \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=92104, ...}) = 0
+mmap(NULL, 2118960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff57db000
+mprotect(0x7ffff57e0000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff59df000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7ffff59df000
+close(3)                                = 0
+mprotect(0x7ffff59df000, 4096, PROT_READ) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psutil_posix.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0775, st_size=51456, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/psutil/_psutil_posix.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\23\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0775, st_size=51456, ...}) = 0
+mmap(NULL, 2110064, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffff55d7000
+mprotect(0x7ffff55da000, 2093056, PROT_NONE) = 0
+mmap(0x7ffff57d9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ffff57d9000
+close(3)                                = 0
+mprotect(0x7ffff57d9000, 4096, PROT_READ) = 0
+stat("/proc/136445/smaps", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff5597000
+brk(0xc42000)                           = 0xc42000
+open("/proc/stat", O_RDONLY|O_CLOEXEC)  = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+ioctl(3, TCGETS, 0x7fffffff7f40)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "cpu  7216027 4444 2969590 280758"..., 1024) = 1024
+close(3)                                = 0
+stat("/sys/devices/system/cpu/cpufreq/policy0", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/proc/136445/io", {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+open("/proc/stat", O_RDONLY|O_CLOEXEC)  = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+ioctl(3, TCGETS, 0x7fffffff9650)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "cpu  7216027 4444 2969590 280758"..., 1024) = 1024
+close(3)                                = 0
+open("/proc/stat", O_RDONLY|O_CLOEXEC)  = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+ioctl(3, TCGETS, 0x7fffffff9550)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "cpu  7216027 4444 2969590 280758"..., 1024) = 1024
+read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 1024
+read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 1024
+read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 1024
+read(3, " 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"..., 1024) = 1024
+read(3, "0\nsoftirq 380925686 40123520 115"..., 1024) = 87
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_worker.py", {st_mode=S_IFREG|0664, st_size=12064, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/_worker.py", {st_mode=S_IFREG|0664, st_size=12064, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_worker.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=8077, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=8077, ...}) = 0
+read(3, "3\r\r\no\350\n^ /\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 8078) = 8077
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/argparse.py", {st_mode=S_IFREG|0644, st_size=90568, ...}) = 0
+stat("/usr/lib/python3.6/argparse.py", {st_mode=S_IFREG|0644, st_size=90568, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/argparse.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=60456, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=60456, ...}) = 0
+read(3, "3\r\r\n\374$\374]\310a\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 60457) = 60456
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/copy.py", {st_mode=S_IFREG|0644, st_size=8815, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/copy.py", {st_mode=S_IFREG|0644, st_size=8815, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/copy.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7135, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7135, ...}) = 0
+read(3, "3\r\r\n\374$\374]o\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 7136) = 7135
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/textwrap.py", {st_mode=S_IFREG|0644, st_size=19558, ...}) = 0
+stat("/usr/lib/python3.6/textwrap.py", {st_mode=S_IFREG|0644, st_size=19558, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/textwrap.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13684, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13684, ...}) = 0
+read(3, "3\r\r\n\374$\374]fL\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 13685) = 13684
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/gettext.py", {st_mode=S_IFREG|0644, st_size=21957, ...}) = 0
+stat("/usr/lib/python3.6/gettext.py", {st_mode=S_IFREG|0644, st_size=21957, ...}) = 0
+open("/usr/lib/python3.6/__pycache__/gettext.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14306, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14306, ...}) = 0
+read(3, "3\r\r\n\374$\374]\305U\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 14307) = 14306
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff5557000
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/bm_pidigits", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/locale.py", {st_mode=S_IFREG|0644, st_size=77304, ...}) = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/locale.py", {st_mode=S_IFREG|0644, st_size=77304, ...}) = 0
+open("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/lib/python3.6/__pycache__/locale.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34086, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=34086, ...}) = 0
+read(3, "3\r\r\n\374$\374]\370-\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0]\2\0\0@\0\0"..., 34087) = 34086
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7fffffffc040) = -1 ENOENT (No such file or directory)
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/kjj", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/kjj/faas-profiler", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/kjj/faas-profiler/functions", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/kjj/faas-profiler/functions/pyperfbenchmark", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/kjj/faas-profiler/functions/pyperfbenchmark/virtualenv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ffff4d56000
+mprotect(0x7ffff4d56000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ffff5555ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ffff55569d0, tls=0x7ffff5556700, child_tidptr=0x7ffff55569d0) = 136446
+futex(0xb1b940, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, {1577781366, 390876000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x7ffff0000c10, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+clone(child_stack=0x7ffff5555ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ffff55569d0, tls=0x7ffff5556700, child_tidptr=0x7ffff55569d0) = 136450
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 7, {1577781367, 96232000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 9, {1577781367, 96281000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 11, {1577781367, 96338000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 13, {1577781367, 96375000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 15, {1577781367, 96411000}, ffffffff) = -1 ETIMEDOUT (Connection timed out)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 17, {1577781367, 101553000}, ffffffff) = 0
+futex(0xab0044, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab0040, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0000, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7ffff0000c10, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+clone(child_stack=0x7ffff5555ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ffff55569d0, tls=0x7ffff5556700, child_tidptr=0x7ffff55569d0) = 136452
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xc185d0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 23, {1577781367, 800606000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 25, {1577781367, 800648000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 27, {1577781367, 800707000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 29, {1577781367, 800734000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 31, {1577781367, 800793000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 33, {1577781367, 800863000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 35, {1577781367, 800919000}, ffffffff) = 0
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 37, {1577781367, 800979000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 39, {1577781367, 801016000}, ffffffff) = -1 ETIMEDOUT (Connection timed out)
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xab00c0, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 41, {1577781367, 806158000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xab0044, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab0040, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0000, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xab0080, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7ffff0000c10, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+clone(child_stack=0x7ffff5555ff0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ffff55569d0, tls=0x7ffff5556700, child_tidptr=0x7ffff55569d0) = 136454
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0xb49de0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+futex(0xab00c4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0xab00c0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x7ffff0000c10, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ffff7bcb390}, {0x5f0dd0, [], SA_RESTORER, 0x7ffff7bcb390}, 8) = 0
+sigaltstack(NULL, {ss_sp=0xad2550, ss_flags=0, ss_size=8192}) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}, NULL) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

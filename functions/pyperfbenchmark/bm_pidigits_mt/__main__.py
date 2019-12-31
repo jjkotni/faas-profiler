@@ -13,7 +13,7 @@ import itertools
 from six.moves import map as imap
 import pyperf
 import threading
-
+from mpkmemalloc import *
 
 DEFAULT_DIGITS = 2000
 icount = itertools.count
@@ -58,36 +58,35 @@ def add_cmdline_args(cmd, args):
     cmd.extend(("--digits", str(args.digits)))
 
 
-def functionWorker(runner, tid, digits):
+def functionWorker(runner, tid, digits, tname):
+    pymem_set_pkru(tname)
     bmk_name = 'pidigits_' + str(tid)
     runner.bench_func(bmk_name, calc_ndigits, digits)
 
 def main(params):
-    nloops  = ('loops'   in params) and int(params['loops']) or 1
-    workers = ('workers' in params) and int(params['workers']) or 1
-    
-    runner  = pyperf.Runner(add_cmdline_args=add_cmdline_args, loops=nloops)
-    cmd = runner.argparser
-    cmd.add_argument("--digits", type=int, default=DEFAULT_DIGITS,
-                     help="Number of computed pi digits (default: %s)"
-                          % DEFAULT_DIGITS)
-
-    args = runner.parse_args()
-    runner.metadata['description'] = "Compute digits of pi."
-    runner.metadata['pidigits_ndigit'] = args.digits
-
+    pymem_setup_allocators()
+    workers = params['workers'] if ('workers' in params) else 1
+    runner  = pyperf.Runner(loops = 1)
     threads = []
+
     for i in range(workers):
-        threads.append(threading.Thread(target=functionWorker, args=[runner,i, args.digits]))
+        tname = 'Worker' + str(i)
+        threads.append(threading.Thread(target=functionWorker, 
+                                        args=[runner,i, DEFAULT_DIGITS, tname], 
+                                        name=tname))
     
     for idx, thread in enumerate(threads):
+        pkey_thread_mapper(thread.name)
         thread.start()
         thread.join()
-    
-    out    =  'Executed '+str(workers)+' threads'
-    result = {'output': out}
+    pymem_set_pkru(thread.name)
+
+    result = {}
+
+    for activation in params:
+        result[activation] = "Finished thread execution"
 
     return(result)
     
-if __name__ == '__main__':
-    main({'workers':4})
+#if __name__ == '__main__':
+#    main({'workers':2})
