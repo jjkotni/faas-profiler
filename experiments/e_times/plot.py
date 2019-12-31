@@ -14,6 +14,7 @@ from ContactDB import GetActivation
 from WorkloadAnalyzer import ExtractExtraAnnotations
 from optparse import OptionParser
 
+current_bmk = ''
 
 def GetMetadata(test_name):
     """
@@ -68,106 +69,54 @@ def ConstructTestDataframe(activationIds):
         perf_data['results'].append(activation['response']['result'])
     return pd.DataFrame(perf_data)
 
-def func(test_name):
+def func(test_name, rate):
     lines = GetMetadata(test_name)
     test_df = ConstructTestDataframe(lines)
 
     #waitTime is the difference between the time at which an event was triggered and the time at which 
     #the function started executing. Hence, waitTime = startTime-invokeTime.
-    test_df['executionTime'] = test_df['duration'] - test_df['initTime']
     test_df['invokeTime'] = test_df['start'] - test_df['waitTime']
     test_df['latency'] = test_df['duration'] + test_df['waitTime']
     firstInvoke = test_df['invokeTime'].min()
     test_df['invokeTimeRel'] = (test_df['invokeTime'] - firstInvoke)/1000.0	
-    requested_frame = test_df[['invokeTimeRel', 'latency', 'executionTime']].sort_values('invokeTimeRel', ascending=True)
+    requested_frame = test_df[['invokeTimeRel', 'latency']].sort_values('invokeTimeRel', ascending=True)
     return requested_frame 
 
 def main(benchmark, machine):
-    runs = [1,2]
-    threads = [4,8,10]
-
     axes =[]
     plt.figure()
 
-    img_dir = os.environ['FAAS_ROOT'] + "/plots/" + machine + "/mt_roi/" + benchmark
+    img_dir = os.environ['FAAS_ROOT'] + "/plots/" + machine + "/e_times/" + benchmark
 
     if not os.path.exists(img_dir):
         os.makedirs(img_dir, 0o777)
 
-    qos_results = {'single_thread':[], 'multi_thread':[], 'num_threads':[], 'qos_improvement':[]}
-    execution_time = {'single_thread':[], 'multi_thread':[], 'num_threads':[]}
-
-    for j in threads: #number of threads
-        balanced_test_name = machine + "/balanced_roi/" + benchmark + "/1_" + str(10*j)
-        balanced_df = func(balanced_test_name)
-        single_thread_QoS = balanced_df['latency'].quantile(0.99)
-        label= str(10*j) + ",1"
-        axes = balanced_df.plot(y='latency',x='invokeTimeRel', label=label)
-
-        execution_time['num_threads'].append(j)
-        execution_time['single_thread'].append(balanced_df['executionTime'].quantile(0.99))
-
-        multi_thread_QoS = 0
-        multi_thread_execution_time = 0
-        for k in runs: #run number
-            mt_test_name = machine + "/mt_roi/" + benchmark + "/" + str(k) + "_" + str(j)
+    for k in [1]: #run number
+        axes = None
+        for j in [8]: #workers
+            test_name    = machine + "/e_times/" + benchmark + "/" + str(k) + "_" + str(j)
+            test_name_mt = machine + "/e_times/" + benchmark + "_mt/" + str(k) + "_" + str(j)
             try:
-                df = func(mt_test_name)
-                label="10, "+ str(j)
-                multi_thread_execution_time += df['executionTime'].quantile(0.99)
-                multi_thread_QoS += df['latency'].quantile(0.99)
-                df.plot(y='latency', x='invokeTimeRel', label=label, ax=axes)
+                df    = func(test_name,j)
+                df_mt = func(test_name_mt,j)
+                label=str(j)
+                if axes is None:
+                    axes = df.plot(y='latency',x='invokeTimeRel', label=label)
+                    df_mt.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
+                else:
+                    df.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
+                    df_mt.plot(y='latency',x='invokeTimeRel', label=label, ax=axes)
             except Exception as e:
                 print("Plot failed for run ", str(k), ", ROI ", str(j))
                 print(e)
 
-        multi_thread_execution_time = multi_thread_execution_time/(1.0*len(runs)*j)
-        execution_time['multi_thread'].append(multi_thread_execution_time)
-        multi_thread_QoS = multi_thread_QoS/(1.0*len(runs))
-        qos_results['num_threads'].append(j)
-        qos_results['single_thread'].append(single_thread_QoS)
-        qos_results['multi_thread'].append(multi_thread_QoS)
-        qos_results['qos_improvement'].append((100.0*(single_thread_QoS-multi_thread_QoS)/multi_thread_QoS))
-
-        img = img_dir + "/latency_" + str(j) + ".png"
-        plt.ylabel("Total Latency")
+        img = img_dir + "/latency_" + str(k) + ".png"
+        plt.ylabel("Execution Latency")
         plt.xlabel("Time")
-        plt.legend(title="(IPS, Workers)")
+        plt.legend(title="Invocation Rate")
         plt.savefig(img)
         plt.close()
         plt.figure()
-
-    execution_time = pd.DataFrame(execution_time)
-    et_axes = execution_time.plot(y='single_thread', x='num_threads', c = 'red', label='Single Thread', marker='o')
-    execution_time.plot(y='multi_thread', x='num_threads', c = 'green', ax=et_axes, label='Multi Thread', marker='o')
-
-    for i, val in enumerate(execution_time['num_threads']):
-        et_axes.annotate(str(round(execution_time['single_thread'][i],2)), (val,execution_time['single_thread'][i] ))
-        et_axes.annotate(str(round(execution_time['multi_thread'][i],2)), (val,execution_time['multi_thread'][i] ))
-
-    img = img_dir + "/ExecutionTime.png"
-    plt.ylabel("99%ile Cost per user")
-    plt.xlabel("No. of workers")
-    plt.legend(title="Container Type")
-    plt.savefig(img)
-    plt.close()
-    plt.figure()
-
-    qos_results = pd.DataFrame(qos_results)
-    qos_axes = qos_results.plot(y='qos_improvement', x='num_threads', marker='o')
-    
-    for i, val in enumerate(qos_results['qos_improvement']):
-        qos_axes.annotate(str(round(val,2))+"%", (qos_results['num_threads'][i], qos_results['qos_improvement'][i]))
-
-    img = img_dir + "/QoS.png"
-    plt.ylabel("QoS Improvement(%)")
-    plt.xlabel("Number of Threads")
-    plt.savefig(img)
-    plt.close()
-    plt.figure()
-
-
-    pd.DataFrame(qos_results).to_csv()
 
 if __name__== "__main__":
     parser = OptionParser()
