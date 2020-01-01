@@ -12,6 +12,7 @@ import itertools
 
 from six.moves import map as imap
 import pyperf
+from multiprocessing import Process
 
 
 DEFAULT_DIGITS = 2000
@@ -57,9 +58,15 @@ def add_cmdline_args(cmd, args):
     cmd.extend(("--digits", str(args.digits)))
 
 
-if __name__ == "__main__":
-    runner = pyperf.Runner(add_cmdline_args=add_cmdline_args)
+def functionWorker(runner, tid, digits):
+    bmk_name = 'pidigits_' + str(tid)
+    runner.bench_func(bmk_name, calc_ndigits, digits)
 
+def main(params):
+    nloops  = ('loops'   in params) and int(params['loops']) or 1
+    workers = ('workers' in params) and int(params['workers']) or 1
+    
+    runner  = pyperf.Runner(add_cmdline_args=add_cmdline_args, loops=nloops)
     cmd = runner.argparser
     cmd.add_argument("--digits", type=int, default=DEFAULT_DIGITS,
                      help="Number of computed pi digits (default: %s)"
@@ -68,4 +75,19 @@ if __name__ == "__main__":
     args = runner.parse_args()
     runner.metadata['description'] = "Compute digits of pi."
     runner.metadata['pidigits_ndigit'] = args.digits
-    runner.bench_func('pidigits', calc_ndigits, args.digits)
+
+    processes = []
+    for i in range(workers):
+        processes.append(Process(target=functionWorker, args=(runner,i, args.digits)))
+    
+    for idx, process in enumerate(processes):
+        process.start()
+        process.join()
+    
+    out    =  'Executed '+str(workers)+' processes'
+    result = {'output': out}
+
+    return(result)
+    
+if __name__ == '__main__':
+    main({'workers':5})
