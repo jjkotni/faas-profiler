@@ -296,10 +296,7 @@ def add_cmdline_args(cmd, args):
         cmd.extend(("--filename", args.filename))
 
 
-def functionWorker(tname, allocate_pkey):
-    if allocate_pkey:
-        pkey_thread_mapper(tname)
-
+def main(params):
     runner = pyperf.Runner(add_cmdline_args=add_cmdline_args, loops = 1)
     runner.metadata['description'] = "Create chaosgame-like fractals"
     cmd = runner.argparser
@@ -327,7 +324,8 @@ def functionWorker(tname, allocate_pkey):
     bench_main(runner, args)
     process = psutil.Process(os.getpid())
     print(process.memory_full_info())  # in bytes
-
+    return({'Result':'Success'})
+    
 
 # if __name__ == '__main__':
 #     out = main({'activation1':{},'activation3':{},'activation4':{}, 'activation2': {},
