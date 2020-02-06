@@ -1,0 +1,1274 @@
+execve("/home/ajayn/virtualenv/bin/python", ["python", "mt_bm_deltablue.py"], 0x7ffc105e06c8 /* 64 vars */) = 0
+brk(NULL)                               = 0x1561000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/haswell/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/haswell/avx512_1/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/haswell/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/haswell/avx512_1", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/haswell/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/haswell", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/avx512_1/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/avx512_1", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/tls", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/haswell/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/haswell/avx512_1/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/haswell/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/haswell/avx512_1", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/haswell/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/haswell", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/avx512_1/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/avx512_1", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64/x86_64", 0x7ffe8e899090) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/cuda-10.0/lib64", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=130312, ...}) = 0
+mmap(NULL, 130312, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbfce9f8000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce9f6000
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfce400000
+mprotect(0x7fbfce5e7000, 2097152, PROT_NONE) = 0
+mmap(0x7fbfce7e7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fbfce7e7000
+mmap(0x7fbfce7ed000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbfce7ed000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000b\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=144976, ...}) = 0
+mmap(NULL, 2221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfce1e1000
+mprotect(0x7fbfce1fb000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfce3fa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fbfce3fa000
+mmap(0x7fbfce3fc000, 13440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fbfce3fc000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14560, ...}) = 0
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcdfdd000
+mprotect(0x7fbfcdfe0000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfce1df000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fbfce1df000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=10592, ...}) = 0
+mmap(NULL, 2105616, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcddda000
+mprotect(0x7fbfcdddc000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfcdfdb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fbfcdfdb000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@8\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=202880, ...}) = 0
+mmap(NULL, 2298016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcdba8000
+mprotect(0x7fbfcdbd7000, 2097152, PROT_NONE) = 0
+mmap(0x7fbfcddd7000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7fbfcddd7000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\37\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=116960, ...}) = 0
+mmap(NULL, 2212016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcd98b000
+mprotect(0x7fbfcd9a7000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfcdba6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x7fbfcdba6000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce9f4000
+mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcd5ed000
+mprotect(0x7fbfcd78a000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfcd989000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7fbfcd989000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce9f1000
+arch_prctl(ARCH_SET_FS, 0x7fbfce9f1740) = 0
+mprotect(0x7fbfce7e7000, 16384, PROT_READ) = 0
+mprotect(0x7fbfcd989000, 4096, PROT_READ) = 0
+mprotect(0x7fbfcdba6000, 4096, PROT_READ) = 0
+mprotect(0x7fbfcddd7000, 8192, PROT_READ) = 0
+mprotect(0x7fbfcdfdb000, 4096, PROT_READ) = 0
+mprotect(0x7fbfce1df000, 4096, PROT_READ) = 0
+mprotect(0x7fbfce3fa000, 4096, PROT_READ) = 0
+mprotect(0x9b3000, 4096, PROT_READ)     = 0
+mprotect(0x7fbfcea18000, 4096, PROT_READ) = 0
+munmap(0x7fbfce9f8000, 130312)          = 0
+set_tid_address(0x7fbfce9f1a10)         = 30287
+set_robust_list(0x7fbfce9f1a20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7fbfce1e6cb0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fbfce1f3890}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7fbfce1e6d50, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fbfce1f3890}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x1561000
+brk(0x1582000)                          = 0x1582000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10281936, ...}) = 0
+mmap(NULL, 10281936, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbfccc1e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26376, ...}) = 0
+mmap(NULL, 26376, PROT_READ, MAP_SHARED, 3, 0) = 0x7fbfcea11000
+close(3)                                = 0
+futex(0x7fbfce7eca08, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("\x70\x7e\xfa\xbd\xfe\xf6\x7f\x3c\xec\x01\xce\xc6\x3e\x07\x5f\xf5\x5f\x02\x6c\x09\x2f\x89\x94\x96", 24, GRND_NONBLOCK) = 24
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce9b1000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce971000
+munmap(0x7fbfce971000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce971000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+stat("/home/ajayn/virtualenv/bin/python", {st_mode=S_IFREG|0755, st_size=4526456, ...}) = 0
+readlink("/home/ajayn/virtualenv/bin/python", "python3", 4096) = 7
+readlink("/home/ajayn/virtualenv/bin/python3", 0x7ffe8e8866b0, 4096) = -1 EINVAL (Invalid argument)
+openat(AT_FDCWD, "/home/ajayn/virtualenv/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/ajayn/virtualenv/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/bin/Modules/Setup", 0x7ffe8e891760) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/bin/lib/python3.6/os.py", 0x7ffe8e887640) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/bin/lib/python3.6/os.pyc", 0x7ffe8e887640) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+stat("/home/ajayn/virtualenv/bin/pybuilddir.txt", 0x7ffe8e891760) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/bin/lib/python3.6/lib-dynload", 0x7ffe8e891760) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+brk(0x15a5000)                          = 0x15a5000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce931000
+sysinfo({uptime=2037621, loads=[29568, 32192, 36320], totalram=67212156928, freeram=2486665216, sharedram=601600000, bufferram=3020062720, totalswap=21474832384, freeswap=21437607936, procs=3056, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+brk(0x15c7000)                          = 0x15c7000
+sigaltstack({ss_sp=0x157fcb0, ss_flags=0, ss_size=8192}, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+stat("/home/ajayn/virtualenv/lib/python36.zip", 0x7ffe8e898170) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python36.zip", 0x7ffe8e897910) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 58 entries */, 32768)    = 1960
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7ffe8e897cf0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/__init__.abi3.so", 0x7ffe8e897cf0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/__init__.so", 0x7ffe8e897cf0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5642, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce8f1000
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5642, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/encodings/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3930, ...}) = 0
+read(3, "3\r\r\nr\365\303]\n\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3931) = 3930
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/codecs.py", {st_mode=S_IFREG|0644, st_size=36276, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/codecs.py", {st_mode=S_IFREG|0644, st_size=36276, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/codecs.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33918, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=33918, ...}) = 0
+read(3, "3\r\r\nr\365\303]\264\215\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0:\0\0\0@\0\0"..., 33919) = 33918
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/encodings", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents(3, /* 128 entries */, 32768)   = 4336
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15577, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15577, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/encodings/__pycache__/aliases.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6274, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6274, ...}) = 0
+read(3, "3\r\r\nr\365\303]\331<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0D\1\0\0@\0\0"..., 6275) = 6274
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/encodings/__pycache__/utf_8.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1592, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1592, ...}) = 0
+read(3, "3\r\r\nr\365\303]\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1593) = 1592
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getpid()                                = 30287
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x630560, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/encodings/__pycache__/latin_1.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1874, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1874, ...}) = 0
+read(3, "3\r\r\nr\365\303]\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 1875) = 1874
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/io.py", {st_mode=S_IFREG|0644, st_size=3517, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/io.py", {st_mode=S_IFREG|0644, st_size=3517, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/io.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3405, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3405, ...}) = 0
+read(3, "3\r\r\nr\365\303]\275\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 3406) = 3405
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/abc.py", {st_mode=S_IFREG|0644, st_size=8727, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/abc.py", {st_mode=S_IFREG|0644, st_size=8727, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7533, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7533, ...}) = 0
+read(3, "3\r\r\nr\365\303]\27\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7534) = 7533
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/_weakrefset.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7846, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7846, ...}) = 0
+read(3, "3\r\r\nr\365\303]I\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 7847) = 7846
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(1)                                  = 3
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 6), ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(2)                                  = 3
+close(3)                                = 0
+fstat(2, {st_mode=S_IFREG|0664, st_size=28496, ...}) = 0
+ioctl(2, TCGETS, 0x7ffe8e8992d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(2, 0, SEEK_CUR)                   = 28649
+ioctl(2, TCGETS, 0x7ffe8e899580)        = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(2, TCGETS, 0x7ffe8e899550)        = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/_bootlocale.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=998, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=998, ...}) = 0
+read(3, "3\r\r\nr\365\303]\25\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 999) = 998
+read(3, "", 1)                          = 0
+close(3)                                = 0
+lseek(2, 0, SEEK_CUR)                   = 29628
+lseek(2, 0, SEEK_CUR)                   = 29676
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site.py", {st_mode=S_IFREG|0644, st_size=28803, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site.py", {st_mode=S_IFREG|0644, st_size=28803, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/site.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=21837, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=21837, ...}) = 0
+brk(0x15eb000)                          = 0x15eb000
+read(3, "3\r\r\n\n\342\n^\203p\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\24\0\0\0@\0\0"..., 21838) = 21837
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce8b1000
+munmap(0x7fbfce8b1000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce8b1000
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/os.py", {st_mode=S_IFREG|0644, st_size=37526, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/os.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=29646, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=29646, ...}) = 0
+read(3, "3\r\r\nr\365\303]\226\222\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0@\0\0"..., 29647) = 29646
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/stat.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3869, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3869, ...}) = 0
+read(3, "3\r\r\nr\365\303]\256\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 3870) = 3869
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/posixpath.py", {st_mode=S_IFREG|0644, st_size=15772, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/posixpath.py", {st_mode=S_IFREG|0644, st_size=15772, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/posixpath.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10441, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10441, ...}) = 0
+read(3, "3\r\r\nr\365\303]\234=\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0\0@\0\0"..., 10442) = 10441
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 151552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce88c000
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/genericpath.py", {st_mode=S_IFREG|0644, st_size=4756, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/genericpath.py", {st_mode=S_IFREG|0644, st_size=4756, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/genericpath.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3744, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3744, ...}) = 0
+read(3, "3\r\r\nr\365\303]\224\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3745) = 3744
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=26392, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=26392, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/_collections_abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=28815, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=28815, ...}) = 0
+read(3, "3\r\r\nr\365\303]\30g\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 28816) = 28815
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfce84c000
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/lib-dynload", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+getdents(3, /* 41 entries */, 32768)    = 2544
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/orig-prefix.txt", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4, ...}) = 0
+ioctl(3, TCGETS, 0x7ffe8e897fd0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, TCGETS, 0x7ffe8e897fa0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4, ...}) = 0
+read(3, "/usr", 5)                      = 4
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/lib64/python3.6", 0x7ffe8e898080) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.6/plat-x86_64-linux-gnu", 0x7ffe8e898080) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.6/lib-tk", 0x7ffe8e898080) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/no-global-site-packages.txt", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/home/ajayn/virtualenv/local/lib64/python3.6/site-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/lib/python3.6/site-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/lib/site-python", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/python3.6/lib-dynload", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/local/lib/python3.6/dist-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/lib/python3/dist-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/lib/dist-python", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib64/python3.6/site-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 19 entries */, 32768)    = 680
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/site-python", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/python3.6/lib-dynload", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/local/lib/python3.6/dist-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3/dist-packages", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/dist-python", 0x7ffe8e897f50) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+getdents(3, /* 203 entries */, 32768)   = 6752
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/lib/python3.6/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+stat("/usr/lib/python3.6/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/sitecustomize.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=212, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=212, ...}) = 0
+read(3, "3\r\r\n6r\300Z\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 213) = 212
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 19 entries */, 32768)    = 680
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("mt_bm_deltablue.py", {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+openat(AT_FDCWD, "mt_bm_deltablue.py", O_RDONLY) = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+lseek(3, 16384, SEEK_SET)               = 16384
+read(3, "iled\")\n\n    change(offset, 2000)"..., 1381) = 1381
+read(3, "  main({'workers':5})\n", 4096) = 22
+close(3)                                = 0
+stat("mt_bm_deltablue.py", {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+readlink("mt_bm_deltablue.py", 0x7ffe8e888860, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", 4096) = 65
+lstat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue/mt_bm_deltablue.py", {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+openat(AT_FDCWD, "mt_bm_deltablue.py", O_RDONLY) = 3
+fcntl(3, F_GETFD)                       = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+ioctl(3, TCGETS, 0x7ffe8e8997e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17787, ...}) = 0
+read(3, "\"\"\"\ndeltablue.py\n============\n\nP"..., 4096) = 4096
+lseek(3, 0, SEEK_SET)                   = 0
+brk(0x160c000)                          = 0x160c000
+read(3, "\"\"\"\ndeltablue.py\n============\n\nP"..., 4096) = 4096
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccbde000
+read(3, "if self.my_output.mark != mark a"..., 4096) = 4096
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb9e000
+read(3, " offset, dest, strength):\n      "..., 4096) = 4096
+read(3, "           return False\n\n       "..., 4096) = 4096
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb5e000
+read(3, "iled\")\n\n    change(offset, 2000)"..., 4096) = 1403
+read(3, "", 4096)                       = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+munmap(0x7fbfccb1e000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+munmap(0x7fbfccb1e000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+munmap(0x7fbfccb1e000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+munmap(0x7fbfccb1e000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+munmap(0x7fbfccb1e000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb1e000
+brk(0x162e000)                          = 0x162e000
+munmap(0x7fbfccb5e000, 262144)          = 0
+munmap(0x7fbfccb9e000, 262144)          = 0
+munmap(0x7fbfccbde000, 262144)          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 11 entries */, 32768)    = 392
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/__future__.py", {st_mode=S_IFREG|0644, st_size=4841, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/__future__.py", {st_mode=S_IFREG|0644, st_size=4841, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/__future__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4185, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4185, ...}) = 0
+read(3, "3\r\r\nr\365\303]\351\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0@\0\0"..., 4186) = 4185
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7ffe8e897c90) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__init__.abi3.so", 0x7ffe8e897c90) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__init__.so", 0x7ffe8e897c90) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__init__.py", {st_mode=S_IFREG|0664, st_size=846, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__init__.py", {st_mode=S_IFREG|0664, st_size=846, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=939, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=939, ...}) = 0
+read(3, "3\r\r\n\257R\v^N\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 940) = 939
+read(3, "", 1)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=312, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=312, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 312
+lseek(3, -188, SEEK_CUR)                = 124
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 188
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getdents(3, /* 24 entries */, 32768)    = 800
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_utils.py", {st_mode=S_IFREG|0664, st_size=14030, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_utils.py", {st_mode=S_IFREG|0664, st_size=14030, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_utils.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=12503, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=12503, ...}) = 0
+read(3, "3\r\r\n\257R\v^\3166\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0/\0\0\0@\0\0"..., 12504) = 12503
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/contextlib.py", {st_mode=S_IFREG|0644, st_size=13162, ...}) = 0
+stat("/usr/lib/python3.6/contextlib.py", {st_mode=S_IFREG|0644, st_size=13162, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/contextlib.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11158, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11158, ...}) = 0
+read(3, "3\r\r\nr\365\303]j3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 11159) = 11158
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/__init__.cpython-36m-x86_64-linux-gnu.so", 0x7ffe8e894ed0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/__init__.abi3.so", 0x7ffe8e894ed0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/__init__.so", 0x7ffe8e894ed0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45812, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=45812, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/collections/__pycache__/__init__.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=45816, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=45816, ...}) = 0
+read(3, "3\r\r\nr\365\303]\364\262\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0$\0\0\0@\0\0"..., 45817) = 45816
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/operator.py", {st_mode=S_IFREG|0644, st_size=10863, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/operator.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13931, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13931, ...}) = 0
+read(3, "3\r\r\nr\365\303]o*\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0006\0\0\0@\0\0"..., 13932) = 13931
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/keyword.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1783, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1783, ...}) = 0
+read(3, "3\r\r\nr\365\303]\241\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0!\0\0\0@\0\0"..., 1784) = 1783
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/heapq.py", {st_mode=S_IFREG|0644, st_size=22929, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/heapq.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14310, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14310, ...}) = 0
+read(3, "3\r\r\nr\365\303]\221Y\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 14311) = 14310
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccbde000
+munmap(0x7fbfccbde000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccbde000
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/reprlib.py", {st_mode=S_IFREG|0644, st_size=5336, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/reprlib.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5418, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5418, ...}) = 0
+read(3, "3\r\r\nr\365\303]\330\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 5419) = 5418
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/functools.py", {st_mode=S_IFREG|0644, st_size=31346, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/functools.py", {st_mode=S_IFREG|0644, st_size=31346, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/functools.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=24080, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=24080, ...}) = 0
+read(3, "3\r\r\nr\365\303]rz\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0+\0\0\0@\0\0"..., 24081) = 24080
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/types.py", {st_mode=S_IFREG|0644, st_size=8870, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/types.py", {st_mode=S_IFREG|0644, st_size=8870, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/types.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8219, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8219, ...}) = 0
+read(3, "3\r\r\nr\365\303]\246\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 8220) = 8219
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/collections", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents(3, /* 5 entries */, 32768)     = 144
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/collections/__pycache__/abc.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=183, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=183, ...}) = 0
+read(3, "3\r\r\nr\365\303]D\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 184) = 183
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/weakref.py", {st_mode=S_IFREG|0644, st_size=20466, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/weakref.py", {st_mode=S_IFREG|0644, st_size=20466, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/weakref.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19161, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19161, ...}) = 0
+read(3, "3\r\r\nr\365\303]\362O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 19162) = 19161
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x1651000)                          = 0x1651000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb9e000
+brk(0x1648000)                          = 0x1648000
+brk(0x1647000)                          = 0x1647000
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/datetime.py", {st_mode=S_IFREG|0644, st_size=82034, ...}) = 0
+stat("/usr/lib/python3.6/datetime.py", {st_mode=S_IFREG|0644, st_size=82034, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/datetime.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=54511, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=54511, ...}) = 0
+read(3, "3\r\r\nr\365\303]r@\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 54512) = 54511
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/six.py", {st_mode=S_IFREG|0644, st_size=33045, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/six.py", {st_mode=S_IFREG|0644, st_size=33045, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/__pycache__/six.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26723, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=26723, ...}) = 0
+read(3, "3\r\r\n6\342\n^\25\201\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0M\0\0\0@\0\0"..., 26724) = 26723
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/struct.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=330, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=330, ...}) = 0
+read(3, "3\r\r\nr\365\303]\1\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 331) = 330
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x166f000)                          = 0x166f000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb5e000
+brk(0x1666000)                          = 0x1666000
+munmap(0x7fbfccb5e000, 262144)          = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/statistics.py", {st_mode=S_IFREG|0644, st_size=20673, ...}) = 0
+stat("/usr/lib/python3.6/statistics.py", {st_mode=S_IFREG|0644, st_size=20673, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/statistics.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18174, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18174, ...}) = 0
+read(3, "3\r\r\nr\365\303]\301P\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 18175) = 18174
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/decimal.py", {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+stat("/usr/lib/python3.6/decimal.py", {st_mode=S_IFREG|0644, st_size=320, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/decimal.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=351, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=351, ...}) = 0
+read(3, "3\r\r\nr\365\303]@\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 352) = 351
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload/_decimal.cpython-36m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=175008, ...}) = 0
+futex(0x7fbfce1e00c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/lib-dynload/_decimal.cpython-36m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\200\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=175008, ...}) = 0
+mmap(NULL, 2270480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcc8f3000
+mprotect(0x7fbfcc915000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfccb14000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7fbfccb14000
+close(3)                                = 0
+openat(AT_FDCWD, "/home/ajayn/cuda-10.0/lib64/libmpdec.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=130312, ...}) = 0
+mmap(NULL, 130312, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fbfce82c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libmpdec.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300O\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=227944, ...}) = 0
+mmap(NULL, 2323088, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fbfcc6bb000
+mprotect(0x7fbfcc6f2000, 2093056, PROT_NONE) = 0
+mmap(0x7fbfcc8f1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x36000) = 0x7fbfcc8f1000
+close(3)                                = 0
+mprotect(0x7fbfcc8f1000, 4096, PROT_READ) = 0
+mprotect(0x7fbfccb14000, 4096, PROT_READ) = 0
+munmap(0x7fbfce82c000, 130312)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfccb5e000
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+stat("/usr/lib/python3.6/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/numbers.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12142, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12142, ...}) = 0
+read(3, "3\r\r\nr\365\303]\3(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 12143) = 12142
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/fractions.py", {st_mode=S_IFREG|0644, st_size=23639, ...}) = 0
+stat("/usr/lib/python3.6/fractions.py", {st_mode=S_IFREG|0644, st_size=23639, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/fractions.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18426, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18426, ...}) = 0
+read(3, "3\r\r\nr\365\303]W\\\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 18427) = 18426
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/re.py", {st_mode=S_IFREG|0644, st_size=15552, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/re.py", {st_mode=S_IFREG|0644, st_size=15552, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/re.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14076, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14076, ...}) = 0
+read(3, "3\r\r\nr\365\303]\300<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 14077) = 14076
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/enum.py", {st_mode=S_IFREG|0644, st_size=33606, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/enum.py", {st_mode=S_IFREG|0644, st_size=33606, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/enum.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23471, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=23471, ...}) = 0
+read(3, "3\r\r\nr\365\303]F\203\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0\0@\0\0"..., 23472) = 23471
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc67b000
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19338, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19338, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/sre_compile.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10296, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10296, ...}) = 0
+read(3, "3\r\r\nr\365\303]\212K\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 10297) = 10296
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_parse.py", {st_mode=S_IFREG|0644, st_size=36536, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_parse.py", {st_mode=S_IFREG|0644, st_size=36536, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/sre_parse.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20376, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=20376, ...}) = 0
+read(3, "3\r\r\nr\365\303]\270\216\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 20377) = 20376
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6821, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/sre_constants.py", {st_mode=S_IFREG|0644, st_size=6821, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/sre_constants.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5990, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5990, ...}) = 0
+read(3, "3\r\r\nr\365\303]\245\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 5991) = 5990
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/copyreg.py", {st_mode=S_IFREG|0644, st_size=7007, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/copyreg.py", {st_mode=S_IFREG|0644, st_size=7007, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/copyreg.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4262, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4262, ...}) = 0
+read(3, "3\r\r\nr\365\303]_\33\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 4263) = 4262
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/bisect.py", {st_mode=S_IFREG|0644, st_size=2595, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/bisect.py", {st_mode=S_IFREG|0644, st_size=2595, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/bisect.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2694, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2694, ...}) = 0
+read(3, "3\r\r\nr\365\303]#\n\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 2695) = 2694
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/shlex.py", {st_mode=S_IFREG|0644, st_size=12956, ...}) = 0
+stat("/usr/lib/python3.6/shlex.py", {st_mode=S_IFREG|0644, st_size=12956, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/shlex.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6970, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6970, ...}) = 0
+read(3, "3\r\r\nr\365\303]\2342\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 6971) = 6970
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x1687000)                          = 0x1687000
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_metadata.py", {st_mode=S_IFREG|0664, st_size=4807, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_metadata.py", {st_mode=S_IFREG|0664, st_size=4807, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_metadata.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=4784, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=4784, ...}) = 0
+read(3, "3\r\r\n\257R\v^\307\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0@\0\0"..., 4785) = 4784
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_formatter.py", {st_mode=S_IFREG|0664, st_size=2878, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_formatter.py", {st_mode=S_IFREG|0664, st_size=2878, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_formatter.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3206, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3206, ...}) = 0
+read(3, "3\r\r\n\257R\v^>\v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3207) = 3206
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc63b000
+munmap(0x7fbfcc63b000, 262144)          = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_bench.py", {st_mode=S_IFREG|0664, st_size=28417, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_bench.py", {st_mode=S_IFREG|0664, st_size=28417, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_bench.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=27586, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=27586, ...}) = 0
+read(3, "3\r\r\n\257R\v^\1o\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 27587) = 27586
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc63b000
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_runner.py", {st_mode=S_IFREG|0664, st_size=23617, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_runner.py", {st_mode=S_IFREG|0664, st_size=23617, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_runner.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=15176, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=15176, ...}) = 0
+read(3, "3\r\r\n\257R\v^A\\\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 15177) = 15176
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_cli.py", {st_mode=S_IFREG|0664, st_size=19907, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_cli.py", {st_mode=S_IFREG|0664, st_size=19907, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_cli.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=13491, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=13491, ...}) = 0
+read(3, "3\r\r\n\257R\v^\303M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 13492) = 13491
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_cpu_utils.py", {st_mode=S_IFREG|0664, st_size=4308, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_cpu_utils.py", {st_mode=S_IFREG|0664, st_size=4308, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_cpu_utils.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=3738, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=3738, ...}) = 0
+read(3, "3\r\r\n\257R\v^\324\20\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3739) = 3738
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_worker.py", {st_mode=S_IFREG|0664, st_size=12064, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/_worker.py", {st_mode=S_IFREG|0664, st_size=12064, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/site-packages/pyperf/__pycache__/_worker.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=8077, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=8077, ...}) = 0
+read(3, "3\r\r\n\257R\v^ /\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 8078) = 8077
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/threading.py", {st_mode=S_IFREG|0644, st_size=49029, ...}) = 0
+stat("/usr/lib/python3.6/threading.py", {st_mode=S_IFREG|0644, st_size=49029, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/threading.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=37234, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=37234, ...}) = 0
+read(3, "3\r\r\nr\365\303]\205\277\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\35\0\0\0@\0\0"..., 37235) = 37234
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/traceback.py", {st_mode=S_IFREG|0644, st_size=23458, ...}) = 0
+stat("/usr/lib/python3.6/traceback.py", {st_mode=S_IFREG|0644, st_size=23458, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/traceback.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19646, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19646, ...}) = 0
+read(3, "3\r\r\nr\365\303]\242[\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\23\0\0\0@\0\0"..., 19647) = 19646
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc5fb000
+mmap(NULL, 299008, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc5b2000
+munmap(0x7fbfce88c000, 151552)          = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/linecache.py", {st_mode=S_IFREG|0644, st_size=5312, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/linecache.py", {st_mode=S_IFREG|0644, st_size=5312, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/linecache.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3796, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3796, ...}) = 0
+read(3, "3\r\r\nr\365\303]\300\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 3797) = 3796
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/tokenize.py", {st_mode=S_IFREG|0644, st_size=29496, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/tokenize.py", {st_mode=S_IFREG|0644, st_size=29496, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/tokenize.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18665, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18665, ...}) = 0
+read(3, "3\r\r\nr\365\303]8s\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0-\0\0\0@\0\0"..., 18666) = 18665
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/token.py", {st_mode=S_IFREG|0644, st_size=3075, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/token.py", {st_mode=S_IFREG|0644, st_size=3075, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/token.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3338, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3338, ...}) = 0
+read(3, "3\r\r\nr\365\303]\3\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3339) = 3338
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/argparse.py", {st_mode=S_IFREG|0644, st_size=90568, ...}) = 0
+stat("/usr/lib/python3.6/argparse.py", {st_mode=S_IFREG|0644, st_size=90568, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/argparse.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=60456, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=60456, ...}) = 0
+brk(0x16b3000)                          = 0x16b3000
+read(3, "3\r\r\nr\365\303]\310a\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 60457) = 60456
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/copy.py", {st_mode=S_IFREG|0644, st_size=8815, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/copy.py", {st_mode=S_IFREG|0644, st_size=8815, ...}) = 0
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/copy.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7097, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7097, ...}) = 0
+read(3, "3\r\r\nr\365\303]o\"\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 7098) = 7097
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/textwrap.py", {st_mode=S_IFREG|0644, st_size=19558, ...}) = 0
+stat("/usr/lib/python3.6/textwrap.py", {st_mode=S_IFREG|0644, st_size=19558, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/textwrap.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13684, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13684, ...}) = 0
+read(3, "3\r\r\nr\365\303]fL\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 13685) = 13684
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.6/gettext.py", {st_mode=S_IFREG|0644, st_size=21957, ...}) = 0
+stat("/usr/lib/python3.6/gettext.py", {st_mode=S_IFREG|0644, st_size=21957, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.6/__pycache__/gettext.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14306, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14306, ...}) = 0
+read(3, "3\r\r\nr\365\303]\305U\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 14307) = 14306
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/faas-profiler/functions/pyperfbenchmark/bm_deltablue", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajayn/virtualenv/lib/python3.6", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc572000
+munmap(0x7fbfcc572000, 262144)          = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/locale.py", {st_mode=S_IFREG|0644, st_size=77304, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc572000
+munmap(0x7fbfcc572000, 262144)          = 0
+stat("/home/ajayn/virtualenv/lib/python3.6/locale.py", {st_mode=S_IFREG|0644, st_size=77304, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fbfcc572000
+openat(AT_FDCWD, "/home/ajayn/virtualenv/lib/python3.6/__pycache__/locale.cpython-36.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34048, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=34048, ...}) = 0
+read(3, "3\r\r\nr\365\303]\370-\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0]\2\0\0@\0\0"..., 34049) = 34048
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ajayn/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_IN/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US.ISO8859-1/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/home/ajayn/virtualenv/share/locale/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/locale-langpack/en_US/LC_MESSAGES/messages.mo", 0x7ffe8e897cc0) = -1 ENOENT (No such file or directory)
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbfcbd71000
+mprotect(0x7fbfcbd72000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fbfcc570fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fbfcc5719d0, tls=0x7fbfcc571700, child_tidptr=0x7fbfcc5719d0) = 30288
+futex(0x1684fd0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854723, tv_nsec=852983000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854723, tv_nsec=853575000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854723, tv_nsec=853755000}, 0xffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854723, tv_nsec=853893000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7fbfc4000e70, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fbfcb0c6000
+mprotect(0x7fbfcb0c7000, 8388608, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7fbfcb8c5fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fbfcb8c69d0, tls=0x7fbfcb8c6700, child_tidptr=0x7fbfcb8c69d0) = 30530
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x7fbfc4000e70, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854726, tv_nsec=581873000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854726, tv_nsec=582168000}, 0xffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854726, tv_nsec=582261000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854726, tv_nsec=582806000}, 0xffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x7fbfc4003510, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+clone(child_stack=0x7fbfcb8c5fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fbfcb8c69d0, tls=0x7fbfcb8c6700, child_tidptr=0x7fbfcb8c69d0) = 30804
+futex(0xa745cc, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7fbfc4003510, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854729, tv_nsec=284869000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854729, tv_nsec=285197000}, 0xffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854729, tv_nsec=285327000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x7fbfc4018b20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+clone(child_stack=0x7fbfcb8c5fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fbfcb8c69d0, tls=0x7fbfcb8c6700, child_tidptr=0x7fbfcb8c69d0) = 30989
+futex(0xa745c8, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7fbfc4018b20, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854732, tv_nsec=1190000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854732, tv_nsec=1464000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854732, tv_nsec=1587000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x7fbfc4003290, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+clone(child_stack=0x7fbfcb8c5fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7fbfcb8c69d0, tls=0x7fbfcb8c6700, child_tidptr=0x7fbfcb8c69d0) = 31224
+futex(0xa745cc, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 1
+futex(0x7fbfc4003290, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854734, tv_nsec=744910000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745cc, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854734, tv_nsec=745181000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa745c8, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, {tv_sec=1577854734, tv_nsec=745287000}, 0xffffffff) = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0xa74560, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x7fbfc4027b80, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, 0xffffffff) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, {sa_handler=0x630560, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fbfce43ef20}, 8) = 0
+sigaltstack(NULL, {ss_sp=0x157fcb0, ss_flags=0, ss_size=8192}) = 0
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}, NULL) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

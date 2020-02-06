@@ -9,18 +9,19 @@ fi
 ZIP_NAME=$1".zip"
 
 SITE=virtualenv/lib/python3.6/site-packages
-VENV=virtualenv/bin/activate_this.py
+#VENV=virtualenv/bin/activate_this.py
+VENV=virtualenv/
 MAIN=__main__.py
 PYPERF=$SITE/pyperf
 SIX=$SITE/six.py
-PYMEM=$SITE/mpkmemalloc-1.0.0.egg-info
+PYMEM=$SITE/mpkmemalloc.cpython-36m-x86_64-linux-gnu.so
 
 # Create chain of arguments
 ARG=$VENV
 ARG+=" "$MAIN
-ARG+=" "$PYPERF
-ARG+=" "$SIX
-ARG+=" "$PYMEM
+#ARG+=" "$PYPERF
+#ARG+=" "$SIX
+#ARG+=" "$PYMEM
 
 # This command creates the zip archive needed!
 zip -r $ZIP_NAME $ARG
