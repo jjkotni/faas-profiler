@@ -1,0 +1,16 @@
+Dummy init: Mean +- std dev: 257 ns +- 63 ns
+float: Mean +- std dev: 228 ms +- 1 ms
+float: Mean +- std dev: 227 ms +- 0 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 228 ms +- 1 ms
+float: Mean +- std dev: 244 ms +- 1 ms
+float: Mean +- std dev: 226 ms +- 0 ms
+float: Mean +- std dev: 228 ms +- 1 ms
+float: Mean +- std dev: 227 ms +- 1 ms
+113732.0
+113732.0
+Setting debug value: 0
